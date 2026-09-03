@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="5c5c-7f1e-984f-2f90" name="Vehiculos" gameSystemId="sys-c514-e280-17d7-17af" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Civiles" id="70a4-c4ff-a0a4-1899" hidden="false"/>
+    <categoryEntry name="Ligeros" id="ead8-5519-749b-6746" hidden="false"/>
+    <categoryEntry name="Medianos" id="3e99-c63f-b607-4222" hidden="false"/>
+    <categoryEntry name="Pesados" id="8fe3-28d5-88fd-a65e" hidden="false"/>
+  </categoryEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Armas" id="893f-0967-b08f-8ada" targetId="0daa-b4f2-7333-2915"/>
+    <catalogueLink type="catalogue" name="Task Force - Militares" id="5260-b7b4-5191-851b" targetId="d8f8-fbb7-c1fb-526b"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="BMP 1" hidden="false" id="37d6-9b2e-2d6f-c555">
+      <categoryLinks>
+        <categoryLink name="Ligeros" hidden="false" id="2136-48b5-9360-7620" targetId="ead8-5519-749b-6746" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="BMP 1" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="dd4f-770e-800e-1964">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">8</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">SPG9</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 10, Vehículo con Orugas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Vehículos con Orugas" id="ec47-8132-6df4-3fc1" hidden="false" type="rule" targetId="5584-88f3-f33a-1cce"/>
+        <infoLink name="Transporte Improvisado" id="f134-6482-84b2-0493" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="SPG9 HEAT / SPG9 HE" hidden="false" id="9ff6-b17d-9d06-5e20" type="selectionEntry" targetId="bdf4-1d4c-5a7a-05d1" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="076e-91c0-080a-ea39-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="076e-91c0-080a-ea39-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BMP 2" hidden="false" id="ed84-74e0-fff3-398d">
+      <profiles>
+        <profile name="BMP 2" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="9ad6-2c23-a18d-0132">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">6</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">7</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">Cañón Mediano, Lanzador Antitanque Guiado, Ametralladora Mediana</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 10, Vehículo con Orugas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Ligeros" hidden="false" id="e95d-8218-38c6-2457" targetId="ead8-5519-749b-6746" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="e5b6-1dbb-f8c4-7d47" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+        <infoLink name="Vehículos con Orugas" id="1c88-1091-faeb-82c3" hidden="false" type="rule" targetId="5584-88f3-f33a-1cce"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cañón Medio" hidden="false" id="6848-b949-f6bf-1fae" type="selectionEntry" targetId="4d26-83d7-0852-0fe2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7890-a6b0-40fe-8e59-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7890-a6b0-40fe-8e59-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lanzador Antitanque Ligero Guiado" hidden="false" id="1540-ebb2-41cb-b34e" type="selectionEntry" targetId="907a-e547-dac3-1794">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bf4-2736-affe-a06d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bf4-2736-affe-a06d-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Media" hidden="false" id="8ecd-9481-0367-6dd2" type="selectionEntry" targetId="698e-2892-f202-6122">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="070a-3776-377f-44a1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="070a-3776-377f-44a1-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BMP 3" hidden="false" id="b1c0-5549-7798-6a34">
+      <profiles>
+        <profile name="BMP 3" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="0373-4477-926f-0686">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">6</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Mediano 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">6</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">12</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">Cañón Mediano, Armas de Tanque, Lanzador Antitanque Guiado y 2 Ametralladoras Medianas</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8, Orugas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="4884-f023-2ce3-d7ff" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+        <infoLink name="Vehículos con Orugas" id="fe13-fb47-011b-91bf" hidden="false" type="rule" targetId="5584-88f3-f33a-1cce"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ametralladora Media" hidden="false" id="028a-fd37-a32a-bf2c" type="selectionEntry" targetId="698e-2892-f202-6122">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dc8-09a1-3cb5-4683-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc8-09a1-3cb5-4683-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cañón Medio" hidden="false" id="41ba-d902-641b-bfb1" type="selectionEntry" targetId="4d26-83d7-0852-0fe2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22b1-18dc-e66a-d259-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22b1-18dc-e66a-d259-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lanzador Antitanque Ligero Guiado" hidden="false" id="3304-975d-2141-fee5" type="selectionEntry" targetId="907a-e547-dac3-1794">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1366-66cf-fae6-6256-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1366-66cf-fae6-6256-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Media" hidden="false" id="9371-a992-9fab-759a" type="selectionEntry" targetId="698e-2892-f202-6122">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="772f-37f6-d26c-c32e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="772f-37f6-d26c-c32e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil HEAT" hidden="false" id="c289-7cc9-48df-0fa5" type="selectionEntry" targetId="bbd4-d9cb-54ee-5b72">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dea3-70b1-0e98-570e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dea3-70b1-0e98-570e-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil Cinético" hidden="false" id="508e-05b5-4510-6945" type="selectionEntry" targetId="8c9a-9b24-ff1e-74ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c400-8299-3f2d-8991-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c400-8299-3f2d-8991-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BTR 80" hidden="false" id="2f0c-bce4-b64b-4440">
+      <categoryLinks>
+        <categoryLink name="Medianos" hidden="false" id="c4b2-da3c-bbc3-fca2" targetId="3e99-c63f-b607-4222" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="ZPU 1" hidden="false" id="1340-15ed-bff9-607b" type="selectionEntry" targetId="6df7-abf1-c828-c77e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b81-8114-0fd7-8042-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b81-8114-0fd7-8042-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Media" hidden="false" id="c50b-dbdc-53f7-3462" type="selectionEntry" targetId="698e-2892-f202-6122">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f645-7f11-923f-db73-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f645-7f11-923f-db73-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="BTR 80" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="6e1d-3912-01c3-3db6">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">6</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Mediano 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">7</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">ZPU 1, Ametralladora Mediana</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="4824-2d9f-1bbf-3ef4" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="BTR 82a" hidden="false" id="570d-0cae-65be-2197">
+      <categoryLinks>
+        <categoryLink name="Medianos" hidden="false" id="804f-cab7-5ae4-314c" targetId="3e99-c63f-b607-4222" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cañón Medio" hidden="false" id="8a5c-1b4c-a123-64c7" type="selectionEntry" targetId="4d26-83d7-0852-0fe2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e11-bde4-de92-1baa-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e11-bde4-de92-1baa-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Media" hidden="false" id="0be6-2b90-d676-9aa6" type="selectionEntry" targetId="698e-2892-f202-6122">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6599-7ef6-913b-9a0c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6599-7ef6-913b-9a0c-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="BTR 82a" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="7774-3152-c8f5-ba72">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">6</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Mediano 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">6</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">7</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">ZPU 1, Ametralladora Mediana</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="7c2a-bef4-aa64-8266" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Coche" hidden="false" id="8a34-c19c-eea1-97e6">
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="68ff-46b9-ae17-e444" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Coche" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="0e9a-718c-b344-35d1">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">8</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">3</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">4</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Coche Blindado" hidden="false" id="e22c-91eb-a642-14b0">
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="ff58-4d68-5fe4-9684" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Coche Blindado" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="59c9-d675-ee68-ee0b">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">7</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">4</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Dagger " hidden="false" id="0d53-73f5-f3e4-db89">
+      <categoryLinks>
+        <categoryLink name="Ligeros" hidden="false" id="614c-96b9-6a09-21b6" targetId="ead8-5519-749b-6746" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Dagger " typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="6749-1b8a-2219-b7c2">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">10</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">4</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">4</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Ultraligero, Modificaciones Todoterreno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Modificaciones Todoterreno" id="7306-2655-a502-5d0f" hidden="false" type="rule" targetId="d241-b22c-ab65-fdf4"/>
+        <infoLink name="Vehículo Ultraligero" id="408b-e67e-458c-3298" hidden="false" type="rule" targetId="1dbd-8291-f9c5-abac"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Humvee" hidden="false" id="0e3d-74e2-9827-e6f1">
+      <categoryLinks>
+        <categoryLink name="Ligeros" hidden="false" id="cd4d-7b3f-f995-6fab" targetId="ead8-5519-749b-6746" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Humvee" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="e66e-6f76-80bd-89e8">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">7</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">6</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Humvee Blindado" hidden="false" id="7269-d751-67c0-0545">
+      <categoryLinks>
+        <categoryLink name="Ligeros" hidden="false" id="d640-6bd8-6ab9-9ae0" targetId="ead8-5519-749b-6746" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Humvee Blindado" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="19c7-9f74-85bc-ab4b">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">7</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">6</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">6</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lenco Bearcat" hidden="false" id="372d-a9f0-c5ed-497d">
+      <categoryLinks>
+        <categoryLink name="Ligeros" hidden="false" id="c7b0-eb93-2a76-f670" targetId="ead8-5519-749b-6746" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lenco Bearcat" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="3560-8d00-b4b2-182b">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">9</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">6</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">10</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 4, Modificaciones Todoterreno, Protección contra Minas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="8647-8537-30ec-6222" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+        <infoLink name="Modificaciones Todoterreno" id="9f16-d1ba-1cff-f83c" hidden="false" type="rule" targetId="d241-b22c-ab65-fdf4"/>
+        <infoLink name="Protección contra Minas" id="bbd2-815b-27ef-76fc" hidden="false" type="rule" targetId="a069-d66f-45c4-5c57"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="LTV" hidden="false" id="5513-72ec-49e3-add5">
+      <categoryLinks>
+        <categoryLink name="Medianos" hidden="false" id="a085-fbb9-28e5-ffc2" targetId="3e99-c63f-b607-4222" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="LTV" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="7bfe-a312-5d34-dd55">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">8</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Mediano 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">6</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">6</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Protección contra Minas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Protección contra Minas" id="b1be-7b64-5950-7582" hidden="false" type="rule" targetId="a069-d66f-45c4-5c57"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="M1 Abrams / Challenger 2 / Leopard 2" hidden="false" id="dcfb-72a2-fd72-e743">
+      <categoryLinks>
+        <categoryLink name="Pesados" hidden="false" id="5919-55cd-7288-9443" targetId="8fe3-28d5-88fd-a65e" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="M1 Abrams / Challenger 2 / Leopard 2" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="2dc8-4709-5028-f7cc">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Pesado 4</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">9</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">-</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">Cañón 120/125mm Proyectil HEAT/Cinético (Arma Estabilizada), Ametralladora Pesada, RWS Mediano</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Vehículo con Orugas, APS Nueva Generación, Blindaje Reactivo Avanzado</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil Cinético" hidden="false" id="00d6-79e9-fe67-c512" type="selectionEntry" targetId="8c9a-9b24-ff1e-74ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a8d-b2bb-cbcf-22cb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a8d-b2bb-cbcf-22cb-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Pesada" hidden="false" id="5b4e-0e2e-004b-21d6" type="selectionEntry" targetId="6913-fd31-fcca-c6c7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc95-bc4f-69cc-1053-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc95-bc4f-69cc-1053-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil HEAT" hidden="false" id="0e57-bb07-b1c6-110a" type="selectionEntry" targetId="bbd4-d9cb-54ee-5b72">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b28-2c75-3bc1-03f9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b28-2c75-3bc1-03f9-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="RWS Medio" id="9eb5-e496-e8e2-5275" hidden="false" type="rule" targetId="c113-744f-f867-039d"/>
+        <infoLink name="Vehículos con Orugas" id="66fa-c240-0668-2231" hidden="false" type="rule" targetId="5584-88f3-f33a-1cce"/>
+        <infoLink name="APS Nueva Generación" id="5d26-691c-dd99-9b55" hidden="false" type="rule" targetId="e0a8-f237-5f95-44d6"/>
+        <infoLink name="Blindaje Reactivo Avanzado" id="b5a4-ce68-171f-6562" hidden="false" type="rule" targetId="9158-c49c-4f94-d3a4"/>
+        <infoLink name="Estabilizador de Arma" id="08f8-6a09-f897-b2c5" hidden="false" type="rule" targetId="d998-499e-0a80-550a"/>
+        <infoLink name="Sistema de Armas Remotas (RWS)" id="daf6-4430-0f74-e37a" hidden="false" type="rule" targetId="903c-ad3b-d4d7-b130"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="RWS Medio" id="3076-0642-a801-6bef" hidden="false" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Ametralladora Ligera " hidden="false" id="be65-4a21-c595-6258" type="selectionEntry" targetId="b0d0-6eac-b352-8a55"/>
+            <entryLink import="true" name="Ametralladora Media Dual" hidden="false" id="66a5-4cc6-dc4b-2b11" type="selectionEntry" targetId="e8c1-805f-4511-9efe"/>
+            <entryLink import="true" name="Ametralladora Pesada" hidden="false" id="d58e-57a4-820d-611c" type="selectionEntry" targetId="6913-fd31-fcca-c6c7"/>
+            <entryLink import="true" name="Lanzagranadas Automático" hidden="false" id="6096-0495-85f3-4448" type="selectionEntry" targetId="8648-6b96-1bb3-dd19"/>
+            <entryLink import="true" name="Ametralladora Rotativa" hidden="false" id="fd76-fe56-0711-4b14" type="selectionEntry" targetId="ef99-a832-5135-e797"/>
+            <entryLink import="true" name="Lanzador Antitanque sin Guiado" hidden="false" id="82a7-3abd-1092-3971" type="selectionEntry" targetId="ae7a-a9dc-750f-1e47"/>
+            <entryLink import="true" name="Cañón Medio" hidden="false" id="a507-6db6-d514-0edb" type="selectionEntry" targetId="4d26-83d7-0852-0fe2"/>
+            <entryLink import="true" name="Ametralladora Media" hidden="false" id="9302-6d78-b94b-d01f" type="selectionEntry" targetId="698e-2892-f202-6122"/>
+            <entryLink import="true" name="Lanzador Antitanque Ligero Guiado" hidden="false" id="82bb-4a92-3ed6-041d" type="selectionEntry" targetId="907a-e547-dac3-1794"/>
+            <entryLink import="true" name="Descargadores de Humo" hidden="false" id="53ec-7b55-d063-00fd" type="selectionEntry" targetId="630b-6e65-f43c-b66e"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f0b-133e-9c39-53e0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Miniván" hidden="false" id="e9ae-ee53-1792-ca00">
+      <profiles>
+        <profile name="Miniván" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="91aa-7cae-4855-ce65">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">6</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">3</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">12</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="18a3-ae87-102d-ba1b" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="MRAP" hidden="false" id="8753-d1b4-444c-eab2">
+      <categoryLinks>
+        <categoryLink name="Medianos" hidden="false" id="39c2-8b9a-f187-ed29" targetId="3e99-c63f-b607-4222" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="MRAP" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="2c40-00da-90a5-40fa">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">7</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Mediano 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">6</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Protección contra Minas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Protección contra Minas" id="fd64-9f23-c9c2-614c" hidden="false" type="rule" targetId="a069-d66f-45c4-5c57"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pick Up" hidden="false" id="f81a-b262-214f-1f23">
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="9792-2dee-1226-ed72" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pick Up" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="c460-22c3-9959-9886">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">8</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">3</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">4</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8, Modificaciones Todoterreno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Modificaciones Todoterreno" id="0e2f-dd1c-bf73-e749" hidden="false" type="rule" targetId="d241-b22c-ab65-fdf4"/>
+        <infoLink name="Transporte Improvisado" id="bdbb-efd9-9c01-bd38" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pick Up Blindado" hidden="false" id="b13c-664f-7f35-558c">
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="8129-da88-477d-3041" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pick Up Blindado" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="6282-0ac4-7084-b08d">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">7</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">4</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pick Up Mejor Blindado" hidden="false" id="3866-1e73-c6b5-c2f3">
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="37d2-22d3-0679-ba99" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pick Up Mejor Blindado" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="1599-1262-fcd1-e3b2">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 3</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">8</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Modificaciones Todoterreno" id="83f9-c7a2-49a1-ca8a" hidden="false" type="rule" targetId="d241-b22c-ab65-fdf4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pick Up Personalizado Blindado" hidden="false" id="90ed-89b6-b173-bb4e">
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="df30-cd4a-e218-6f5b" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pick Up Personalizado Blindado" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="a399-211e-9a53-e9ee">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">4</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="0881-249b-a584-8ea4" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Razor 2/4" hidden="false" id="723a-5c71-7d79-0c96">
+      <categoryLinks>
+        <categoryLink name="Ligeros" hidden="false" id="84d6-9bcc-fa52-782c" targetId="ead8-5519-749b-6746" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Razor 2/4" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="e133-d1cf-9dc2-c3e4">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">10</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">3</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">4</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Ultraligero, Modificaciones Todoterreno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Vehículo Ultraligero" id="601b-e1df-6b56-6175" hidden="false" type="rule" targetId="1dbd-8291-f9c5-abac"/>
+        <infoLink name="Modificaciones Todoterreno" id="e372-8380-06bd-0764" hidden="false" type="rule" targetId="d241-b22c-ab65-fdf4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="SUV" hidden="false" id="2040-5bdb-0fef-309d">
+      <profiles>
+        <profile name="SUV" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="8bc6-882c-2047-aa38">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">6</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">3</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">7</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Modificaciones Todoterreno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="4fbf-aa3c-69ff-3204" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Modificaciones Todoterreno" id="a5a5-9cd5-c70e-4ec7" hidden="false" type="rule" targetId="d241-b22c-ab65-fdf4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="SUV Blindado" hidden="false" id="94f5-ba42-93c4-a235">
+      <profiles>
+        <profile name="SUV Blindado" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="e5b6-d6aa-fbca-f802">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">6</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Civil 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">7</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Modificaciones Todoterreno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Civiles" hidden="false" id="faf8-f20d-97a6-4e49" targetId="70a4-c4ff-a0a4-1899" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Modificaciones Todoterreno" id="dcfe-977c-c49e-9dd4" hidden="false" type="rule" targetId="d241-b22c-ab65-fdf4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="T-72" hidden="false" id="29ee-7cd1-f595-d1c6">
+      <categoryLinks>
+        <categoryLink name="Pesados" hidden="false" id="2148-42e1-3932-c3a1" targetId="8fe3-28d5-88fd-a65e" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="T-72" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="d510-aec1-81fd-72c3">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Pesado 3</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">7</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">-</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">Cañón 120/125mm Proyectil HEAT/Cinético (Arma Estabilizada), Ametralladora Pesada</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8, Vehículo con Orugas, APS 1ª Generación, Blindaje Reactivo</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil Cinético" hidden="false" id="2c84-7fa2-e68d-8fa0" type="selectionEntry" targetId="8c9a-9b24-ff1e-74ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c858-5668-a5ca-d4ed-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c858-5668-a5ca-d4ed-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Pesada" hidden="false" id="21d6-77fd-ee6f-149a" type="selectionEntry" targetId="6913-fd31-fcca-c6c7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbae-ca5c-0fa2-7efa-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbae-ca5c-0fa2-7efa-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil HEAT" hidden="false" id="a1c2-39c0-a725-8531" type="selectionEntry" targetId="bbd4-d9cb-54ee-5b72">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2751-66ad-9b50-6bde-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2751-66ad-9b50-6bde-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="fb89-5cda-7375-16a2" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+        <infoLink name="Vehículos con Orugas" id="1c4f-4e53-355b-b154" hidden="false" type="rule" targetId="5584-88f3-f33a-1cce"/>
+        <infoLink name="APS 1ª Generación" id="bcf7-b6bc-df3d-af92" hidden="false" type="rule" targetId="49bc-064e-6883-04dd"/>
+        <infoLink name="Blindaje Reactivo" id="2962-20a7-10c9-f735" hidden="false" type="rule" targetId="a787-2ff0-7eb3-1de3"/>
+        <infoLink name="Estabilizador de Arma" id="f30d-6fcd-8acb-324f" hidden="false" type="rule" targetId="d998-499e-0a80-550a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="T-90" hidden="false" id="60a3-f566-b672-5817">
+      <categoryLinks>
+        <categoryLink name="Pesados" hidden="false" id="a4cd-26c8-e8ad-4b7d" targetId="8fe3-28d5-88fd-a65e" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="T-90" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="69c7-ece3-22a5-0466">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Pesado 4</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">8</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">-</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">Cañón 120/125mm Proyectil HEAT/Cinético (Arma Estabilizada), Ametralladora Pesada</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8, Vehículo con Orugas, APS Nueva Generación, Blindaje Reactivo Avanzado</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil Cinético" hidden="false" id="4dd7-a4ac-9d64-d18f" type="selectionEntry" targetId="8c9a-9b24-ff1e-74ad">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98b8-db91-dba0-8910-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98b8-db91-dba0-8910-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Pesada" hidden="false" id="0a21-edc9-27e1-db33" type="selectionEntry" targetId="6913-fd31-fcca-c6c7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4b10-30b8-30ea-7f22-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b10-30b8-30ea-7f22-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cañón 120/125mm Proyectil HEAT" hidden="false" id="5db2-34f7-0937-bf62" type="selectionEntry" targetId="bbd4-d9cb-54ee-5b72">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d9b-4986-a769-026d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d9b-4986-a769-026d-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Transporte Improvisado" id="b9eb-d1b8-5c40-684c" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+        <infoLink name="Vehículos con Orugas" id="043a-b875-2b28-8727" hidden="false" type="rule" targetId="5584-88f3-f33a-1cce"/>
+        <infoLink name="APS Nueva Generación" id="7396-bd71-f9d9-1560" hidden="false" type="rule" targetId="e0a8-f237-5f95-44d6"/>
+        <infoLink name="Blindaje Reactivo Avanzado" id="4660-1dac-6e65-b281" hidden="false" type="rule" targetId="9158-c49c-4f94-d3a4"/>
+        <infoLink name="Estabilizador de Arma" id="ed37-cfcf-fadc-3cfb" hidden="false" type="rule" targetId="d998-499e-0a80-550a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="T-55" hidden="false" id="4d6f-f239-f43b-3347">
+      <profiles>
+        <profile name="T-55" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo" hidden="false" id="002c-1d71-d0c7-c105">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">5</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Ligero 2</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">5</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">8</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0"/>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8, Vehículo con Orugas</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Vehículos con Orugas" id="32fc-fed2-de56-3ec1" hidden="false" type="rule" targetId="5584-88f3-f33a-1cce"/>
+        <infoLink name="Transporte Improvisado" id="79b0-1219-7e4a-b298" hidden="false" type="rule" targetId="daa0-73d6-065d-65c4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Cañón 100mm Proyectil HEAT" hidden="false" id="c130-cda0-701e-0355" type="selectionEntry" targetId="9f8c-683e-2e3a-a3bd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7099-0be5-7d53-80c4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7099-0be5-7d53-80c4-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cañón 100mm Proyectil Cinético" hidden="false" id="547d-a036-106b-3bc2" type="selectionEntry" targetId="8892-8c74-32ee-c9b4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da1c-112c-53b3-c137-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da1c-112c-53b3-c137-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ametralladora Pesada" hidden="false" id="0ca1-31c5-42f1-45f1" type="selectionEntry" targetId="6913-fd31-fcca-c6c7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb4b-728c-168d-93d9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaf8-6735-ccba-cb99" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc07-3c84-fa70-310b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc07-3c84-fa70-310b-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Tripulación Entrenada" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente" hidden="false" id="656c-a32c-6f84-bfde">
+      <characteristics>
+        <characteristic name="Movimiento" typeId="62b0-2d44-1adc-2daf">5</characteristic>
+        <characteristic name="Balística" typeId="e9bf-d1ec-4f7e-b6fb">6</characteristic>
+        <characteristic name="Percepción" typeId="319e-be1e-4f04-0f03">9</characteristic>
+        <characteristic name="Estrés" typeId="7bd1-d92a-d8df-8b7f">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tripulación no Entrenada" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente" hidden="false" id="e5ec-b5f4-949d-33c1">
+      <characteristics>
+        <characteristic name="Movimiento" typeId="62b0-2d44-1adc-2daf">5</characteristic>
+        <characteristic name="Balística" typeId="e9bf-d1ec-4f7e-b6fb">7</characteristic>
+        <characteristic name="Percepción" typeId="319e-be1e-4f04-0f03">9</characteristic>
+        <characteristic name="Estrés" typeId="7bd1-d92a-d8df-8b7f">5</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

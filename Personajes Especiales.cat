@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue name="Personajes Especiales" id="e350-ac92-303f-4b74" battleScribeVersion="2.03" gameSystemId="sys-c514-e280-17d7-17af" gameSystemRevision="1" library="false" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink name="Armas" id="b04e-e476-03cc-886e" targetId="0daa-b4f2-7333-2915" type="catalogue"/>
+    <catalogueLink name="Vehiculos" id="2925-9523-f573-b16a" targetId="5c5c-7f1e-984f-2f90" type="catalogue"/>
+  </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="Humanos" id="b8c7-3c69-5b5f-83bc" hidden="false"/>
+    <categoryEntry name="Alienigenas" id="3858-a699-2bdd-b350" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry name="Force" id="0153-e627-afd3-c8f9" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Humanos" id="1073-f7e9-da1e-c9ce" hidden="false" targetId="b8c7-3c69-5b5f-83bc"/>
+        <categoryLink name="Alienigenas" id="ee91-9b6a-7c3b-c80e" hidden="false" targetId="3858-a699-2bdd-b350"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry name="Baba Yaga" id="8798-965f-350f-872d" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Humanos" id="1228-2ac6-830a-caf5" hidden="false" primary="true" targetId="b8c7-3c69-5b5f-83bc"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="acdb-bc69-f9e3-1031" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="200"/>
+      </costs>
+      <profiles>
+        <profile name="Baba Yaga" id="e5e1-a0a1-f218-cb7c" hidden="false" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="62b0-2d44-1adc-2daf">6</characteristic>
+            <characteristic name="Balística" typeId="e9bf-d1ec-4f7e-b6fb">3</characteristic>
+            <characteristic name="Percepción" typeId="319e-be1e-4f04-0f03">6</characteristic>
+            <characteristic name="Estrés" typeId="7bd1-d92a-d8df-8b7f">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Momentum +4" id="fc07-5a8b-847f-69b0" hidden="false">
+          <description>Genera 4 Momentum por Turno</description>
+        </rule>
+        <rule name="No conoce el miedo" id="13e1-e674-c7e2-5f51" hidden="false">
+          <description>Nunca realiza Chequeos de Estrés tras recibir una Acción de Combate</description>
+        </rule>
+        <rule name="No se muere..." id="7b48-9f59-8a28-d60d" hidden="false">
+          <description>Por cada tirada de Letalidad exitosa contra él, Baba yaga pierde 1 punto de Movimiento (en lugar de ser retirado de la mesa).
+En el momento en que su Movilidad se reduzca a 0, es eliminado finalmente.</description>
+        </rule>
+        <rule name="Máquina de Matar" id="caa1-1b7b-0b86-d843" hidden="false">
+          <description>Cada vez que una Acción de Combate resulte en al menos un enemigo eliminado, Baba Yaga puede realizar gratis otra Acción de Combate o de Asalto (esta es una excepción a la regla de no poder repetir la misma Acción de seguido)</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas" id="5904-f598-d941-e7cc" hidden="false">
+          <constraints>
+            <constraint id="73c1-8085-421f-635e" field="selections" includeChildSelections="false" message="Máximo 2 Armas" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Fusil Corto" id="3e59-830a-bbef-ca97" hidden="false" import="true" sortIndex="4" targetId="ee00-4566-4e70-2a28" type="selectionEntry">
+              <constraints>
+                <constraint id="c4f9-79ee-f6e0-19df" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Mejoras" id="dfe0-c403-4e84-d57e" hidden="false" import="true" targetId="6cd0-61c7-2eeb-795d" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="PDW" id="0f2c-19d4-ed22-5e3a" hidden="false" import="true" sortIndex="5" targetId="b5d3-ed17-326f-5b6a" type="selectionEntry">
+              <constraints>
+                <constraint id="6c9a-dc94-f81c-be55" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="18"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Mejoras" id="05f4-9c9d-65e6-dba7" hidden="false" import="true" targetId="6cd0-61c7-2eeb-795d" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Escopeta de Combate" id="b88c-6562-7d30-fbad" hidden="false" import="true" sortIndex="7" targetId="e2e4-0bc3-36b6-9395" type="selectionEntry">
+              <constraints>
+                <constraint id="d503-1ead-1894-1ff2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="16"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Mejoras" id="8c1f-2b3d-cbb6-9193" hidden="false" import="true" targetId="6cd0-61c7-2eeb-795d" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Escopeta Automática" id="2acb-eef1-27ab-50ae" hidden="false" import="true" sortIndex="6" targetId="063d-2533-e196-e923" type="selectionEntry">
+              <constraints>
+                <constraint id="3440-8b03-e12c-b51d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="24"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Mejoras" id="6072-b159-d0c3-d795" hidden="false" import="true" targetId="6cd0-61c7-2eeb-795d" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Pistola" id="efb7-bbec-ce03-4cfc" hidden="false" import="true" sortIndex="1" targetId="7450-4bcf-e688-a638" type="selectionEntry">
+              <constraints>
+                <constraint id="0603-6bf0-1e86-ca31" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Mejoras" id="cac2-bfbe-d7fb-44d6" hidden="false" import="true" targetId="6cd0-61c7-2eeb-795d" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Arco" id="e510-649a-57d3-cef4" hidden="false" import="true" sortIndex="8" targetId="587b-b3f0-6a36-cd63" type="selectionEntry">
+              <constraints>
+                <constraint id="641f-7ee4-87fa-9512" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Subfusil Compacto" id="3a66-26b6-2575-bd0c" hidden="false" import="true" sortIndex="3" targetId="d268-6cc3-45ff-4ea7" type="selectionEntry">
+              <constraints>
+                <constraint id="8521-0186-4518-f84e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Mejoras" id="d886-f908-e234-a357" hidden="false" import="true" targetId="6cd0-61c7-2eeb-795d" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Subfusil" id="a420-3d48-5e60-2da3" hidden="false" import="true" sortIndex="2" targetId="bfbe-0fbd-d8da-5ce2" type="selectionEntry">
+              <constraints>
+                <constraint id="c6a1-8c8d-8bfc-88c2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Mejoras" id="fc61-85ec-591b-7807" hidden="false" import="true" targetId="6cd0-61c7-2eeb-795d" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Arma de Especialista" id="0c59-166a-e86a-0fef" hidden="false" import="true" sortIndex="9" targetId="e0a6-7fcd-04e5-db15" type="selectionEntry">
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Predator" id="b12f-8a1b-0d23-0a36" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Alienigenas" id="6faa-eaf1-9b37-5ad9" hidden="false" primary="true" targetId="3858-a699-2bdd-b350"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="67c2-ad40-d306-a1bc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Predator" id="bde1-f3f8-278e-f622" hidden="false" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="62b0-2d44-1adc-2daf">6</characteristic>
+            <characteristic name="Balística" typeId="e9bf-d1ec-4f7e-b6fb">6</characteristic>
+            <characteristic name="Percepción" typeId="319e-be1e-4f04-0f03">6</characteristic>
+            <characteristic name="Estrés" typeId="7bd1-d92a-d8df-8b7f">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Imparable" id="d635-16ab-8328-2299" hidden="false">
+          <description>No puede ser eliminado al instante con un arma. Si la tirada de Letalidad tiene éxito, se realiza una tirada en la tabla de heridas criticas.</description>
+        </rule>
+        <rule name="Digno Oponente" id="1857-f488-e216-fc6b" hidden="false">
+          <description>Detecta automáticamente unidades Encubiertas, pero nunca atacará a un enemigo desarmado.</description>
+        </rule>
+        <rule name="Cazador" id="226a-72ef-458c-4bf0" hidden="false">
+          <description>Cada vez que elimina a un enemigo a distancia o en Asalto, puede moverse hasta el cadáver de ese enemigo para recolectar su cráneo.
+El Predator ganará sin consigue todos los cráneos de sus enemigos.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipamiento" id="aa11-81ea-2a98-1d9f" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Camuflaje Adaptativo" id="aac5-e4b3-1085-906a" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="93d9-7e3f-2637-69ff-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="93d9-7e3f-2637-69ff-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Camuflaje Adaptativo" id="3361-1d67-9ae3-42bf" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+                  <characteristics>
+                    <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Todos los ataques a distancia sufren un penalizador de -3 si el Predator no se ha movido en su fase y -2 si se ha movido.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Armadura Alienígena" id="9263-ec2f-ba03-e6fb" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="dcf9-baf2-cb56-27ac-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="dcf9-baf2-cb56-27ac-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Armadura Alienígena" id="0476-7efc-8249-87df" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+                  <characteristics>
+                    <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Blindaje 5, al igual que un vehículo.
+Si la tirada de penetración iguala el valor de armadura, resulta en una Herida
+Si la tirada de penetración es mayor que el valor de armadura, se realiza una tirada de Herida Crítica.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Máscara de Visión Avanzada" id="dc3f-88c3-0de8-9a3d" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="d739-8325-d7e5-6d8e-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="d739-8325-d7e5-6d8e-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Máscara de Visión Avanzada" id="dcdb-ce66-15b8-9b9c" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+                  <characteristics>
+                    <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">+2 a cualquier ataque a distancia con el Proyector de Plasma y con la Pistola de Dardos. 
+No puede ser Aturdido.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Dispositivo de Antimateria" id="2341-afb9-2fd8-fce2" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="75ad-96bf-c205-03da-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="75ad-96bf-c205-03da-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Dispositivo de Antimateria" id="accf-79db-c29d-a887" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+                  <characteristics>
+                    <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Si cualquiera de sus atributos llega a 1, puede optar por activar este dispositivo. En D3 Turnos, explota con el perfil de un IED.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Kit Médico Avanzado" id="e155-c4cc-d2ff-45f3" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="8d21-917a-cbbf-545d-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8d21-917a-cbbf-545d-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Kit Médico Avanzado" id="8483-bb45-f81b-837e" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+                  <characteristics>
+                    <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Se puede usar como una Acción, recuperando 2 puntos de sus atributos. No puede mover no realizar ataques a distancia ese turno.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armas" id="7244-18ad-698d-2fcb" hidden="false">
+          <selectionEntries>
+            <selectionEntry name="Disco" id="92c5-ae58-d92b-b30f" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="15f0-3f1e-3300-4cb1-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="15f0-3f1e-3300-4cb1-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Pistola de Dardos" id="e1a6-af15-f795-a7e0" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="6b4a-ab1b-d6cb-e63a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="6b4a-ab1b-d6cb-e63a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Proyector de Plasma" id="f1f0-b6ae-6e54-e768" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="ea16-dc8e-a5fb-8263-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="ea16-dc8e-a5fb-8263-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Proyector de Plasma" id="e2e4-8f04-b706-fdf4" hidden="false" typeId="e585-baa0-23fd-d836" typeName="Arma">
+                  <characteristics>
+                    <characteristic name="CQB R/M/L/AP" typeId="7aab-c3cd-87ac-eae2">24&quot;</characteristic>
+                    <characteristic name="Combate R/M/L/AP" typeId="646a-c48f-d06b-7249"/>
+                    <characteristic name="Extremo R/M/L/AP" typeId="e478-29d2-0e1d-f1c5"/>
+                    <characteristic name="Especial" typeId="3ac9-347e-9443-e1c6"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Red Constrictora" id="e313-3a1a-607f-b41d" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="f41f-d0e8-829e-8577-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="f41f-d0e8-829e-8577-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry name="Lanza del Cazador" id="bc9e-e176-ac5c-4979" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="42c0-cc3b-dc75-d6aa-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="42c0-cc3b-dc75-d6aa-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Lanza del Cazador" id="e097-035f-f4cd-39ed" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+                  <characteristics>
+                    <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Estas Armas añadirán +4 a cualquier tirada de Asalto, pero la miniatura perdedora siempre será asesinada cuando se usen.
+Alcance a 2&quot; para atacar.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Mejoras" id="6cd0-61c7-2eeb-795d" hidden="false">
+      <entryLinks>
+        <entryLink name="Equipamiento CQB" id="f794-058f-d321-0e6d" hidden="false" import="true" targetId="2b2a-da7f-e182-fd1f" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Equipamiento Media Distancia" id="6042-a59b-be1c-b4c5" hidden="false" import="true" targetId="3766-21f9-3596-138f" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

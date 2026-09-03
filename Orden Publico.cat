@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue name="Orden Publico" id="e4df-bfc0-d824-dffa" battleScribeVersion="2.03" gameSystemId="sys-c514-e280-17d7-17af" gameSystemRevision="1" library="false" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink name="Armas" id="16cf-1d9a-4ea5-5e13" targetId="0daa-b4f2-7333-2915" type="catalogue"/>
+    <catalogueLink name="Vehiculos" id="6176-c856-eeab-7ee4" targetId="5c5c-7f1e-984f-2f90" type="catalogue"/>
+  </catalogueLinks>
+  <categoryEntries>
+    <categoryEntry name="Unidades Orden Público" id="802d-0547-2e9f-83c3" hidden="false"/>
+    <categoryEntry name="Vehículos Orden Público" id="ec47-760f-7389-9261" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink name="Lenco Bearcat" id="f831-da81-0187-1118" hidden="false" import="true" targetId="372d-a9f0-c5ed-497d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Vehículos Orden Público" id="34d5-3e1d-06ab-c548" primary="true" targetId="ec47-760f-7389-9261"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="150"/>
+      </costs>
+    </entryLink>
+  </entryLinks>
+  <forceEntries>
+    <forceEntry name="Force" id="50e0-8e4c-e7ed-13b3" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Unidades Orden Público" id="38da-74ff-125e-f447" hidden="false" targetId="802d-0547-2e9f-83c3"/>
+        <categoryLink name="Vehículos Orden Público" id="103a-9b46-5f46-fcdc" hidden="false" targetId="ec47-760f-7389-9261"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry name="Equipo SWAT" id="3c18-5ecd-7886-5368" hidden="false" import="true" subType="unit-group" type="unit">
+      <categoryLinks>
+        <categoryLink name="Unidades Orden Público" id="7c2f-a64d-08b0-b126" primary="true" targetId="802d-0547-2e9f-83c3"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Entrenamiento" id="af08-2070-48e3-0f6a" hidden="false" import="true" sortIndex="1" targetId="89a7-ffcf-7b07-7d20" type="selectionEntryGroup"/>
+        <entryLink name="Componente" id="ebc4-90b2-0c8f-2f70" defaultAmount="4" hidden="false" import="true" sortIndex="3" targetId="4019-3fc1-da0c-7032" type="selectionEntry">
+          <constraints>
+            <constraint id="2764-3cd4-ab44-9a39" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="9c92-7e54-e1e5-d395" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="8"/>
+          </constraints>
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="35"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Armamento" id="d5e4-2cf5-f703-7e94" hidden="false" import="true" sortIndex="1" targetId="d336-7043-cfc0-c2fb" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Taser" id="a7ff-d575-00aa-bfbc" defaultAmount="1" hidden="false" import="true" sortIndex="2" targetId="b0a2-0954-6f85-f565" type="selectionEntry">
+                  <constraints>
+                    <constraint id="1cdb-5baf-b1a6-799a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Pistola" id="6a1b-4053-75bb-8272" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="7450-4bcf-e688-a638" type="selectionEntry">
+                  <constraints>
+                    <constraint id="bb91-11a4-bec8-f084" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Armas Arrojadizas" id="6590-dedf-b3e8-8606" hidden="false" import="true" sortIndex="5" targetId="ab1b-e744-a172-f821" type="selectionEntryGroup"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Otras Armas" id="d348-8680-ca07-eaa3" flatten="true" hidden="false" sortIndex="3">
+                  <constraints>
+                    <constraint id="1884-c5b1-5b5b-82ca" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="8089-8805-e267-5374" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Fusil Medio" id="faab-d7e0-30a3-1362" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="7b3f-01ed-c9cf-dc39" type="selectionEntry"/>
+                    <entryLink name="Arma Corta" id="12ac-08a8-ef9b-d749" hidden="false" import="true" sortIndex="2" targetId="3e97-1ae7-36ba-49eb" type="selectionEntryGroup"/>
+                    <entryLink name="Fusil" id="c8db-7d39-7166-3f66" hidden="false" import="true" sortIndex="3" targetId="178c-5bab-f95a-724d" type="selectionEntryGroup"/>
+                    <entryLink name="Subfusil" id="ae96-9394-168c-a0ef" hidden="false" import="true" sortIndex="4" targetId="7499-ae00-31a9-8ef9" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Especialista" id="a5bc-d021-b62f-8d81" collapsible="true" hidden="false" sortIndex="4">
+                  <constraints>
+                    <constraint id="20da-e4ef-0644-d0c5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="c104-6701-ff61-10db" field="selections" includeChildSelections="true" scope="root-entry" shared="true" type="max" value="0"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Escopeta" id="1ceb-a9ff-5d82-1a17" hidden="false" import="true" sortIndex="1" targetId="7438-c8be-10f6-5624" type="selectionEntryGroup"/>
+                    <entryLink name="Fusil Tirador" id="eac3-255b-a06e-a94f" hidden="false" import="true" sortIndex="2" targetId="bbbb-26ba-232c-f208" type="selectionEntryGroup"/>
+                    <entryLink name="Armas Únicas" id="3ebd-db9d-cc67-e2ca" hidden="false" import="true" sortIndex="3" targetId="d1b0-ac56-a40f-f3b1" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier field="c104-6701-ff61-10db" type="increment" value="2">
+                      <repeats>
+                        <repeat childId="4019-3fc1-da0c-7032" childName="Componente" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="root-entry" shared="true" value="4"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink name="Equipamiento" id="ee46-4307-b364-92db" hidden="false" import="true" sortIndex="2" targetId="46de-6b8b-1585-2cd9" type="selectionEntryGroup"/>
+            <entryLink name="Equipamiento Especialista" id="367e-1110-5ea8-f2ec" hidden="true" import="true" sortIndex="3" targetId="2485-bb78-a154-4257" type="selectionEntryGroup">
+              <modifiers>
+                <modifier field="hidden" type="set" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition childId="d1b0-ac56-a40f-f3b1" childName="Armas Únicas" field="selections" includeChildSelections="true" scope="ebc4-90b2-0c8f-2f70" shared="true" type="equalTo" value="1"/>
+                        <condition childId="7438-c8be-10f6-5624" childName="Escopeta" field="selections" includeChildSelections="true" scope="ebc4-90b2-0c8f-2f70" shared="true" type="equalTo" value="1"/>
+                        <condition childId="bbbb-26ba-232c-f208" childName="Fusil Tirador" field="selections" includeChildSelections="true" scope="ebc4-90b2-0c8f-2f70" shared="true" type="equalTo" value="1"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink name="Sargento" id="a6a6-bb25-cfb9-6837" defaultAmount="1" hidden="false" import="true" sortIndex="2" targetId="e1e5-5e54-a29c-fa75" type="selectionEntry">
+          <entryLinks>
+            <entryLink name="Armamento" id="a172-0ba3-2725-e0a4" hidden="false" import="true" targetId="d336-7043-cfc0-c2fb" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Taser" id="078e-16bf-9ea5-8eee" defaultAmount="1" hidden="false" import="true" sortIndex="2" targetId="b0a2-0954-6f85-f565" type="selectionEntry">
+                  <constraints>
+                    <constraint id="9662-3d54-4087-a6d8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Pistola" id="3c69-8d32-f165-ada5" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="7450-4bcf-e688-a638" type="selectionEntry">
+                  <constraints>
+                    <constraint id="0241-f287-6dbf-ed85" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Armas Arrojadizas" id="50c2-66b2-8d5a-8eb5" hidden="false" import="true" sortIndex="5" targetId="ab1b-e744-a172-f821" type="selectionEntryGroup"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Otras Armas" id="ae87-9f29-b884-3384" flatten="true" hidden="false" sortIndex="3">
+                  <constraints>
+                    <constraint id="a5b8-943b-2936-676a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="8474-77f4-1473-4a43" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Fusil Medio" id="ed6c-1a11-7b21-f314" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="7b3f-01ed-c9cf-dc39" type="selectionEntry"/>
+                    <entryLink name="Arma Corta" id="4109-748f-9780-7d80" hidden="false" import="true" sortIndex="2" targetId="3e97-1ae7-36ba-49eb" type="selectionEntryGroup"/>
+                    <entryLink name="Fusil" id="f80c-e306-e17b-fa37" hidden="false" import="true" sortIndex="3" targetId="178c-5bab-f95a-724d" type="selectionEntryGroup"/>
+                    <entryLink name="Subfusil" id="79d1-69fc-cd75-f897" hidden="false" import="true" sortIndex="4" targetId="7499-ae00-31a9-8ef9" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink name="Equipamiento" id="4df5-11d1-a38f-ecce" hidden="false" import="true" targetId="46de-6b8b-1585-2cd9" type="selectionEntryGroup"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry name="Patrulla de Policía" id="d34f-e778-1ef5-9195" hidden="false" import="true" subType="unit-group" type="unit">
+      <categoryLinks>
+        <categoryLink name="Unidades Orden Público" id="eed2-78e3-6145-ec27" primary="true" targetId="802d-0547-2e9f-83c3"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="40"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Componente" id="a08b-9858-d57b-0835" defaultAmount="2" hidden="false" import="true" sortIndex="2" targetId="4019-3fc1-da0c-7032" type="selectionEntry">
+          <entryLinks>
+            <entryLink name="Armamento" id="3340-99db-aa79-ba8d" hidden="false" import="true" sortIndex="1" targetId="d336-7043-cfc0-c2fb" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Pistola" id="3e11-f722-240c-e087" defaultAmount="1" hidden="false" import="true" targetId="7450-4bcf-e688-a638" type="selectionEntry">
+                  <constraints>
+                    <constraint id="bff5-2147-8442-b147" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Taser" id="7cbc-6389-1955-3f16" defaultAmount="1" hidden="false" import="true" targetId="b0a2-0954-6f85-f565" type="selectionEntry">
+                  <constraints>
+                    <constraint id="a6b2-5c53-d0ea-6340" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Arma Adicional" id="3f5d-d16d-b091-7de2" hidden="false">
+                  <constraints>
+                    <constraint id="a450-a554-a2b0-4cbf" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="a176-0385-bd98-6b43" field="selections" includeChildSelections="true" scope="root-entry" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Escopeta" id="fae3-520e-c444-e3fb" hidden="false" import="true" targetId="2c37-a3bc-0cfe-dc52" type="selectionEntry">
+                      <costs>
+                        <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="12"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Fusil Medio" id="63a2-89e8-e054-27f9" hidden="false" import="true" targetId="7b3f-01ed-c9cf-dc39" type="selectionEntry">
+                      <costs>
+                        <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Equipamiento" id="4e1d-e7f9-03bf-223c" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink name="Blindaje Corporal" id="8762-b065-6bd9-2719" hidden="false" import="true" targetId="3362-a69c-9050-dcd4" type="selectionEntry">
+                  <costs>
+                    <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink name="Militares" id="27a1-a2f9-4871-b81c" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="0327-fbf0-8a83-80c5" type="selectionEntry">
+          <constraints>
+            <constraint id="f95d-18a7-bfc7-1cde-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="f95d-18a7-bfc7-1cde-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry name="Vehículo Patrulla" id="b760-1117-d20a-2c1b" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Vehículos Orden Público" id="8b46-fa3f-0c6d-7d3c" primary="true" targetId="ec47-760f-7389-9261"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Modelo" id="c493-200c-f0f1-a050" hidden="false">
+          <constraints>
+            <constraint id="ab9e-fd3c-e638-7ca2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="dc0d-58ca-be9b-52a5" field="selections" includeChildSelections="false" message="Selecciona un Vehículo" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="SUV" id="43a9-019d-ec08-67d4" hidden="false" import="true" sortIndex="5" targetId="2040-5bdb-0fef-309d" type="selectionEntry"/>
+            <entryLink name="Coche Blindado" id="10b1-1336-eda3-d596" hidden="false" import="true" sortIndex="2" targetId="e22c-91eb-a642-14b0" type="selectionEntry"/>
+            <entryLink name="Coche" id="cb7b-5616-fec0-af3b" hidden="false" import="true" sortIndex="1" targetId="8a34-c19c-eea1-97e6" type="selectionEntry"/>
+            <entryLink name="SUV Blindado" id="0b4c-d23d-adaa-e599" hidden="false" import="true" sortIndex="6" targetId="94f5-ba42-93c4-a235" type="selectionEntry"/>
+            <entryLink name="Pick Up" id="3940-b04d-870a-fb5b" hidden="false" import="true" sortIndex="3" targetId="f81a-b262-214f-1f23" type="selectionEntry"/>
+            <entryLink name="Pick Up Blindado" id="5283-12ad-312a-022c" hidden="false" import="true" sortIndex="4" targetId="b13c-664f-7f35-558c" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry name="Sargento" id="e1e5-5e54-a29c-fa75" hidden="false" import="true" type="model">
+      <constraints>
+        <constraint id="6e1c-017f-3b8d-dafd" field="selections" includeChildSelections="true" scope="root-entry" shared="true" type="max" value="1"/>
+        <constraint id="f46e-43b2-b7c8-5493" field="selections" includeChildSelections="true" scope="root-entry" shared="true" type="min" value="1"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry name="Componente" id="4019-3fc1-da0c-7032" hidden="false" import="true" type="model"/>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Entrenamiento" id="89a7-ffcf-7b07-7d20" defaultSelectionEntryId="8af2-ef1f-b6fe-2267" hidden="false">
+      <constraints>
+        <constraint id="c328-b6e6-aa5e-2a38" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <entryLinks>
+        <entryLink name="Militares" id="8af2-ef1f-b6fe-2267" defaultAmount="1" hidden="false" import="true" sortIndex="3" targetId="0327-fbf0-8a83-80c5" type="selectionEntry"/>
+        <entryLink name="Milicia" id="f22d-89e3-f465-2533" hidden="false" import="true" sortIndex="1" targetId="5f8d-85d6-f141-3076" type="selectionEntry"/>
+        <entryLink name="Veterano" id="9b51-52f1-c8fc-6689" hidden="false" import="true" sortIndex="4" targetId="8d78-9db1-12e8-1e9f" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier field="e097-af1e-bf07-f031" type="increment" value="10">
+              <repeats>
+                <repeat childId="4019-3fc1-da0c-7032" childName="Componente" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="root-entry" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink name="Recluta" id="d1c4-a362-bfbf-31a2" hidden="false" import="true" sortIndex="2" targetId="5769-dc19-dd7a-e770" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armamento" id="d336-7043-cfc0-c2fb" collapsible="true" hidden="false"/>
+    <selectionEntryGroup name="Equipamiento Especialista" id="2485-bb78-a154-4257" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Escudo Completo" id="1f4a-3d74-2279-e3a2" hidden="false" import="true" sortIndex="3" targetId="d9fc-cc05-a596-028f" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Medio Escudo" id="3c35-cd54-234c-ec68" hidden="false" import="true" sortIndex="2" targetId="998f-bd89-7b7c-2070" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="12"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Perro Entrenado" id="cbe8-36f7-14d3-7f57" hidden="false" import="true" sortIndex="4" targetId="7794-7527-c19d-448c" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Blindaje Corporal Pesado" id="0ca1-e661-dc46-eeff" hidden="false" import="true" sortIndex="1" targetId="be73-0cec-e2bf-9ff4" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="28"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Comunicaciones de Larga Distancia" id="a47d-1e9a-fe0f-c554" hidden="false" import="true" sortIndex="7" targetId="a1c3-df18-e636-830a" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Designador Láser" id="55ed-cb3e-9393-0440" hidden="false" import="true" sortIndex="5" targetId="a5b6-b296-ca76-719f" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Comunicaciones de Fuerzas Combinadas" id="8835-7d82-f3d4-f83d" hidden="false" import="true" sortIndex="6" targetId="a722-b5a2-991d-3cb8" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Herramientas de Brecha  Pesadas" id="be97-a17e-1dff-41b9" hidden="false" import="true" sortIndex="8" targetId="55ad-80e2-999c-7df2" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="8"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Explosivos de Brecha" id="8da1-b5b3-1a09-7386" hidden="false" import="true" sortIndex="9" targetId="103c-5948-71d2-6a2e" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Herramientas de Brecha Electrónicas" id="38ab-579e-cd4c-5048" hidden="false" import="true" sortIndex="10" targetId="b275-15bf-1a6a-5bb6" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Equipamiento" id="46de-6b8b-1585-2cd9" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Silenciador" id="e78c-e5bc-b899-5189" hidden="false" import="true" sortIndex="5" targetId="0286-c9db-88a9-0657" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Blindaje Corporal Encubierto" id="f57b-4293-d8b6-a0c2" hidden="false" import="true" sortIndex="2" targetId="4b8e-1de9-d9b8-80aa" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Equipamiento CQB" id="4822-2128-bcfc-8617" hidden="false" import="true" sortIndex="12" targetId="2b2a-da7f-e182-fd1f" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Blindaje Corporal" id="9fa3-2e99-d372-bcd1" hidden="false" import="true" sortIndex="1" targetId="3362-a69c-9050-dcd4" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Equipamiento Media Distancia" id="ee08-ab08-7e91-f77e" hidden="false" import="true" sortIndex="13" targetId="3766-21f9-3596-138f" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Respirador Uso Corto" id="bcaf-368f-3eb6-2d10" hidden="false" import="true" sortIndex="6" targetId="bdad-1a83-592b-cadf" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Respirador Uso Prolongado" id="4d61-97d3-9347-27d0" hidden="false" import="true" sortIndex="7" targetId="6b15-3fb8-5832-1b78" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="18"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Equipamiento Larga Distancia" id="e56a-04c1-9383-99c1" hidden="false" import="true" sortIndex="14" targetId="a71d-b074-72d8-2f72" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Inhibidor de Artefactos Explosivos" id="26a7-aae1-60d5-8188" hidden="false" import="true" sortIndex="11" targetId="cf85-f181-9604-17e7" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Traje NRBQ" id="6623-f4b6-c002-d19b" hidden="false" import="true" sortIndex="4" targetId="d39c-967c-7035-883e" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Traje Ghillie" id="81d0-9ce4-4ebe-f892" hidden="false" import="true" sortIndex="3" targetId="0032-9893-78ba-2be9" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
+          </costs>
+        </entryLink>
+        <entryLink name="NVG Mk1" id="50f7-5796-97d4-ac8b" hidden="false" import="true" sortIndex="8" targetId="b46d-7a8f-ae5e-1424" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink name="NVG Mk2" id="8a8f-351f-bcdb-0a0b" hidden="false" import="true" sortIndex="9" targetId="a704-ebdc-5ce1-b20e" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Ópticas Térmicas" id="4df7-1923-94ce-c862" hidden="false" import="true" sortIndex="10" targetId="f46c-8417-4a9b-16d1" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="32"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Combatiente Nocturno" id="e185-bada-3430-5c4d" hidden="false" import="true" sortIndex="15" targetId="ffe0-6569-6966-b962" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Fusil" id="178c-5bab-f95a-724d" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="PDW" id="3f69-651b-2a98-69c4" hidden="false" import="true" targetId="b5d3-ed17-326f-5b6a" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="18"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Fusil Corto" id="2075-a9a9-1589-00b3" hidden="false" import="true" targetId="ee00-4566-4e70-2a28" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Fusil Largo" id="56f6-a4a7-1d48-322c" hidden="false" import="true" targetId="f1a5-17ad-0f12-1213" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="18"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Subfusil" id="7499-ae00-31a9-8ef9" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Subfusil" id="f1fc-b66d-6ed1-ab49" hidden="false" import="true" targetId="bfbe-0fbd-d8da-5ce2" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Subfusil Compacto" id="7c52-777f-42f0-d4dc" hidden="false" import="true" targetId="d268-6cc3-45ff-4ea7" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Fusil Tirador" id="bbbb-26ba-232c-f208" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="DMR" id="3b1e-fdcf-7295-ad50" hidden="false" import="true" targetId="121e-77b0-1a52-4ebb" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Escopeta" id="7438-c8be-10f6-5624" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Escopeta" id="b351-51a3-0fc8-7378" hidden="false" import="true" targetId="2c37-a3bc-0cfe-dc52" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="12"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Escopeta de Combate" id="6123-f8f0-416a-5791" hidden="false" import="true" targetId="e2e4-0bc3-36b6-9395" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="16"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Lanzadores" id="2db7-8ff1-2b5b-045d" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Lanzagranadas (Gas Lacrimógeno)" id="193b-c517-0aa9-5c7b" hidden="false" import="true" targetId="35f8-0352-e898-a0de" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armas Únicas" id="d1b0-ac56-a40f-f3b1" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Arma Antidrones" id="9927-811c-22c3-5570" hidden="false" import="true" targetId="e24a-0e33-b59e-e77b" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armas Arrojadizas" id="ab1b-e744-a172-f821" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Granada de Humo" id="2225-089b-2441-6e44" hidden="false" import="true" targetId="6fa1-967a-f865-4661" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Granada Aturdidora" id="e138-3382-2073-dea2" hidden="false" import="true" targetId="4d61-3776-e1a0-bae4" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Granada de Humo IR" id="c581-b17f-d47a-d99f" hidden="false" import="true" targetId="7b7f-27f4-9bfc-1fb8" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Granada de Gas Lacrimogeno" id="d4f2-9be5-d55e-af50" hidden="false" import="true" targetId="321b-9e04-dbb5-c630" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Arma Corta" id="3e97-1ae7-36ba-49eb" collapsible="true" hidden="false">
+      <entryLinks>
+        <entryLink name="Pistola Pesada" id="f736-226a-f0ff-246a" hidden="false" import="true" targetId="87ce-65f3-e90a-c3dc" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="8"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Pistola Ametralladora" id="782c-5658-0d0f-24b8" hidden="false" import="true" targetId="5004-b431-da18-f16e" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
