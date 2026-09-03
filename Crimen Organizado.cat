@@ -9,7 +9,7 @@
     <categoryEntry name="Vehículos Criminales" id="4077-a6dd-eec7-66d5" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Force" id="26f6-c556-04f3-af69" hidden="false">
+    <forceEntry name="Crimen Organizado" id="26f6-c556-04f3-af69" hidden="false">
       <categoryLinks>
         <categoryLink name="Unidades Criminales" id="9475-4030-3846-0e5e" hidden="false" targetId="1460-30a9-4632-9e12"/>
         <categoryLink name="Vehículos Criminales" id="09a9-a026-4efb-d701" hidden="false" targetId="4077-a6dd-eec7-66d5"/>
