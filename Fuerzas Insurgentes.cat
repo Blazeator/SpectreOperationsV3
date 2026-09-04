@@ -1,817 +1,830 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c775-afb6-fd83-e34b" name="Fuerzas Insurgentes" gameSystemId="sys-c514-e280-17d7-17af" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <selectionEntries>
-    <selectionEntry type="unit" import="true" name="Unidad de Mando" hidden="false" id="3188-52d9-ce19-775b" subType="unit-group">
+<catalogue name="Fuerzas Insurgentes" id="c775-afb6-fd83-e34b" battleScribeVersion="2.03" gameSystemId="sys-c514-e280-17d7-17af" gameSystemRevision="1" library="false" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink name="Armas" id="eb46-85bd-df4b-c54a" targetId="0daa-b4f2-7333-2915" type="catalogue"/>
+    <catalogueLink name="Vehiculos" id="ac15-ca3c-d2fc-d935" targetId="5c5c-7f1e-984f-2f90" type="catalogue"/>
+  </catalogueLinks>
+  <forceEntries>
+    <forceEntry name="Force" id="9a7c-ca12-555d-ab08" hidden="false">
       <categoryLinks>
-        <categoryLink targetId="41dc-643d-2b8b-8d0d" id="6449-15d4-ce0c-7161" primary="true" name="Unidades de las Milicias"/>
+        <categoryLink name="Unidades" id="484b-b0ca-8f8f-764e" hidden="false" targetId="946c-0f3e-f2dc-ac84"/>
+        <categoryLink name="Vehículos" id="ab06-a360-db5f-79e4" hidden="false" targetId="a5bc-a829-cccd-2f38"/>
+        <categoryLink name="Escaladas" id="27d2-10e3-8fbb-51e3" hidden="false" targetId="a941-773c-c46f-39b0"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry name="Unidad de Mando" id="3188-52d9-ce19-775b" hidden="false" import="true" subType="unit-group" type="unit">
+      <categoryLinks>
+        <categoryLink name="Unidades" id="04c0-5dcd-1106-3656" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Entrenamiento" hidden="false" id="fe6f-1659-c6e6-77e7" type="selectionEntryGroup" targetId="f36a-4363-d8f0-2f52" sortIndex="1"/>
-        <entryLink import="true" name="Combatiente" hidden="false" id="bac6-6363-ae97-ad23" type="selectionEntry" targetId="d3f0-0d7a-5c3f-4b2b" sortIndex="3">
-          <entryLinks>
-            <entryLink import="true" name="Armamento" hidden="false" id="2a75-23dc-fbc2-57cb" type="selectionEntryGroup" targetId="224b-7576-f907-42d9">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Armería" id="312a-3d9a-593c-a2df" hidden="false" flatten="true" sortIndex="2">
-                  <selectionEntryGroups>
-                    <selectionEntryGroup name="Especialista" id="c193-9a69-4c98-5e8c" hidden="false" sortIndex="2">
-                      <entryLinks>
-                        <entryLink import="true" name="Ametralladoras" hidden="false" id="03c1-63a6-0a71-44ab" type="selectionEntryGroup" targetId="2343-17dd-8486-7beb" sortIndex="1"/>
-                        <entryLink import="true" name="Armas de Especialista" hidden="false" id="a8b8-290e-30cd-bed2" type="selectionEntryGroup" targetId="ce37-cb73-c814-2035" sortIndex="4"/>
-                        <entryLink import="true" name="Escopetas" hidden="false" id="a470-e321-f7fd-99b4" type="selectionEntryGroup" targetId="1d96-8628-8ed3-a7f1" sortIndex="2"/>
-                        <entryLink import="true" name="Lanzadores" hidden="false" id="a3d8-bb96-5121-db86" type="selectionEntryGroup" targetId="35e4-fe88-ffb2-ed62" sortIndex="5"/>
-                        <entryLink import="true" name="Fusiles de Tirador" hidden="false" id="a0e7-98b2-68df-2b37" type="selectionEntryGroup" targetId="290c-e6b3-15ce-67a2" sortIndex="3"/>
-                      </entryLinks>
-                      <constraints>
-                        <constraint type="max" value="0" field="selections" scope="root-entry" shared="true" id="c639-93a2-5b02-d6b1" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="c639-93a2-5b02-d6b1" affects="self.entries">
-                          <repeats>
-                            <repeat value="2" repeats="1" field="selections" scope="root-entry" childId="d3f0-0d7a-5c3f-4b2b" shared="true" roundUp="false" childName="Combatiente" includeChildSelections="true"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntryGroup>
-                    <selectionEntryGroup name="Fusil/Subfusil" id="3901-1627-eefe-40b5" hidden="false" collapsible="true" sortIndex="1">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d627-9a8d-b5a9-c907" includeChildSelections="false"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Fusiles" hidden="false" id="45b7-ba90-479e-033b" type="selectionEntryGroup" targetId="677b-dff4-5243-e3e7" sortIndex="1"/>
-                        <entryLink import="true" name="Subfusiles" hidden="false" id="2cb9-c8f2-26d4-856c" type="selectionEntryGroup" targetId="4279-e343-9b79-0985" sortIndex="2"/>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddc3-ca33-90bd-b2d6" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Armas Arrojadizas" hidden="false" id="c1c1-fb9b-efce-8478" type="selectionEntryGroup" targetId="f547-e9fb-3d63-d366" sortIndex="3"/>
-                <entryLink import="true" name="Armas de Combate Cercano" hidden="false" id="5ca6-699a-80b7-5829" type="selectionEntryGroup" targetId="e0bb-9eeb-6ad5-2cae" sortIndex="4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c107-5cf0-74ae-3cea" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Arma Corta" hidden="false" id="d973-b52f-fc2a-d5fd" type="selectionEntryGroup" targetId="a91d-0de6-c91e-b5c5" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9954-1daf-9487-c865" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Equipamiento" hidden="false" id="f11c-bd3e-a1e0-59bb" type="selectionEntryGroup" targetId="05f4-e791-1abb-ce09">
-              <entryLinks>
-                <entryLink import="true" name="Equipamiento Especialista" hidden="false" id="eb8d-4a81-42df-87c9" type="selectionEntryGroup" targetId="c68e-9f56-f8ca-9b07" collapsible="true" sortIndex="3"/>
-                <entryLink import="true" name="Equipamiento Estándar" hidden="false" id="505c-fee5-b323-643e" type="selectionEntryGroup" targetId="7019-0660-9d87-9794" collapsible="true" sortIndex="1"/>
-                <entryLink import="true" name="Equipamiento Mando" hidden="false" id="e89c-1216-729a-d9d2" type="selectionEntryGroup" targetId="459b-bc80-d627-6dec" collapsible="true" sortIndex="2"/>
-              </entryLinks>
-            </entryLink>
-          </entryLinks>
+        <entryLink name="Entrenamiento" id="fe6f-1659-c6e6-77e7" hidden="false" import="true" sortIndex="1" targetId="f36a-4363-d8f0-2f52" type="selectionEntryGroup"/>
+        <entryLink name="Combatiente" id="bac6-6363-ae97-ad23" hidden="false" import="true" sortIndex="3" targetId="d3f0-0d7a-5c3f-4b2b" type="selectionEntry">
           <constraints>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="71b1-ee37-ae02-aa05" includeChildSelections="false" message="Unidad de Mando: Máximo {value} ({current} seleccionados)"/>
+            <constraint id="71b1-ee37-ae02-aa05" field="selections" includeChildSelections="false" message="Unidad de Mando: Máximo {value} ({current} seleccionados)" scope="parent" shared="true" type="max" value="5"/>
           </constraints>
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
-        </entryLink>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Comandante" hidden="false" id="51c3-5252-d2d6-6709" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7da4-705a-52a2-0303-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7da4-705a-52a2-0303-max" includeChildSelections="false"/>
-          </constraints>
           <entryLinks>
-            <entryLink import="true" name="Armamento" hidden="false" id="a17d-f0af-e5e5-891a" type="selectionEntryGroup" targetId="224b-7576-f907-42d9">
+            <entryLink name="Armamento" id="2a75-23dc-fbc2-57cb" hidden="false" import="true" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Armas Arrojadizas" id="c1c1-fb9b-efce-8478" hidden="false" import="true" sortIndex="3" targetId="f547-e9fb-3d63-d366" type="selectionEntryGroup"/>
+                <entryLink name="Armas de Combate Cercano" id="5ca6-699a-80b7-5829" hidden="false" import="true" sortIndex="4" targetId="e0bb-9eeb-6ad5-2cae" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint id="c107-5cf0-74ae-3cea" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Arma Corta" id="d973-b52f-fc2a-d5fd" hidden="false" import="true" sortIndex="1" targetId="a91d-0de6-c91e-b5c5" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint id="9954-1daf-9487-c865" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Armería" id="4bf8-8b34-397a-9eb3" hidden="false" flatten="true" sortIndex="2">
+                <selectionEntryGroup name="Armería" id="312a-3d9a-593c-a2df" flatten="true" hidden="false" sortIndex="2">
+                  <constraints>
+                    <constraint id="ddc3-ca33-90bd-b2d6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Especialista" id="b74e-93ec-c0e2-d476" hidden="false" sortIndex="2">
-                      <entryLinks>
-                        <entryLink import="true" name="Ametralladoras" hidden="false" id="af84-b7db-bc1f-ae74" type="selectionEntryGroup" targetId="2343-17dd-8486-7beb" sortIndex="1"/>
-                        <entryLink import="true" name="Armas de Especialista" hidden="false" id="ee38-4295-e6fb-af1f" type="selectionEntryGroup" targetId="ce37-cb73-c814-2035" sortIndex="4"/>
-                        <entryLink import="true" name="Escopetas" hidden="false" id="cd2c-9339-b810-627f" type="selectionEntryGroup" targetId="1d96-8628-8ed3-a7f1" sortIndex="2"/>
-                        <entryLink import="true" name="Lanzadores" hidden="false" id="7cbf-da13-70d5-06ef" type="selectionEntryGroup" targetId="35e4-fe88-ffb2-ed62" sortIndex="5"/>
-                        <entryLink import="true" name="Fusiles de Tirador" hidden="false" id="9b67-e505-2aa4-1e5f" type="selectionEntryGroup" targetId="290c-e6b3-15ce-67a2" sortIndex="3"/>
-                      </entryLinks>
+                    <selectionEntryGroup name="Especialista" id="c193-9a69-4c98-5e8c" hidden="false" sortIndex="2">
                       <constraints>
-                        <constraint type="max" value="0" field="selections" scope="root-entry" shared="true" id="178f-460e-e9b4-a2c0" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)"/>
+                        <constraint id="c639-93a2-5b02-d6b1" field="selections" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)" scope="root-entry" shared="true" type="max" value="0"/>
                       </constraints>
+                      <entryLinks>
+                        <entryLink name="Ametralladoras" id="03c1-63a6-0a71-44ab" hidden="false" import="true" sortIndex="1" targetId="2343-17dd-8486-7beb" type="selectionEntryGroup"/>
+                        <entryLink name="Armas de Especialista" id="a8b8-290e-30cd-bed2" hidden="false" import="true" sortIndex="4" targetId="ce37-cb73-c814-2035" type="selectionEntryGroup"/>
+                        <entryLink name="Escopetas" id="a470-e321-f7fd-99b4" hidden="false" import="true" sortIndex="2" targetId="1d96-8628-8ed3-a7f1" type="selectionEntryGroup"/>
+                        <entryLink name="Lanzadores" id="a3d8-bb96-5121-db86" hidden="false" import="true" sortIndex="5" targetId="35e4-fe88-ffb2-ed62" type="selectionEntryGroup"/>
+                        <entryLink name="Fusiles de Tirador" id="a0e7-98b2-68df-2b37" hidden="false" import="true" sortIndex="3" targetId="290c-e6b3-15ce-67a2" type="selectionEntryGroup"/>
+                      </entryLinks>
                       <modifiers>
-                        <modifier type="increment" value="1" field="178f-460e-e9b4-a2c0" affects="self.entries">
+                        <modifier affects="self.entries" field="c639-93a2-5b02-d6b1" type="increment" value="1">
                           <repeats>
-                            <repeat value="2" repeats="1" field="selections" scope="root-entry" childId="d3f0-0d7a-5c3f-4b2b" shared="true" roundUp="false" childName="Combatiente" includeChildSelections="true"/>
+                            <repeat childId="d3f0-0d7a-5c3f-4b2b" childName="Combatiente" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="root-entry" shared="true" value="2"/>
                           </repeats>
                         </modifier>
                       </modifiers>
                     </selectionEntryGroup>
-                    <selectionEntryGroup name="Fusil/Subfusil" id="f7f4-c8e6-d892-8c9c" hidden="false" collapsible="true" sortIndex="1">
+                    <selectionEntryGroup name="Fusil/Subfusil" id="3901-1627-eefe-40b5" collapsible="true" hidden="false" sortIndex="1">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c4a-3758-d221-51c4" includeChildSelections="false"/>
+                        <constraint id="d627-9a8d-b5a9-c907" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Fusiles" hidden="false" id="f2cb-25cf-7c98-3cef" type="selectionEntryGroup" targetId="677b-dff4-5243-e3e7" sortIndex="1"/>
-                        <entryLink import="true" name="Subfusiles" hidden="false" id="eb8a-e3d8-da88-4ec1" type="selectionEntryGroup" targetId="4279-e343-9b79-0985" sortIndex="2"/>
+                        <entryLink name="Fusiles" id="45b7-ba90-479e-033b" hidden="false" import="true" sortIndex="1" targetId="677b-dff4-5243-e3e7" type="selectionEntryGroup"/>
+                        <entryLink name="Subfusiles" id="2cb9-c8f2-26d4-856c" hidden="false" import="true" sortIndex="2" targetId="4279-e343-9b79-0985" type="selectionEntryGroup"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aea2-3a3f-2da4-6a7c" includeChildSelections="false"/>
-                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Armas Arrojadizas" hidden="false" id="4b0c-adb7-9aba-85dd" type="selectionEntryGroup" targetId="f547-e9fb-3d63-d366" sortIndex="3"/>
-                <entryLink import="true" name="Armas de Combate Cercano" hidden="false" id="91d8-27d4-6069-bdaf" type="selectionEntryGroup" targetId="e0bb-9eeb-6ad5-2cae" sortIndex="4"/>
-                <entryLink import="true" name="Arma Corta" hidden="false" id="99b2-9696-8c96-b193" type="selectionEntryGroup" targetId="a91d-0de6-c91e-b5c5" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e186-aee3-a0b9-2904" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Equipamiento" hidden="false" id="76ca-f8f3-7653-0be2" type="selectionEntryGroup" targetId="05f4-e791-1abb-ce09">
+            <entryLink name="Equipamiento" id="f11c-bd3e-a1e0-59bb" hidden="false" import="true" targetId="05f4-e791-1abb-ce09" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink import="true" name="Equipamiento Especialista" hidden="false" id="b3f2-f4d9-4fb0-f8ea" type="selectionEntryGroup" targetId="c68e-9f56-f8ca-9b07" collapsible="true" sortIndex="3"/>
-                <entryLink import="true" name="Equipamiento Estándar" hidden="false" id="0d80-a00e-6b73-8612" type="selectionEntryGroup" targetId="7019-0660-9d87-9794" collapsible="true" sortIndex="1"/>
-                <entryLink import="true" name="Equipamiento Mando" hidden="false" id="4799-0fe5-dd0f-6632" type="selectionEntryGroup" targetId="459b-bc80-d627-6dec" collapsible="true" sortIndex="2"/>
+                <entryLink name="Equipamiento Especialista" id="eb8d-4a81-42df-87c9" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="c68e-9f56-f8ca-9b07" type="selectionEntryGroup"/>
+                <entryLink name="Equipamiento Estándar" id="505c-fee5-b323-643e" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="7019-0660-9d87-9794" type="selectionEntryGroup"/>
+                <entryLink name="Equipamiento Mando" id="e89c-1216-729a-d9d2" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="459b-bc80-d627-6dec" type="selectionEntryGroup"/>
               </entryLinks>
             </entryLink>
           </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry name="Comandante" id="51c3-5252-d2d6-6709" hidden="false" import="true" sortIndex="2" type="model">
+          <constraints>
+            <constraint id="7da4-705a-52a2-0303-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="7da4-705a-52a2-0303-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="40"/>
           </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Unidad de Milicianos" hidden="false" id="2346-297b-af43-7238" subType="unit-group">
-      <categoryLinks>
-        <categoryLink targetId="41dc-643d-2b8b-8d0d" id="dbd0-0721-1df2-2b74" primary="true" name="Unidades de las Milicias"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Entrenamiento" hidden="false" id="2e90-f1d9-6156-2f5c" type="selectionEntryGroup" targetId="f36a-4363-d8f0-2f52" sortIndex="1"/>
-        <entryLink import="true" name="Combatiente" hidden="false" id="fbfb-55f1-8321-1ef3" type="selectionEntry" targetId="d3f0-0d7a-5c3f-4b2b" sortIndex="2">
           <entryLinks>
-            <entryLink import="true" name="Armamento" hidden="false" id="ea93-e7cc-ade9-0683" type="selectionEntryGroup" targetId="224b-7576-f907-42d9" sortIndex="2">
+            <entryLink name="Armamento" id="a17d-f0af-e5e5-891a" hidden="false" import="true" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink import="true" name="Armas Arrojadizas" hidden="false" id="cf36-54bf-0db1-c614" type="selectionEntryGroup" targetId="f547-e9fb-3d63-d366" sortIndex="3"/>
-                <entryLink import="true" name="Armas de Combate Cercano" hidden="false" id="e709-e056-f597-5df7" type="selectionEntryGroup" targetId="e0bb-9eeb-6ad5-2cae" sortIndex="4">
+                <entryLink name="Armas Arrojadizas" id="4b0c-adb7-9aba-85dd" hidden="false" import="true" sortIndex="3" targetId="f547-e9fb-3d63-d366" type="selectionEntryGroup"/>
+                <entryLink name="Armas de Combate Cercano" id="91d8-27d4-6069-bdaf" hidden="false" import="true" sortIndex="4" targetId="e0bb-9eeb-6ad5-2cae" type="selectionEntryGroup"/>
+                <entryLink name="Arma Corta" id="99b2-9696-8c96-b193" hidden="false" import="true" sortIndex="1" targetId="a91d-0de6-c91e-b5c5" type="selectionEntryGroup">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1247-76ab-3066-42aa" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Arma Corta" hidden="false" id="e113-2943-2dbe-83f3" type="selectionEntryGroup" targetId="a91d-0de6-c91e-b5c5" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62f6-7fe9-6267-3a23" includeChildSelections="false"/>
+                    <constraint id="e186-aee3-a0b9-2904" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Armería" id="6aa9-2827-8bb1-03cb" hidden="false" flatten="true" sortIndex="2">
+                <selectionEntryGroup name="Armería" id="4bf8-8b34-397a-9eb3" flatten="true" hidden="false" sortIndex="2">
+                  <constraints>
+                    <constraint id="aea2-3a3f-2da4-6a7c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Especialista" id="0ca9-6d4c-56b8-a17e" hidden="false" sortIndex="2">
-                      <entryLinks>
-                        <entryLink import="true" name="Ametralladoras" hidden="false" id="af92-dc62-b272-ba26" type="selectionEntryGroup" targetId="2343-17dd-8486-7beb" sortIndex="1"/>
-                        <entryLink import="true" name="Escopetas" hidden="false" id="fd41-b188-896c-7494" type="selectionEntryGroup" targetId="1d96-8628-8ed3-a7f1" sortIndex="2"/>
-                        <entryLink import="true" name="Lanzadores" hidden="false" id="91d6-5774-abb5-9149" type="selectionEntryGroup" targetId="35e4-fe88-ffb2-ed62" sortIndex="4"/>
-                        <entryLink import="true" name="Fusiles de Tirador" hidden="false" id="4883-2604-e97f-732a" type="selectionEntryGroup" targetId="290c-e6b3-15ce-67a2" sortIndex="3"/>
-                      </entryLinks>
+                    <selectionEntryGroup name="Especialista" id="b74e-93ec-c0e2-d476" hidden="false" sortIndex="2">
                       <constraints>
-                        <constraint type="max" value="0" field="selections" scope="root-entry" shared="true" id="dbe1-d00f-cfa1-617e" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)"/>
+                        <constraint id="178f-460e-e9b4-a2c0" field="selections" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)" scope="root-entry" shared="true" type="max" value="0"/>
                       </constraints>
+                      <entryLinks>
+                        <entryLink name="Ametralladoras" id="af84-b7db-bc1f-ae74" hidden="false" import="true" sortIndex="1" targetId="2343-17dd-8486-7beb" type="selectionEntryGroup"/>
+                        <entryLink name="Armas de Especialista" id="ee38-4295-e6fb-af1f" hidden="false" import="true" sortIndex="4" targetId="ce37-cb73-c814-2035" type="selectionEntryGroup"/>
+                        <entryLink name="Escopetas" id="cd2c-9339-b810-627f" hidden="false" import="true" sortIndex="2" targetId="1d96-8628-8ed3-a7f1" type="selectionEntryGroup"/>
+                        <entryLink name="Lanzadores" id="7cbf-da13-70d5-06ef" hidden="false" import="true" sortIndex="5" targetId="35e4-fe88-ffb2-ed62" type="selectionEntryGroup"/>
+                        <entryLink name="Fusiles de Tirador" id="9b67-e505-2aa4-1e5f" hidden="false" import="true" sortIndex="3" targetId="290c-e6b3-15ce-67a2" type="selectionEntryGroup"/>
+                      </entryLinks>
                       <modifiers>
-                        <modifier type="increment" value="1" field="dbe1-d00f-cfa1-617e" affects="self.entries">
+                        <modifier affects="self.entries" field="178f-460e-e9b4-a2c0" type="increment" value="1">
                           <repeats>
-                            <repeat value="3" repeats="1" field="selections" scope="root-entry" childId="d3f0-0d7a-5c3f-4b2b" shared="true" roundUp="false" childName="Combatiente" includeChildSelections="true"/>
+                            <repeat childId="d3f0-0d7a-5c3f-4b2b" childName="Combatiente" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="root-entry" shared="true" value="2"/>
                           </repeats>
                         </modifier>
                       </modifiers>
                     </selectionEntryGroup>
-                    <selectionEntryGroup name="Fusil/Subfusil" id="49ca-5e3b-df23-3356" hidden="false" collapsible="true" sortIndex="1">
+                    <selectionEntryGroup name="Fusil/Subfusil" id="f7f4-c8e6-d892-8c9c" collapsible="true" hidden="false" sortIndex="1">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="57b0-c6f9-b297-2c45" includeChildSelections="false"/>
+                        <constraint id="2c4a-3758-d221-51c4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Fusiles" hidden="false" id="fbfd-0bed-1083-9c7b" type="selectionEntryGroup" targetId="677b-dff4-5243-e3e7" sortIndex="1"/>
-                        <entryLink import="true" name="Subfusiles" hidden="false" id="43ae-ce2d-bc32-712f" type="selectionEntryGroup" targetId="4279-e343-9b79-0985" sortIndex="2"/>
+                        <entryLink name="Fusiles" id="f2cb-25cf-7c98-3cef" hidden="false" import="true" sortIndex="1" targetId="677b-dff4-5243-e3e7" type="selectionEntryGroup"/>
+                        <entryLink name="Subfusiles" id="eb8a-e3d8-da88-4ec1" hidden="false" import="true" sortIndex="2" targetId="4279-e343-9b79-0985" type="selectionEntryGroup"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b76d-2ffb-52aa-3cef" includeChildSelections="false"/>
-                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </entryLink>
-            <entryLink import="true" name="Equipamiento Estándar" hidden="false" id="c35e-3f73-72be-77f9" type="selectionEntryGroup" targetId="7019-0660-9d87-9794" collapsible="true" sortIndex="3"/>
-            <entryLink import="true" name="Sargento" hidden="false" id="1871-8388-4f5a-b04d" type="selectionEntry" targetId="c327-cba4-d686-30b2" sortIndex="1">
+            <entryLink name="Equipamiento" id="76ca-f8f3-7653-0be2" hidden="false" import="true" targetId="05f4-e791-1abb-ce09" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Equipamiento Especialista" id="b3f2-f4d9-4fb0-f8ea" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="c68e-9f56-f8ca-9b07" type="selectionEntryGroup"/>
+                <entryLink name="Equipamiento Estándar" id="0d80-a00e-6b73-8612" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="7019-0660-9d87-9794" type="selectionEntryGroup"/>
+                <entryLink name="Equipamiento Mando" id="4799-0fe5-dd0f-6632" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="459b-bc80-d627-6dec" type="selectionEntryGroup"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Unidad de Milicianos" id="2346-297b-af43-7238" hidden="false" import="true" subType="unit-group" type="unit">
+      <categoryLinks>
+        <categoryLink name="Unidades" id="45fe-d93c-6ea8-5efb" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Entrenamiento" id="2e90-f1d9-6156-2f5c" hidden="false" import="true" sortIndex="1" targetId="f36a-4363-d8f0-2f52" type="selectionEntryGroup"/>
+        <entryLink name="Combatiente" id="fbfb-55f1-8321-1ef3" hidden="false" import="true" sortIndex="2" targetId="d3f0-0d7a-5c3f-4b2b" type="selectionEntry">
+          <constraints>
+            <constraint id="d438-605d-6f48-2652" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="364b-ded4-c79f-da8b" field="selections" includeChildSelections="false" message="Unidad de Milicianos: Máximo {value} ({current} seleccionados)" scope="parent" shared="true" type="max" value="19"/>
+          </constraints>
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Armamento" id="ea93-e7cc-ade9-0683" hidden="false" import="true" sortIndex="2" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Armas Arrojadizas" id="cf36-54bf-0db1-c614" hidden="false" import="true" sortIndex="3" targetId="f547-e9fb-3d63-d366" type="selectionEntryGroup"/>
+                <entryLink name="Armas de Combate Cercano" id="e709-e056-f597-5df7" hidden="false" import="true" sortIndex="4" targetId="e0bb-9eeb-6ad5-2cae" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint id="1247-76ab-3066-42aa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Arma Corta" id="e113-2943-2dbe-83f3" hidden="false" import="true" sortIndex="1" targetId="a91d-0de6-c91e-b5c5" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint id="62f6-7fe9-6267-3a23" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Armería" id="6aa9-2827-8bb1-03cb" flatten="true" hidden="false" sortIndex="2">
+                  <constraints>
+                    <constraint id="b76d-2ffb-52aa-3cef" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Especialista" id="0ca9-6d4c-56b8-a17e" hidden="false" sortIndex="2">
+                      <constraints>
+                        <constraint id="dbe1-d00f-cfa1-617e" field="selections" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)" scope="root-entry" shared="true" type="max" value="0"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink name="Ametralladoras" id="af92-dc62-b272-ba26" hidden="false" import="true" sortIndex="1" targetId="2343-17dd-8486-7beb" type="selectionEntryGroup"/>
+                        <entryLink name="Escopetas" id="fd41-b188-896c-7494" hidden="false" import="true" sortIndex="2" targetId="1d96-8628-8ed3-a7f1" type="selectionEntryGroup"/>
+                        <entryLink name="Lanzadores" id="91d6-5774-abb5-9149" hidden="false" import="true" sortIndex="4" targetId="35e4-fe88-ffb2-ed62" type="selectionEntryGroup"/>
+                        <entryLink name="Fusiles de Tirador" id="4883-2604-e97f-732a" hidden="false" import="true" sortIndex="3" targetId="290c-e6b3-15ce-67a2" type="selectionEntryGroup"/>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier affects="self.entries" field="dbe1-d00f-cfa1-617e" type="increment" value="1">
+                          <repeats>
+                            <repeat childId="d3f0-0d7a-5c3f-4b2b" childName="Combatiente" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="root-entry" shared="true" value="3"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Fusil/Subfusil" id="49ca-5e3b-df23-3356" collapsible="true" hidden="false" sortIndex="1">
+                      <constraints>
+                        <constraint id="57b0-c6f9-b297-2c45" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink name="Fusiles" id="fbfd-0bed-1083-9c7b" hidden="false" import="true" sortIndex="1" targetId="677b-dff4-5243-e3e7" type="selectionEntryGroup"/>
+                        <entryLink name="Subfusiles" id="43ae-ce2d-bc32-712f" hidden="false" import="true" sortIndex="2" targetId="4279-e343-9b79-0985" type="selectionEntryGroup"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink name="Equipamiento Estándar" id="c35e-3f73-72be-77f9" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="7019-0660-9d87-9794" type="selectionEntryGroup"/>
+            <entryLink name="Sargento" id="1871-8388-4f5a-b04d" hidden="false" import="true" sortIndex="1" targetId="c327-cba4-d686-30b2" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d438-605d-6f48-2652" includeChildSelections="false"/>
-            <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="364b-ded4-c79f-da8b" includeChildSelections="false" message="Unidad de Milicianos: Máximo {value} ({current} seleccionados)"/>
-          </constraints>
-          <costs>
-            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
-          </costs>
           <modifiers>
-            <modifier type="set" value="Sargento" field="name">
+            <modifier field="name" type="set" value="Sargento">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="c327-cba4-d686-30b2" shared="true" childName="Sargento" includeChildSelections="false"/>
+                <condition childId="c327-cba4-d686-30b2" childName="Sargento" field="selections" includeChildSelections="false" scope="self" shared="true" type="equalTo" value="1"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="20" field="364b-ded4-c79f-da8b">
+            <modifier field="364b-ded4-c79f-da8b" type="set" value="20">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="root-entry" childId="c327-cba4-d686-30b2" shared="true" childName="Sargento" includeChildSelections="true"/>
+                <condition childId="c327-cba4-d686-30b2" childName="Sargento" field="selections" includeChildSelections="true" scope="root-entry" shared="true" type="equalTo" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Unidad de Especialistas" hidden="false" id="e795-7a3b-42e6-859c" subType="unit-group">
+    <selectionEntry name="Unidad de Especialistas" id="e795-7a3b-42e6-859c" hidden="false" import="true" subType="unit-group" type="unit">
       <categoryLinks>
-        <categoryLink targetId="41dc-643d-2b8b-8d0d" id="7100-f0cf-6830-eea6" primary="true" name="Unidades de las Milicias"/>
+        <categoryLink name="Unidades" id="0368-b814-52a6-f6a7" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Entrenamiento" hidden="false" id="1003-7a30-eeac-002d" type="selectionEntryGroup" targetId="f36a-4363-d8f0-2f52" sortIndex="1"/>
-        <entryLink import="true" name="Combatiente" hidden="false" id="63af-666e-ad5a-c9c5" type="selectionEntry" targetId="d3f0-0d7a-5c3f-4b2b" sortIndex="2">
+        <entryLink name="Entrenamiento" id="1003-7a30-eeac-002d" hidden="false" import="true" sortIndex="1" targetId="f36a-4363-d8f0-2f52" type="selectionEntryGroup"/>
+        <entryLink name="Combatiente" id="63af-666e-ad5a-c9c5" hidden="false" import="true" sortIndex="2" targetId="d3f0-0d7a-5c3f-4b2b" type="selectionEntry">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="255a-15c5-2fff-7c5f" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9947-eabe-3a71-26d6" includeChildSelections="false" message="Unidad de Especialistas: Máximo {value} ({current} seleccionados)"/>
+            <constraint id="255a-15c5-2fff-7c5f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="9947-eabe-3a71-26d6" field="selections" includeChildSelections="false" message="Unidad de Especialistas: Máximo {value} ({current} seleccionados)" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Armamento" hidden="false" id="f608-539f-8225-37e4" type="selectionEntryGroup" targetId="224b-7576-f907-42d9" sortIndex="2">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Especialista" id="5be0-d69e-94ce-7547" hidden="false" sortIndex="3">
-                  <entryLinks>
-                    <entryLink import="true" name="Ametralladoras" hidden="false" id="25a0-eca0-8e14-58e0" type="selectionEntryGroup" targetId="2343-17dd-8486-7beb" sortIndex="1"/>
-                    <entryLink import="true" name="Armas de Especialista" hidden="false" id="3c51-feaa-bbe4-6560" type="selectionEntryGroup" targetId="ce37-cb73-c814-2035" sortIndex="4"/>
-                    <entryLink import="true" name="Escopetas" hidden="false" id="fbef-a940-abe2-dd0e" type="selectionEntryGroup" targetId="1d96-8628-8ed3-a7f1" sortIndex="2"/>
-                    <entryLink import="true" name="Lanzadores" hidden="false" id="7542-70c5-b682-3ddf" type="selectionEntryGroup" targetId="35e4-fe88-ffb2-ed62" sortIndex="5"/>
-                    <entryLink import="true" name="Fusiles de Tirador" hidden="false" id="1867-1e62-b967-03fb" type="selectionEntryGroup" targetId="290c-e6b3-15ce-67a2" sortIndex="3"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c817-5c56-f6b5-5b69" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Fusil/Subfusil" id="0f2b-0e89-9592-919a" hidden="false" collapsible="true" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e23b-5ae5-9da6-d979" includeChildSelections="false"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink import="true" name="Fusiles" hidden="false" id="5c6d-c41e-e73e-4db5" type="selectionEntryGroup" targetId="677b-dff4-5243-e3e7" sortIndex="1"/>
-                    <entryLink import="true" name="Subfusiles" hidden="false" id="3e86-5bfe-8e5b-4976" type="selectionEntryGroup" targetId="4279-e343-9b79-0985" sortIndex="2"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+            <entryLink name="Armamento" id="f608-539f-8225-37e4" hidden="false" import="true" sortIndex="2" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink import="true" name="Arma Corta" hidden="false" id="88a5-7044-7d38-c9aa" type="selectionEntryGroup" targetId="a91d-0de6-c91e-b5c5" sortIndex="1">
+                <entryLink name="Arma Corta" id="88a5-7044-7d38-c9aa" hidden="false" import="true" sortIndex="1" targetId="a91d-0de6-c91e-b5c5" type="selectionEntryGroup">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ba0-c5f7-3223-6b3f" includeChildSelections="false"/>
+                    <constraint id="7ba0-c5f7-3223-6b3f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Especialista" id="5be0-d69e-94ce-7547" hidden="false" sortIndex="3">
+                  <constraints>
+                    <constraint id="c817-5c56-f6b5-5b69" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Ametralladoras" id="25a0-eca0-8e14-58e0" hidden="false" import="true" sortIndex="1" targetId="2343-17dd-8486-7beb" type="selectionEntryGroup"/>
+                    <entryLink name="Armas de Especialista" id="3c51-feaa-bbe4-6560" hidden="false" import="true" sortIndex="4" targetId="ce37-cb73-c814-2035" type="selectionEntryGroup"/>
+                    <entryLink name="Escopetas" id="fbef-a940-abe2-dd0e" hidden="false" import="true" sortIndex="2" targetId="1d96-8628-8ed3-a7f1" type="selectionEntryGroup"/>
+                    <entryLink name="Lanzadores" id="7542-70c5-b682-3ddf" hidden="false" import="true" sortIndex="5" targetId="35e4-fe88-ffb2-ed62" type="selectionEntryGroup"/>
+                    <entryLink name="Fusiles de Tirador" id="1867-1e62-b967-03fb" hidden="false" import="true" sortIndex="3" targetId="290c-e6b3-15ce-67a2" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Fusil/Subfusil" id="0f2b-0e89-9592-919a" collapsible="true" hidden="false" sortIndex="2">
+                  <constraints>
+                    <constraint id="e23b-5ae5-9da6-d979" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Fusiles" id="5c6d-c41e-e73e-4db5" hidden="false" import="true" sortIndex="1" targetId="677b-dff4-5243-e3e7" type="selectionEntryGroup"/>
+                    <entryLink name="Subfusiles" id="3e86-5bfe-8e5b-4976" hidden="false" import="true" sortIndex="2" targetId="4279-e343-9b79-0985" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
             </entryLink>
-            <entryLink import="true" name="Equipamiento" hidden="false" id="9c94-f57d-c28f-0a8f" type="selectionEntryGroup" targetId="05f4-e791-1abb-ce09" sortIndex="3">
+            <entryLink name="Equipamiento" id="9c94-f57d-c28f-0a8f" hidden="false" import="true" sortIndex="3" targetId="05f4-e791-1abb-ce09" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink import="true" name="Equipamiento Estándar" hidden="false" id="2034-e2ec-ae8a-3972" type="selectionEntryGroup" targetId="7019-0660-9d87-9794" sortIndex="1"/>
-                <entryLink import="true" name="Equipamiento Especialista" hidden="false" id="fedd-fa6d-23b2-ca9d" type="selectionEntryGroup" targetId="c68e-9f56-f8ca-9b07" sortIndex="2"/>
+                <entryLink name="Equipamiento Estándar" id="2034-e2ec-ae8a-3972" hidden="false" import="true" sortIndex="1" targetId="7019-0660-9d87-9794" type="selectionEntryGroup"/>
+                <entryLink name="Equipamiento Especialista" id="fedd-fa6d-23b2-ca9d" hidden="false" import="true" sortIndex="2" targetId="c68e-9f56-f8ca-9b07" type="selectionEntryGroup"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Sargento" hidden="false" id="4000-d57f-9c1b-d6f8" type="selectionEntry" targetId="c327-cba4-d686-30b2" sortIndex="1">
+            <entryLink name="Sargento" id="4000-d57f-9c1b-d6f8" hidden="false" import="true" sortIndex="1" targetId="c327-cba4-d686-30b2" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
           <modifiers>
-            <modifier type="set" value="Sargento" field="name">
+            <modifier field="name" type="set" value="Sargento">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="c327-cba4-d686-30b2" shared="true" childName="Sargento" includeChildSelections="false"/>
+                <condition childId="c327-cba4-d686-30b2" childName="Sargento" field="selections" includeChildSelections="false" scope="self" shared="true" type="equalTo" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Emplazamiento de Armas" hidden="false" id="9957-c10e-d2c6-966f" sortIndex="3">
+        <selectionEntry name="Emplazamiento de Armas" id="9957-c10e-d2c6-966f" hidden="false" import="true" sortIndex="3" type="model">
           <constraints>
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="af26-ee99-b368-f142" includeChildSelections="false" message="Para desplegar un Emplazamiento de Armas, debe haber seleccionados dos Combatientes en la Unidad de Especialistas"/>
+            <constraint id="af26-ee99-b368-f142" field="selections" includeChildSelections="false" message="Para desplegar un Emplazamiento de Armas, debe haber seleccionados dos Combatientes en la Unidad de Especialistas" scope="parent" shared="true" type="max" value="0"/>
           </constraints>
-          <modifiers>
-            <modifier type="set" value="1" field="af26-ee99-b368-f142">
-              <conditions>
-                <condition type="equalTo" value="2" field="selections" scope="root-entry" childId="d3f0-0d7a-5c3f-4b2b" shared="true" childName="Combatiente"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Emplazamientos de Armas" hidden="false" id="a142-0b8b-a682-b463" type="selectionEntryGroup" targetId="132e-efa5-3770-e0fe">
+            <entryLink name="Emplazamientos de Armas" id="a142-0b8b-a682-b463" hidden="false" import="true" targetId="132e-efa5-3770-e0fe" type="selectionEntryGroup">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5fd-d1af-19d5-0af6" includeChildSelections="false"/>
+                <constraint id="b5fd-d1af-19d5-0af6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier field="af26-ee99-b368-f142" type="set" value="1">
+              <conditions>
+                <condition childId="d3f0-0d7a-5c3f-4b2b" childName="Combatiente" field="selections" scope="root-entry" shared="true" type="equalTo" value="2"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Unidad de Mercenarios" hidden="false" id="579c-7c11-b16e-6c04" subType="unit-group">
+    <selectionEntry name="Unidad de Mercenarios" id="579c-7c11-b16e-6c04" hidden="false" import="true" subType="unit-group" type="unit">
       <categoryLinks>
-        <categoryLink targetId="41dc-643d-2b8b-8d0d" id="c8af-f48a-91ae-1488" primary="true" name="Unidades de las Milicias"/>
+        <categoryLink name="Unidades" id="1b27-ad5b-7c47-c7b7" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Combatiente" hidden="false" id="a4bc-8a88-f99a-603e" type="selectionEntry" targetId="d3f0-0d7a-5c3f-4b2b" sortIndex="2">
+        <entryLink name="Combatiente" id="a4bc-8a88-f99a-603e" hidden="false" import="true" sortIndex="2" targetId="d3f0-0d7a-5c3f-4b2b" type="selectionEntry">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="44e2-b8ea-5bc0-d014" includeChildSelections="false"/>
-            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="a0e9-bc13-726b-c2cb" includeChildSelections="false" message="Unidad de Mercenarios: Máximo {value} ({current} seleccionados)"/>
+            <constraint id="44e2-b8ea-5bc0-d014" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="a0e9-bc13-726b-c2cb" field="selections" includeChildSelections="false" message="Unidad de Mercenarios: Máximo {value} ({current} seleccionados)" scope="parent" shared="true" type="max" value="12"/>
           </constraints>
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Armamento" hidden="false" id="cce3-03d6-3869-452d" type="selectionEntryGroup" targetId="224b-7576-f907-42d9">
+            <entryLink name="Armamento" id="cce3-03d6-3869-452d" hidden="false" import="true" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
+              <entryLinks>
+                <entryLink name="Armas Arrojadizas" id="eb3c-cfcc-d453-f5fb" hidden="false" import="true" sortIndex="3" targetId="f547-e9fb-3d63-d366" type="selectionEntryGroup"/>
+                <entryLink name="Armas de Combate Cercano" id="b72a-5ea5-aeb2-eb6d" hidden="false" import="true" sortIndex="4" targetId="e0bb-9eeb-6ad5-2cae" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint id="306b-cd2c-a4ad-b18e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Arma Corta" id="f7bb-12e8-3c72-93ee" hidden="false" import="true" sortIndex="1" targetId="a91d-0de6-c91e-b5c5" type="selectionEntryGroup">
+                  <constraints>
+                    <constraint id="80aa-3904-41a2-dc39" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Armería" id="3a55-bcb2-c283-16e0" hidden="false" flatten="true" sortIndex="2">
+                <selectionEntryGroup name="Armería" id="3a55-bcb2-c283-16e0" flatten="true" hidden="false" sortIndex="2">
+                  <constraints>
+                    <constraint id="522d-49af-cb34-ba7e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Especialista" id="87e8-ec22-356f-80b7" hidden="false" sortIndex="2">
-                      <entryLinks>
-                        <entryLink import="true" name="Ametralladoras" hidden="false" id="0b3f-ea74-ebcd-712f" type="selectionEntryGroup" targetId="2343-17dd-8486-7beb" sortIndex="1"/>
-                        <entryLink import="true" name="Armas de Especialista" hidden="false" id="322a-d0c8-196a-d10f" type="selectionEntryGroup" targetId="ce37-cb73-c814-2035" sortIndex="4"/>
-                        <entryLink import="true" name="Escopetas" hidden="false" id="145f-d880-c8dc-d00a" type="selectionEntryGroup" targetId="1d96-8628-8ed3-a7f1" sortIndex="2"/>
-                        <entryLink import="true" name="Lanzadores" hidden="false" id="6d71-571a-a6d1-f8b2" type="selectionEntryGroup" targetId="35e4-fe88-ffb2-ed62" sortIndex="5"/>
-                        <entryLink import="true" name="Fusiles de Tirador" hidden="false" id="04ed-cd81-af30-f36a" type="selectionEntryGroup" targetId="290c-e6b3-15ce-67a2" sortIndex="3"/>
-                      </entryLinks>
                       <constraints>
-                        <constraint type="max" value="0" field="selections" scope="root-entry" shared="true" id="de42-b698-599d-7a0f" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)"/>
+                        <constraint id="de42-b698-599d-7a0f" field="selections" includeChildSelections="true" message="Máximo {total} Especialistas ({current} seleccionados)" scope="root-entry" shared="true" type="max" value="0"/>
                       </constraints>
+                      <entryLinks>
+                        <entryLink name="Ametralladoras" id="0b3f-ea74-ebcd-712f" hidden="false" import="true" sortIndex="1" targetId="2343-17dd-8486-7beb" type="selectionEntryGroup"/>
+                        <entryLink name="Armas de Especialista" id="322a-d0c8-196a-d10f" hidden="false" import="true" sortIndex="4" targetId="ce37-cb73-c814-2035" type="selectionEntryGroup"/>
+                        <entryLink name="Escopetas" id="145f-d880-c8dc-d00a" hidden="false" import="true" sortIndex="2" targetId="1d96-8628-8ed3-a7f1" type="selectionEntryGroup"/>
+                        <entryLink name="Lanzadores" id="6d71-571a-a6d1-f8b2" hidden="false" import="true" sortIndex="5" targetId="35e4-fe88-ffb2-ed62" type="selectionEntryGroup"/>
+                        <entryLink name="Fusiles de Tirador" id="04ed-cd81-af30-f36a" hidden="false" import="true" sortIndex="3" targetId="290c-e6b3-15ce-67a2" type="selectionEntryGroup"/>
+                      </entryLinks>
                       <modifiers>
-                        <modifier type="increment" value="1" field="de42-b698-599d-7a0f" affects="self.entries">
+                        <modifier affects="self.entries" field="de42-b698-599d-7a0f" type="increment" value="1">
                           <repeats>
-                            <repeat value="2" repeats="1" field="selections" scope="root-entry" childId="d3f0-0d7a-5c3f-4b2b" shared="true" roundUp="false" childName="Combatiente" includeChildSelections="true"/>
+                            <repeat childId="d3f0-0d7a-5c3f-4b2b" childName="Combatiente" field="selections" includeChildSelections="true" repeats="1" roundUp="false" scope="root-entry" shared="true" value="2"/>
                           </repeats>
                         </modifier>
                       </modifiers>
                     </selectionEntryGroup>
-                    <selectionEntryGroup name="Fusil/Subfusil" id="2746-3ea0-407d-6578" hidden="false" collapsible="true" sortIndex="1">
+                    <selectionEntryGroup name="Fusil/Subfusil" id="2746-3ea0-407d-6578" collapsible="true" hidden="false" sortIndex="1">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c574-aa34-aefe-ab9f" includeChildSelections="false"/>
+                        <constraint id="c574-aa34-aefe-ab9f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Fusiles" hidden="false" id="c477-bd35-79a1-6f57" type="selectionEntryGroup" targetId="677b-dff4-5243-e3e7" sortIndex="1"/>
-                        <entryLink import="true" name="Subfusiles" hidden="false" id="1213-4541-3bea-a28c" type="selectionEntryGroup" targetId="4279-e343-9b79-0985" sortIndex="2"/>
+                        <entryLink name="Fusiles" id="c477-bd35-79a1-6f57" hidden="false" import="true" sortIndex="1" targetId="677b-dff4-5243-e3e7" type="selectionEntryGroup"/>
+                        <entryLink name="Subfusiles" id="1213-4541-3bea-a28c" hidden="false" import="true" sortIndex="2" targetId="4279-e343-9b79-0985" type="selectionEntryGroup"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="522d-49af-cb34-ba7e" includeChildSelections="false"/>
-                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+            </entryLink>
+            <entryLink name="Equipamiento" id="e093-111f-2521-458e" hidden="false" import="true" targetId="05f4-e791-1abb-ce09" type="selectionEntryGroup">
               <entryLinks>
-                <entryLink import="true" name="Armas Arrojadizas" hidden="false" id="eb3c-cfcc-d453-f5fb" type="selectionEntryGroup" targetId="f547-e9fb-3d63-d366" sortIndex="3"/>
-                <entryLink import="true" name="Armas de Combate Cercano" hidden="false" id="b72a-5ea5-aeb2-eb6d" type="selectionEntryGroup" targetId="e0bb-9eeb-6ad5-2cae" sortIndex="4">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="306b-cd2c-a4ad-b18e" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Arma Corta" hidden="false" id="f7bb-12e8-3c72-93ee" type="selectionEntryGroup" targetId="a91d-0de6-c91e-b5c5" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80aa-3904-41a2-dc39" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
+                <entryLink name="Equipamiento Estándar" id="2a1c-5acb-7cf1-510f" hidden="false" import="true" sortIndex="1" targetId="7019-0660-9d87-9794" type="selectionEntryGroup"/>
+                <entryLink name="Equipamiento Mando" id="c2d3-bcf0-91d9-320a" hidden="false" import="true" sortIndex="3" targetId="459b-bc80-d627-6dec" type="selectionEntryGroup"/>
+                <entryLink name="Equipamiento Especialista" id="b9b4-552b-54f9-668b" hidden="false" import="true" sortIndex="2" targetId="c68e-9f56-f8ca-9b07" type="selectionEntryGroup"/>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Equipamiento" hidden="false" id="e093-111f-2521-458e" type="selectionEntryGroup" targetId="05f4-e791-1abb-ce09">
-              <entryLinks>
-                <entryLink import="true" name="Equipamiento Estándar" hidden="false" id="2a1c-5acb-7cf1-510f" type="selectionEntryGroup" targetId="7019-0660-9d87-9794" sortIndex="1"/>
-                <entryLink import="true" name="Equipamiento Mando" hidden="false" id="c2d3-bcf0-91d9-320a" type="selectionEntryGroup" targetId="459b-bc80-d627-6dec" sortIndex="3"/>
-                <entryLink import="true" name="Equipamiento Especialista" hidden="false" id="b9b4-552b-54f9-668b" type="selectionEntryGroup" targetId="c68e-9f56-f8ca-9b07" sortIndex="2"/>
-              </entryLinks>
-            </entryLink>
-            <entryLink import="true" name="Sargento" hidden="false" id="68c1-8981-2325-6f5d" type="selectionEntry" targetId="c327-cba4-d686-30b2">
+            <entryLink name="Sargento" id="68c1-8981-2325-6f5d" hidden="false" import="true" targetId="c327-cba4-d686-30b2" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
           <modifiers>
-            <modifier type="set" value="Sargento" field="name">
+            <modifier field="name" type="set" value="Sargento">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="self" childId="c327-cba4-d686-30b2" shared="true" childName="Sargento" includeChildSelections="false"/>
+                <condition childId="c327-cba4-d686-30b2" childName="Sargento" field="selections" includeChildSelections="false" scope="self" shared="true" type="equalTo" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Entrenamiento" hidden="false" id="408e-1ad6-9280-3ae5" type="selectionEntryGroup" targetId="f36a-4363-d8f0-2f52" sortIndex="1"/>
+        <entryLink name="Entrenamiento" id="408e-1ad6-9280-3ae5" hidden="false" import="true" sortIndex="1" targetId="f36a-4363-d8f0-2f52" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Escaladas" hidden="false" id="cb35-7dd8-3fff-7a83">
+    <selectionEntry name="Escaladas" id="cb35-7dd8-3fff-7a83" hidden="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink targetId="b1f9-4ca1-8e10-ae0d" id="1466-1224-650e-911b" primary="true" name="Escaladas de las Milicias"/>
+        <categoryLink name="Escaladas" id="bc8b-970f-2012-f6e3" hidden="false" primary="true" targetId="a941-773c-c46f-39b0"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="05c9-e55e-253c-6807-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05c9-e55e-253c-6807-max" includeChildSelections="false"/>
+        <constraint id="05c9-e55e-253c-6807-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="05c9-e55e-253c-6807-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Nivel 1 - Inteligencia Local y Caos" hidden="false" id="ed7d-1c9e-5dae-bbc0">
+        <selectionEntry name="Nivel 1 - Inteligencia Local y Caos" id="ed7d-1c9e-5dae-bbc0" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="e6a4-d346-343e-3614-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="e6a4-d346-343e-3614-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Artefacto IED Antipersona" id="0d6e-97d5-807d-18a4" hidden="false" import="true" targetId="d14a-fec5-762a-17fa" type="selectionEntry">
+              <constraints>
+                <constraint id="e07c-97e4-88b0-8b4a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="e07c-97e4-88b0-8b4a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Artefacto IED Antiblindaje" id="ae7a-b7bb-322d-086b" hidden="false" import="true" targetId="8540-b740-bef2-94c9" type="selectionEntry">
+              <constraints>
+                <constraint id="8815-3c61-5e2f-b1c3-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8815-3c61-5e2f-b1c3-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <profiles>
-            <profile name="Nivel 1 - Detonación de IED" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="3484-0af8-d9e3-ecba">
+            <profile name="Nivel 1 - Detonación de IED" id="3484-0af8-d9e3-ecba" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Un IED explota</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Artefacto IED (Eljie si es Antipersona o Antitanque)</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 1 - Muchedumbre Enfurecida" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="3ba0-4a43-9a28-3706">
+            <profile name="Nivel 1 - Muchedumbre Enfurecida" id="3ba0-4a43-9a28-3706" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Civiles cabreados se juntan en una multitud</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Una Unidad de 8 civiles Hostiles. Colócala a 2&quot; de cualquier terreno. Aplica Reglas de Refuerzos.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 1 - Observadores e Informantes" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="7011-b3a3-81a7-9b62">
+            <profile name="Nivel 1 - Observadores e Informantes" id="7011-b3a3-81a7-9b62" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Civiles aliados alertan a tus fuerzas de las amenazas</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Desvela enemigos a 12&quot; de cualquier Unidad Aliada, +2 a una única tirada de Detección</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry name="Nivel 2 - Amenazas Cinéticas Ligeras" id="993e-9921-1ce7-838e" hidden="false" import="true" type="upgrade">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6a4-d346-343e-3614-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a4-d346-343e-3614-max" includeChildSelections="false"/>
+            <constraint id="c389-3f6c-2ec1-0293-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="c389-3f6c-2ec1-0293-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Artefacto IED Antipersona" hidden="false" id="0d6e-97d5-807d-18a4" type="selectionEntry" targetId="d14a-fec5-762a-17fa">
+            <entryLink name="Francotirador Medio" id="1499-bb44-5132-6ffc" hidden="false" import="true" targetId="ee1a-7ee0-7020-169b" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e07c-97e4-88b0-8b4a-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e07c-97e4-88b0-8b4a-max" includeChildSelections="false"/>
+                <constraint id="29fa-c282-1862-1ab7-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="29fa-c282-1862-1ab7-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Artefacto IED Antiblindaje" hidden="false" id="ae7a-b7bb-322d-086b" type="selectionEntry" targetId="8540-b740-bef2-94c9">
+            <entryLink name="Cócktel Molotov" id="d963-03e2-27dc-f53e" hidden="false" import="true" targetId="743a-a572-0346-7b3d" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8815-3c61-5e2f-b1c3-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8815-3c61-5e2f-b1c3-max" includeChildSelections="false"/>
+                <constraint id="397e-a5fc-8f9b-a6f0-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="397e-a5fc-8f9b-a6f0-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Nivel 2 - Amenazas Cinéticas Ligeras" hidden="false" id="993e-9921-1ce7-838e">
           <profiles>
-            <profile name="Nivel 2 - Fuego de apoyo de Vehículo Técnico" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="da3a-9a0f-3199-d510">
+            <profile name="Nivel 2 - Fuego de apoyo de Vehículo Técnico" id="da3a-9a0f-3199-d510" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Se incorpora al combate un Vahículo Técnico con HMG o SPG-9</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Debe aparecer en una carretera, un callejón o un garaje. Aplica Reglas de Refuerzos.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 2 - Salva de Molotóvs" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="b63e-7855-837b-47a5">
+            <profile name="Nivel 2 - Salva de Molotóvs" id="b63e-7855-837b-47a5" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Varios combatientes lanzan una andanada de Cockteles Molotóvs</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Arma Cocktel Molotov</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 2 - Trampa de Francotirador" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="f995-895f-2d45-fd0c">
+            <profile name="Nivel 2 - Trampa de Francotirador" id="f995-895f-2d45-fd0c" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Un Tirador escondido ataca.</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Usa el perfil de Francotirador Medio en Alcance Extremo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry name="Nivel 3 - Daños en Área" id="47d1-00e9-bea1-b6c2" hidden="false" import="true" type="upgrade">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c389-3f6c-2ec1-0293-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c389-3f6c-2ec1-0293-max" includeChildSelections="false"/>
+            <constraint id="d51d-ecb8-99a1-0364-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="d51d-ecb8-99a1-0364-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Francotirador Medio" hidden="false" id="1499-bb44-5132-6ffc" type="selectionEntry" targetId="ee1a-7ee0-7020-169b">
+            <entryLink name="Bombardeo de Mortero Ligero" id="bae1-8f5d-c566-7ae0" hidden="false" import="true" targetId="9989-65b7-4f40-5bbc" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="29fa-c282-1862-1ab7-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29fa-c282-1862-1ab7-max" includeChildSelections="false"/>
+                <constraint id="75e0-ff0e-1467-0a81-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="75e0-ff0e-1467-0a81-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Cócktel Molotov" hidden="false" id="d963-03e2-27dc-f53e" type="selectionEntry" targetId="743a-a572-0346-7b3d">
+            <entryLink name="Coche Bomba" id="ab2d-5a50-130c-20b5" hidden="false" import="true" targetId="bd05-32bf-34f7-5e2d" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="397e-a5fc-8f9b-a6f0-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="397e-a5fc-8f9b-a6f0-max" includeChildSelections="false"/>
+                <constraint id="f7c4-472c-4699-4882-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="f7c4-472c-4699-4882-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Nivel 3 - Daños en Área" hidden="false" id="47d1-00e9-bea1-b6c2">
           <profiles>
-            <profile name="Nivel 3 - Ataque de Mortero" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="071d-228b-13ec-13a3">
+            <profile name="Nivel 3 - Ataque de Mortero" id="071d-228b-13ec-13a3" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Fuego desde posiciones alejadas</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Mortero Ligero</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 3 - Coche Bomba" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="bb91-4527-835a-f9c6">
+            <profile name="Nivel 3 - Coche Bomba" id="bb91-4527-835a-f9c6" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Un suicida detona un Coche Bomba</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Coche Bomba</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry name="Nivel 4 - Caos en Masa" id="80ae-4722-1ab8-f438" hidden="false" import="true" type="upgrade">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d51d-ecb8-99a1-0364-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d51d-ecb8-99a1-0364-max" includeChildSelections="false"/>
+            <constraint id="2962-6f5e-fc87-c29d-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="2962-6f5e-fc87-c29d-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Bombardeo de Mortero Ligero" hidden="false" id="bae1-8f5d-c566-7ae0" type="selectionEntry" targetId="9989-65b7-4f40-5bbc">
+            <entryLink name="Vaina de Cohetes" id="db77-f718-7fe6-c2e0" hidden="false" import="true" targetId="991e-20c7-1b74-f41b" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="75e0-ff0e-1467-0a81-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75e0-ff0e-1467-0a81-max" includeChildSelections="false"/>
+                <constraint id="2456-9dec-bfb4-6cf5-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="2456-9dec-bfb4-6cf5-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Coche Bomba" hidden="false" id="ab2d-5a50-130c-20b5" type="selectionEntry" targetId="bd05-32bf-34f7-5e2d">
+            <entryLink name="Bombardeo de Mortero Pesado" id="6c55-2836-7f67-1bf6" hidden="false" import="true" targetId="a34b-2c4b-8fa0-b6b0" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7c4-472c-4699-4882-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7c4-472c-4699-4882-max" includeChildSelections="false"/>
+                <constraint id="21ad-6922-a5cb-04fe-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="21ad-6922-a5cb-04fe-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Nivel 4 - Caos en Masa" hidden="false" id="80ae-4722-1ab8-f438">
           <profiles>
-            <profile name="Nivel 4 - Andanada de Cohetes" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="5dd9-9bd6-0038-4752">
+            <profile name="Nivel 4 - Andanada de Cohetes" id="5dd9-9bd6-0038-4752" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Una lluvia de Cohetes Caseros</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Vaina de Cohetes</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 4 - Ataque de Mortero Pesado" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="bc4b-14f6-95c8-13cc">
+            <profile name="Nivel 4 - Ataque de Mortero Pesado" id="bc4b-14f6-95c8-13cc" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Fuego de gran calibre desde posiciones alejadas</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Mortero Pesado</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 4 - Refuerzos: Muchedumbre" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="7207-f3c1-a854-5309">
+            <profile name="Nivel 4 - Refuerzos: Muchedumbre" id="7207-f3c1-a854-5309" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Despliega 2-3 Unidades de Milicianos desde la reserva</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Deben aparecer en una carretera, un callejón o un garaje. Aplica Reglas de Refuerzos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry name="Nivel 5 - Escalada del Conflicto" id="7ed6-2d2a-c94a-6d4e" hidden="false" import="true" type="upgrade">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2962-6f5e-fc87-c29d-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2962-6f5e-fc87-c29d-max" includeChildSelections="false"/>
+            <constraint id="4fd8-626d-99f2-4ccd-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="4fd8-626d-99f2-4ccd-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Vaina de Cohetes" hidden="false" id="db77-f718-7fe6-c2e0" type="selectionEntry" targetId="991e-20c7-1b74-f41b">
+            <entryLink name="Ataque de Artillería" id="7264-bbca-c7ff-b455" hidden="false" import="true" targetId="a530-ee93-7e18-93b6" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2456-9dec-bfb4-6cf5-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2456-9dec-bfb4-6cf5-max" includeChildSelections="false"/>
+                <constraint id="7a1e-8442-e5ea-fa2b-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="7a1e-8442-e5ea-fa2b-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Bombardeo de Mortero Pesado" hidden="false" id="6c55-2836-7f67-1bf6" type="selectionEntry" targetId="a34b-2c4b-8fa0-b6b0">
+            <entryLink name="Bomba sin Guía" id="af12-e46c-22c4-686b" hidden="false" import="true" targetId="b11d-653a-80af-8355" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="21ad-6922-a5cb-04fe-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ad-6922-a5cb-04fe-max" includeChildSelections="false"/>
+                <constraint id="8c77-6212-5593-0b61-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8c77-6212-5593-0b61-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Ataque de Artillería de Cohetes" id="f738-bbfd-acc8-c473" hidden="false" import="true" targetId="948d-82a7-064e-199c" type="selectionEntry">
+              <constraints>
+                <constraint id="d911-c813-2121-1ea0-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="d911-c813-2121-1ea0-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Municiones Incendiarias" id="3a56-9261-c619-39a1" hidden="false" import="true" targetId="0b0e-38a2-180b-7692" type="selectionEntry">
+              <constraints>
+                <constraint id="22ef-6050-4c08-95b7-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="22ef-6050-4c08-95b7-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Cañón de Cadena Pesado" id="3902-b708-6d70-6498" hidden="false" import="true" targetId="a3b7-124e-e90b-f8fb" type="selectionEntry">
+              <constraints>
+                <constraint id="35c2-f90d-2ea3-ab49-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="35c2-f90d-2ea3-ab49-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Cañón de Cadena Medio" id="3cb2-c52b-8e04-a5a5" hidden="false" import="true" targetId="a9fa-2060-8146-ffcc" type="selectionEntry">
+              <constraints>
+                <constraint id="1206-e2eb-e3e1-722d-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="1206-e2eb-e3e1-722d-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Nivel 5 - Escalada del Conflicto" hidden="false" id="7ed6-2d2a-c94a-6d4e">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fd8-626d-99f2-4ccd-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fd8-626d-99f2-4ccd-max" includeChildSelections="false"/>
-          </constraints>
           <profiles>
-            <profile name="Nivel 5 - Intento de Asesinato" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="eefd-3dba-91c0-3525">
+            <profile name="Nivel 5 - Intento de Asesinato" id="eefd-3dba-91c0-3525" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Un Tirador de la Milicia intenta asesinar al Comandante enemigo.</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Francotirador Medio a Alcance Extremo</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Helicóptero Cañonera" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="fae3-0489-115d-0604">
+            <profile name="Nivel 5 - Helicóptero Cañonera" id="fae3-0489-115d-0604" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Apoyo de ala rotatoria, provisto de cohetes y cañones</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Vaina de Cohetes y Cañón de Cadena</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Bomba no guiada" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="cbad-cfcb-01ba-3c9a">
+            <profile name="Nivel 5 - Bomba no guiada" id="cbad-cfcb-01ba-3c9a" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Lanzamiento de municiones desde medios improvisados</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Bomba sin Guía</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Ataque de Artillería" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="6dc9-9b00-5289-97db">
+            <profile name="Nivel 5 - Ataque de Artillería" id="6dc9-9b00-5289-97db" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Ataque de Artillería con precisión limitada</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Artillería</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Municiones Incendiarias" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="4fd0-0300-24d7-7cda">
+            <profile name="Nivel 5 - Municiones Incendiarias" id="4fd0-0300-24d7-7cda" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Bomba Termobárica casera</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Municiones Incendiarias</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Ataque de Cohetes en masa" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="058e-a4fd-9dc5-bd6d">
+            <profile name="Nivel 5 - Ataque de Cohetes en masa" id="058e-a4fd-9dc5-bd6d" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Ataque con cohetes caseros de gran calibre</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Artillería de Cohetes</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry name="Nivel 6 - Caos Total" id="0606-46f8-d080-4974" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="89b0-40fb-1b6c-c09a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="89b0-40fb-1b6c-c09a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
           <entryLinks>
-            <entryLink import="true" name="Ataque de Artillería" hidden="false" id="7264-bbca-c7ff-b455" type="selectionEntry" targetId="a530-ee93-7e18-93b6">
+            <entryLink name="Ataque con Arma Química" id="9406-db5b-41b5-82e9" hidden="false" import="true" targetId="e308-f7d5-d8cf-90c8" type="selectionEntry">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a1e-8442-e5ea-fa2b-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a1e-8442-e5ea-fa2b-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Bomba sin Guía" hidden="false" id="af12-e46c-22c4-686b" type="selectionEntry" targetId="b11d-653a-80af-8355">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c77-6212-5593-0b61-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c77-6212-5593-0b61-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Ataque de Artillería de Cohetes" hidden="false" id="f738-bbfd-acc8-c473" type="selectionEntry" targetId="948d-82a7-064e-199c">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d911-c813-2121-1ea0-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d911-c813-2121-1ea0-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Municiones Incendiarias" hidden="false" id="3a56-9261-c619-39a1" type="selectionEntry" targetId="0b0e-38a2-180b-7692">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="22ef-6050-4c08-95b7-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22ef-6050-4c08-95b7-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Cañón de Cadena Pesado" hidden="false" id="3902-b708-6d70-6498" type="selectionEntry" targetId="a3b7-124e-e90b-f8fb">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35c2-f90d-2ea3-ab49-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="35c2-f90d-2ea3-ab49-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Cañón de Cadena Medio" hidden="false" id="3cb2-c52b-8e04-a5a5" type="selectionEntry" targetId="a9fa-2060-8146-ffcc">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1206-e2eb-e3e1-722d-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1206-e2eb-e3e1-722d-max" includeChildSelections="false"/>
+                <constraint id="7308-5839-c483-09f9-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="7308-5839-c483-09f9-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Nivel 6 - Caos Total" hidden="false" id="0606-46f8-d080-4974">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89b0-40fb-1b6c-c09a-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89b0-40fb-1b6c-c09a-max" includeChildSelections="false"/>
-          </constraints>
           <profiles>
-            <profile name="Nivel 6 - Movilización en Masa" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="4ac0-9aec-40f2-4cc6">
+            <profile name="Nivel 6 - Movilización en Masa" id="4ac0-9aec-40f2-4cc6" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Hasta 3 Unidades llegan desde fuera de los limites del tablero. Generalmente, inexpertos pero numerosos.</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Aparecen desde cualquier zona accesible por civiles. Aplican reglas de Refuerzos.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 6 - Ataque de Armas Químicas" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="9fce-a2b3-5f14-50f0">
+            <profile name="Nivel 6 - Ataque de Armas Químicas" id="9fce-a2b3-5f14-50f0" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Dispersión de agentes químicos caseros.</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Armas Químicas.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 6 - Levantamiento Coordinado" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="671b-3f7b-cdcb-c96e">
+            <profile name="Nivel 6 - Levantamiento Coordinado" id="671b-3f7b-cdcb-c96e" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Todas las Unidades de la Milicia gana +2 de Momentum en este turno</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Mayor caos, mayor peligro.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 6 - Pánico Generalizado" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas" hidden="false" id="0db9-5548-f8fb-4d2e">
+            <profile name="Nivel 6 - Pánico Generalizado" id="0db9-5548-f8fb-4d2e" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
                 <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Los civiles empiezan a huir. Las fuerzas del orden u otras facciones pueden intervenir.</characteristic>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Todas las unidades Civiles realizan una tirada de Comportamiento Hostil. Todas las Unidades enemigas realizan un Test de Estrés.</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <entryLinks>
-            <entryLink import="true" name="Ataque con Arma Química" hidden="false" id="9406-db5b-41b5-82e9" type="selectionEntry" targetId="e308-f7d5-d8cf-90c8">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7308-5839-c483-09f9-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7308-5839-c483-09f9-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vehículos Militares Capturados o Adquiridos" hidden="false" id="5718-be70-dbe1-c52e">
+    <selectionEntry name="Vehículos Militares Capturados o Adquiridos" id="5718-be70-dbe1-c52e" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink targetId="4241-4665-124b-4cfa" id="ca79-c315-6f08-d226" primary="true" name="Vehículos de las Milicias"/>
+        <categoryLink name="Vehículos" id="6ef6-7a2a-950a-fc58" hidden="false" primary="true" targetId="a5bc-a829-cccd-2f38"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Modelo" id="a0de-cc5e-3da8-07d2" hidden="false" defaultSelectionEntryId="06cc-6772-a99c-8a36">
+        <selectionEntryGroup name="Modelo" id="a0de-cc5e-3da8-07d2" defaultSelectionEntryId="06cc-6772-a99c-8a36" hidden="false">
+          <constraints>
+            <constraint id="4e8b-dc87-aba8-75f9-min" field="selections" includeChildSelections="false" message="Selecciona un Vehículo Militar" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="4e8b-dc87-aba8-75f9-max" field="selections" includeChildSelections="false" message="Selecciona un Vehículo Militar" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
           <entryLinks>
-            <entryLink import="true" name="BMP 1" hidden="false" id="06cc-6772-a99c-8a36" type="selectionEntry" targetId="37d6-9b2e-2d6f-c555" sortIndex="1">
+            <entryLink name="BMP 1" id="06cc-6772-a99c-8a36" hidden="false" import="true" sortIndex="1" targetId="37d6-9b2e-2d6f-c555" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="120"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="BMP 2" hidden="false" id="a36e-884d-0fcc-beb2" type="selectionEntry" targetId="ed84-74e0-fff3-398d" sortIndex="2">
+            <entryLink name="BMP 2" id="a36e-884d-0fcc-beb2" hidden="false" import="true" sortIndex="2" targetId="ed84-74e0-fff3-398d" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="200"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="BTR 80" hidden="false" id="4f9c-9140-edea-5f48" type="selectionEntry" targetId="2f0c-bce4-b64b-4440" sortIndex="3">
+            <entryLink name="BTR 80" id="4f9c-9140-edea-5f48" hidden="false" import="true" sortIndex="3" targetId="2f0c-bce4-b64b-4440" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="250"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="T-72" hidden="false" id="55f2-85cf-fc71-0b8c" type="selectionEntry" targetId="29ee-7cd1-f595-d1c6" sortIndex="5">
+            <entryLink name="T-72" id="55f2-85cf-fc71-0b8c" hidden="false" import="true" sortIndex="5" targetId="29ee-7cd1-f595-d1c6" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="350"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="T-55" hidden="false" id="4209-07ce-0554-9fd1" type="selectionEntry" targetId="4d6f-f239-f43b-3347" sortIndex="4">
+            <entryLink name="T-55" id="4209-07ce-0554-9fd1" hidden="false" import="true" sortIndex="4" targetId="4d6f-f239-f43b-3347" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="120"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="T-90" hidden="false" id="6630-f0f5-7ca8-1688" type="selectionEntry" targetId="60a3-f566-b672-5817" sortIndex="6">
+            <entryLink name="T-90" id="6630-f0f5-7ca8-1688" hidden="false" import="true" sortIndex="6" targetId="60a3-f566-b672-5817" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="500"/>
               </costs>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e8b-dc87-aba8-75f9-min" includeChildSelections="false" message="Selecciona un Vehículo Militar"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e8b-dc87-aba8-75f9-max" includeChildSelections="false" message="Selecciona un Vehículo Militar"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vehículos Improvisados" hidden="false" id="2aff-713d-ea4d-a550">
+    <selectionEntry name="Vehículos Improvisados" id="2aff-713d-ea4d-a550" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink targetId="4241-4665-124b-4cfa" id="c966-ead1-d50a-a17c" primary="true" name="Vehículos de las Milicias"/>
+        <categoryLink name="Vehículos" id="d85d-1797-3ca5-1bec" hidden="false" primary="true" targetId="a5bc-a829-cccd-2f38"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Modelo" id="47a7-8d95-be44-4760" hidden="false" flatten="true" defaultSelectionEntryId="77f9-dd56-15c0-a4ce">
+        <selectionEntryGroup name="Modelo" id="47a7-8d95-be44-4760" defaultSelectionEntryId="77f9-dd56-15c0-a4ce" flatten="true" hidden="false">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec85-4bea-5912-076a-min" includeChildSelections="false" message="Selecciona un Vehículo Improvisado"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec85-4bea-5912-076a-max" includeChildSelections="false" message="Selecciona un Vehículo Improvisado"/>
+            <constraint id="ec85-4bea-5912-076a-min" field="selections" includeChildSelections="false" message="Selecciona un Vehículo Improvisado" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="ec85-4bea-5912-076a-max" field="selections" includeChildSelections="false" message="Selecciona un Vehículo Improvisado" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="MRAP" hidden="false" id="d231-d0de-642d-e312" type="selectionEntry" targetId="8753-d1b4-444c-eab2" sortIndex="3">
+            <entryLink name="MRAP" id="d231-d0de-642d-e312" hidden="false" import="true" sortIndex="3" targetId="8753-d1b4-444c-eab2" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="200"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Armamento" hidden="false" id="876d-1175-8209-d88f" type="selectionEntryGroup" targetId="224b-7576-f907-42d9">
-                  <entryLinks>
-                    <entryLink import="true" name="Armas Ligeras" hidden="false" id="e29c-340c-be24-6000" type="selectionEntryGroup" targetId="b335-76c3-a7bb-eca0" sortIndex="1"/>
-                    <entryLink import="true" name="Armas Pesadas" hidden="false" id="f316-f6c7-267c-e6d2" type="selectionEntryGroup" targetId="1f8d-f131-6dc7-257a" sortIndex="3"/>
-                    <entryLink import="true" name="Armas Medias" hidden="false" id="621a-75c6-aa25-d996" type="selectionEntryGroup" targetId="0eb2-c597-4dc7-6d32" sortIndex="2"/>
-                  </entryLinks>
+                <entryLink name="Armamento" id="876d-1175-8209-d88f" hidden="false" import="true" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
                   <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8f6d-b191-f798-e263" includeChildSelections="false"/>
+                    <constraint id="8f6d-b191-f798-e263" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink name="Armas Ligeras" id="e29c-340c-be24-6000" hidden="false" import="true" sortIndex="1" targetId="b335-76c3-a7bb-eca0" type="selectionEntryGroup"/>
+                    <entryLink name="Armas Pesadas" id="f316-f6c7-267c-e6d2" hidden="false" import="true" sortIndex="3" targetId="1f8d-f131-6dc7-257a" type="selectionEntryGroup"/>
+                    <entryLink name="Armas Medias" id="621a-75c6-aa25-d996" hidden="false" import="true" sortIndex="2" targetId="0eb2-c597-4dc7-6d32" type="selectionEntryGroup"/>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
             </entryLink>
-            <entryLink import="true" name="Pick Up" hidden="false" id="77f9-dd56-15c0-a4ce" type="selectionEntry" targetId="f81a-b262-214f-1f23" sortIndex="1">
+            <entryLink name="Pick Up" id="77f9-dd56-15c0-a4ce" hidden="false" import="true" sortIndex="1" targetId="f81a-b262-214f-1f23" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="75"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Armamento" hidden="false" id="0612-0850-f8f6-067d" type="selectionEntryGroup" targetId="224b-7576-f907-42d9">
-                  <entryLinks>
-                    <entryLink import="true" name="Armas Ligeras" hidden="false" id="4149-fe8c-8214-5385" type="selectionEntryGroup" targetId="b335-76c3-a7bb-eca0" sortIndex="1"/>
-                    <entryLink import="true" name="Armas Pesadas" hidden="false" id="4065-b83f-8e98-0e08" type="selectionEntryGroup" targetId="1f8d-f131-6dc7-257a" sortIndex="3"/>
-                    <entryLink import="true" name="Armas Medias" hidden="false" id="bd64-d8d7-d337-88a1" type="selectionEntryGroup" targetId="0eb2-c597-4dc7-6d32" sortIndex="2"/>
-                  </entryLinks>
+                <entryLink name="Armamento" id="0612-0850-f8f6-067d" hidden="false" import="true" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab29-6e66-458e-0a18" includeChildSelections="false"/>
+                    <constraint id="ab29-6e66-458e-0a18" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink name="Armas Ligeras" id="4149-fe8c-8214-5385" hidden="false" import="true" sortIndex="1" targetId="b335-76c3-a7bb-eca0" type="selectionEntryGroup"/>
+                    <entryLink name="Armas Pesadas" id="4065-b83f-8e98-0e08" hidden="false" import="true" sortIndex="3" targetId="1f8d-f131-6dc7-257a" type="selectionEntryGroup"/>
+                    <entryLink name="Armas Medias" id="bd64-d8d7-d337-88a1" hidden="false" import="true" sortIndex="2" targetId="0eb2-c597-4dc7-6d32" type="selectionEntryGroup"/>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
               <modifiers>
-                <modifier type="set" value="Técnico" field="annotation"/>
+                <modifier field="annotation" type="set" value="Técnico"/>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Pick Up Blindado" hidden="false" id="0d96-cb20-0e0f-041d" type="selectionEntry" targetId="b13c-664f-7f35-558c" sortIndex="2">
+            <entryLink name="Pick Up Blindado" id="0d96-cb20-0e0f-041d" hidden="false" import="true" sortIndex="2" targetId="b13c-664f-7f35-558c" type="selectionEntry">
               <costs>
                 <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="100"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Armamento" hidden="false" id="578f-9ee9-badb-ff95" type="selectionEntryGroup" targetId="224b-7576-f907-42d9">
-                  <entryLinks>
-                    <entryLink import="true" name="Armas Ligeras" hidden="false" id="2eb2-0f5a-275b-c27a" type="selectionEntryGroup" targetId="b335-76c3-a7bb-eca0" sortIndex="1"/>
-                    <entryLink import="true" name="Armas Pesadas" hidden="false" id="3af8-fff2-0550-c67c" type="selectionEntryGroup" targetId="1f8d-f131-6dc7-257a" sortIndex="3"/>
-                    <entryLink import="true" name="Armas Medias" hidden="false" id="2b95-7ddf-8dff-4c9f" type="selectionEntryGroup" targetId="0eb2-c597-4dc7-6d32" sortIndex="2"/>
-                  </entryLinks>
+                <entryLink name="Armamento" id="578f-9ee9-badb-ff95" hidden="false" import="true" targetId="224b-7576-f907-42d9" type="selectionEntryGroup">
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a008-04ab-db57-8ca1" includeChildSelections="false"/>
+                    <constraint id="a008-04ab-db57-8ca1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink name="Armas Ligeras" id="2eb2-0f5a-275b-c27a" hidden="false" import="true" sortIndex="1" targetId="b335-76c3-a7bb-eca0" type="selectionEntryGroup"/>
+                    <entryLink name="Armas Pesadas" id="3af8-fff2-0550-c67c" hidden="false" import="true" sortIndex="3" targetId="1f8d-f131-6dc7-257a" type="selectionEntryGroup"/>
+                    <entryLink name="Armas Medias" id="2b95-7ddf-8dff-4c9f" hidden="false" import="true" sortIndex="2" targetId="0eb2-c597-4dc7-6d32" type="selectionEntryGroup"/>
+                  </entryLinks>
                 </entryLink>
               </entryLinks>
               <modifiers>
-                <modifier type="set" value="Pick Up Blindado / SUV" field="name"/>
+                <modifier field="name" type="set" value="Pick Up Blindado / SUV"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -819,359 +832,367 @@
       </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry name="Combatiente" id="d3f0-0d7a-5c3f-4b2b" hidden="false" import="true" type="model"/>
+    <selectionEntry name="Sargento" id="c327-cba4-d686-30b2" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="9329-7a48-6228-e458" field="selections" includeChildSelections="true" message="Máximo 1 Sargento por Unidad" scope="root-entry" shared="true" type="max" value="1"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Perfil de Combatiente" id="14dd-86be-3f62-e939" hidden="false" defaultSelectionEntryId="b555-c645-ec67-ed2a" collapsible="true">
+    <selectionEntryGroup name="Perfil de Combatiente" id="14dd-86be-3f62-e939" collapsible="true" defaultSelectionEntryId="b555-c645-ec67-ed2a" hidden="false">
+      <constraints>
+        <constraint id="cdf6-341e-0fff-e88f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="cdf6-341e-0fff-e88f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Civil" hidden="false" id="68f2-a287-b096-1fab" sortIndex="1">
+        <selectionEntry name="Civil" id="68f2-a287-b096-1fab" hidden="false" import="true" sortIndex="1" type="upgrade">
           <infoLinks>
-            <infoLink name="Civil" id="269c-fba2-96cd-ef38" hidden="false" type="profile" targetId="d2df-5d35-cf20-9324"/>
+            <infoLink name="Civil" id="269c-fba2-96cd-ef38" hidden="false" targetId="d2df-5d35-cf20-9324" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Criminal" hidden="false" id="2999-d1aa-0e96-3841" sortIndex="2">
+        <selectionEntry name="Criminal" id="2999-d1aa-0e96-3841" hidden="false" import="true" sortIndex="2" type="upgrade">
           <infoLinks>
-            <infoLink name="Criminal" id="3141-ef07-7414-6d90" hidden="false" type="profile" targetId="3c83-9cde-8e46-659d"/>
+            <infoLink name="Criminal" id="3141-ef07-7414-6d90" hidden="false" targetId="3c83-9cde-8e46-659d" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Recluta" hidden="false" id="6177-e6fd-7c6f-b8f5" sortIndex="3">
+        <selectionEntry name="Recluta" id="6177-e6fd-7c6f-b8f5" hidden="false" import="true" sortIndex="3" type="upgrade">
           <infoLinks>
-            <infoLink name="Recluta" id="637e-2a72-276c-d205" hidden="false" type="profile" targetId="aac1-39ef-dfed-abde"/>
+            <infoLink name="Recluta" id="637e-2a72-276c-d205" hidden="false" targetId="aac1-39ef-dfed-abde" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Milicia" hidden="false" id="b555-c645-ec67-ed2a" sortIndex="4">
+        <selectionEntry name="Milicia" id="b555-c645-ec67-ed2a" hidden="false" import="true" sortIndex="4" type="upgrade">
           <infoLinks>
-            <infoLink name="Milicia" id="c051-19c5-6f92-24b5" hidden="false" type="profile" targetId="309c-9800-d8c1-1acd"/>
+            <infoLink name="Milicia" id="c051-19c5-6f92-24b5" hidden="false" targetId="309c-9800-d8c1-1acd" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cdf6-341e-0fff-e88f-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdf6-341e-0fff-e88f-max" includeChildSelections="false"/>
-      </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Fusiles" id="677b-dff4-5243-e3e7" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Fusiles" id="677b-dff4-5243-e3e7" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Fusil Medio" hidden="false" id="b292-c27f-1a22-a6e0" type="selectionEntry" targetId="7b3f-01ed-c9cf-dc39" sortIndex="2">
+        <entryLink name="Fusil Medio" id="b292-c27f-1a22-a6e0" hidden="false" import="true" sortIndex="2" targetId="7b3f-01ed-c9cf-dc39" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Fusil Corto" hidden="false" id="60a1-3133-1a58-87f0" type="selectionEntry" targetId="ee00-4566-4e70-2a28" sortIndex="1">
+        <entryLink name="Fusil Corto" id="60a1-3133-1a58-87f0" hidden="false" import="true" sortIndex="1" targetId="ee00-4566-4e70-2a28" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Fusil Largo" hidden="false" id="38a5-54df-ab22-2333" type="selectionEntry" targetId="f1a5-17ad-0f12-1213" sortIndex="3">
+        <entryLink name="Fusil Largo" id="38a5-54df-ab22-2333" hidden="false" import="true" sortIndex="3" targetId="f1a5-17ad-0f12-1213" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="28"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Fusil de Combate" hidden="false" id="710b-9984-4df7-1adc" type="selectionEntry" targetId="93de-c2f7-fd16-f1b3" sortIndex="4">
+        <entryLink name="Fusil de Combate" id="710b-9984-4df7-1adc" hidden="false" import="true" sortIndex="4" targetId="93de-c2f7-fd16-f1b3" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Fusil de Cerrojo" hidden="false" id="1af4-3e67-4802-1eee" type="selectionEntry" targetId="6d85-52fe-b15d-22de" sortIndex="5">
+        <entryLink name="Fusil de Cerrojo" id="1af4-3e67-4802-1eee" hidden="false" import="true" sortIndex="5" targetId="6d85-52fe-b15d-22de" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Escopetas" id="1d96-8628-8ed3-a7f1" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Escopetas" id="1d96-8628-8ed3-a7f1" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Escopeta Recortada" hidden="false" id="cda8-f085-7249-705d" type="selectionEntry" targetId="ce35-0dda-f19b-c082" sortIndex="1">
+        <entryLink name="Escopeta Recortada" id="cda8-f085-7249-705d" hidden="false" import="true" sortIndex="1" targetId="ce35-0dda-f19b-c082" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Munición Especial" id="8f64-1b49-23c8-4b98" hidden="false">
+              <constraints>
+                <constraint id="5fd6-d1bc-ecbc-dd0d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bala de Escopeta" hidden="false" id="23b8-d73d-54dd-ea9a" type="selectionEntry" targetId="7e63-a946-031d-e932">
+                <entryLink name="Bala de Escopeta" id="23b8-d73d-54dd-ea9a" hidden="false" import="true" targetId="7e63-a946-031d-e932" type="selectionEntry">
                   <costs>
                     <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fd6-d1bc-ecbc-dd0d" includeChildSelections="false"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
-        <entryLink import="true" name="Escopeta" hidden="false" id="07f9-13c2-b287-615c" type="selectionEntry" targetId="2c37-a3bc-0cfe-dc52" sortIndex="2">
+        <entryLink name="Escopeta" id="07f9-13c2-b287-615c" hidden="false" import="true" sortIndex="2" targetId="2c37-a3bc-0cfe-dc52" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="12"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Munición Especial" id="c8db-92bc-66f7-3aa1" hidden="false">
+              <constraints>
+                <constraint id="830f-eaf3-01cd-4be9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bala de Escopeta" hidden="false" id="9d77-0854-3502-b7c1" type="selectionEntry" targetId="7e63-a946-031d-e932">
+                <entryLink name="Bala de Escopeta" id="9d77-0854-3502-b7c1" hidden="false" import="true" targetId="7e63-a946-031d-e932" type="selectionEntry">
                   <costs>
                     <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="830f-eaf3-01cd-4be9" includeChildSelections="false"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
-        <entryLink import="true" name="Escopeta de Combate" hidden="false" id="66c7-4657-3ed1-299e" type="selectionEntry" targetId="e2e4-0bc3-36b6-9395" sortIndex="3">
+        <entryLink name="Escopeta de Combate" id="66c7-4657-3ed1-299e" hidden="false" import="true" sortIndex="3" targetId="e2e4-0bc3-36b6-9395" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="16"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Munición Especial" id="c938-747f-6f42-8770" hidden="false">
+              <constraints>
+                <constraint id="0271-a32f-424d-895d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bala de Escopeta" hidden="false" id="d6b6-6199-890d-370d" type="selectionEntry" targetId="7e63-a946-031d-e932">
+                <entryLink name="Bala de Escopeta" id="d6b6-6199-890d-370d" hidden="false" import="true" targetId="7e63-a946-031d-e932" type="selectionEntry">
                   <costs>
                     <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0271-a32f-424d-895d" includeChildSelections="false"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Subfusiles" id="4279-e343-9b79-0985" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Subfusiles" id="4279-e343-9b79-0985" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Subfusil" hidden="false" id="cb13-1891-aa5f-e16b" type="selectionEntry" targetId="bfbe-0fbd-d8da-5ce2" sortIndex="2">
+        <entryLink name="Subfusil" id="cb13-1891-aa5f-e16b" hidden="false" import="true" sortIndex="2" targetId="bfbe-0fbd-d8da-5ce2" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Subfusil Compacto" hidden="false" id="4159-497e-ca9d-5b51" type="selectionEntry" targetId="d268-6cc3-45ff-4ea7" sortIndex="1">
+        <entryLink name="Subfusil Compacto" id="4159-497e-ca9d-5b51" hidden="false" import="true" sortIndex="1" targetId="d268-6cc3-45ff-4ea7" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Lanzadores" id="35e4-fe88-ffb2-ed62" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Lanzadores" id="35e4-fe88-ffb2-ed62" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Lanzagranadas" hidden="false" id="7bf2-199c-4512-cd2e" type="selectionEntry" targetId="da65-e675-b738-8276" sortIndex="1">
+        <entryLink name="Lanzagranadas" id="7bf2-199c-4512-cd2e" hidden="false" import="true" sortIndex="1" targetId="da65-e675-b738-8276" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="RPG con proyectil HEAT" hidden="false" id="6c23-74fd-4193-5b7b" type="selectionEntry" targetId="3d2d-0383-408b-44e5" sortIndex="2">
+        <entryLink name="RPG con proyectil HEAT" id="6c23-74fd-4193-5b7b" hidden="false" import="true" sortIndex="2" targetId="3d2d-0383-408b-44e5" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="28"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="RPG con proyectil Frag" hidden="false" id="8934-1f07-f4ee-801a" type="selectionEntry" targetId="a227-365f-c761-7927" sortIndex="3">
+        <entryLink name="RPG con proyectil Frag" id="8934-1f07-f4ee-801a" hidden="false" import="true" sortIndex="3" targetId="a227-365f-c761-7927" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="36"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="RPG con proyectil Termobárico" hidden="false" id="01f4-ad62-2e69-52e3" type="selectionEntry" targetId="3457-e415-3f77-5be4" sortIndex="4">
+        <entryLink name="RPG con proyectil Termobárico" id="01f4-ad62-2e69-52e3" hidden="false" import="true" sortIndex="4" targetId="3457-e415-3f77-5be4" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="45"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="RPG con Proyectil en Tándem" hidden="false" id="5229-6fbb-6bf1-1da6" type="selectionEntry" targetId="318f-3c0e-9d33-6e4c" sortIndex="5">
+        <entryLink name="RPG con Proyectil en Tándem" id="5229-6fbb-6bf1-1da6" hidden="false" import="true" sortIndex="5" targetId="318f-3c0e-9d33-6e4c" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="70"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Ametralladoras" id="2343-17dd-8486-7beb" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Ametralladoras" id="2343-17dd-8486-7beb" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Ametralladora Ligera de Asalto" hidden="false" id="5091-413b-6697-4ef0" type="selectionEntry" targetId="d66d-16ca-80cb-1379" sortIndex="1">
+        <entryLink name="Ametralladora Ligera de Asalto" id="5091-413b-6697-4ef0" hidden="false" import="true" sortIndex="1" targetId="d66d-16ca-80cb-1379" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="24"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora Ligera " hidden="false" id="9fca-ab22-709b-5e70" type="selectionEntry" targetId="b0d0-6eac-b352-8a55" sortIndex="2">
+        <entryLink name="Ametralladora Ligera " id="9fca-ab22-709b-5e70" hidden="false" import="true" sortIndex="2" targetId="b0d0-6eac-b352-8a55" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora Media" hidden="false" id="e436-b33f-9575-6ac1" type="selectionEntry" targetId="698e-2892-f202-6122" sortIndex="4">
+        <entryLink name="Ametralladora Media" id="e436-b33f-9575-6ac1" hidden="false" import="true" sortIndex="4" targetId="698e-2892-f202-6122" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="38"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora Ligera Alimentada por Mochila" hidden="false" id="da8f-50de-8221-d2da" type="selectionEntry" targetId="0aa6-46d2-be1b-09f5" sortIndex="3">
+        <entryLink name="Ametralladora Ligera Alimentada por Mochila" id="da8f-50de-8221-d2da" hidden="false" import="true" sortIndex="3" targetId="0aa6-46d2-be1b-09f5" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="35"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora Pesada" hidden="false" id="22c6-3b90-9ffd-c6d6" type="selectionEntry" targetId="6913-fd31-fcca-c6c7" sortIndex="5">
+        <entryLink name="Ametralladora Pesada" id="22c6-3b90-9ffd-c6d6" hidden="false" import="true" sortIndex="5" targetId="6913-fd31-fcca-c6c7" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Fusiles de Tirador" id="290c-e6b3-15ce-67a2" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Fusiles de Tirador" id="290c-e6b3-15ce-67a2" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="DMR" hidden="false" id="8d52-7447-dc94-b43a" type="selectionEntry" targetId="121e-77b0-1a52-4ebb" sortIndex="1">
+        <entryLink name="DMR" id="8d52-7447-dc94-b43a" hidden="false" import="true" sortIndex="1" targetId="121e-77b0-1a52-4ebb" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Francotirador Medio" hidden="false" id="3ebb-bfc8-a277-079f" type="selectionEntry" targetId="ee1a-7ee0-7020-169b" sortIndex="2">
+        <entryLink name="Francotirador Medio" id="3ebb-bfc8-a277-079f" hidden="false" import="true" sortIndex="2" targetId="ee1a-7ee0-7020-169b" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="40"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Francotirador Pesado" hidden="false" id="365a-7e1e-d257-5bdc" type="selectionEntry" targetId="d4f7-5439-5d57-f59e" sortIndex="3">
+        <entryLink name="Francotirador Pesado" id="365a-7e1e-d257-5bdc" hidden="false" import="true" sortIndex="3" targetId="d4f7-5439-5d57-f59e" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Arma Corta" id="a91d-0de6-c91e-b5c5" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Arma Corta" id="a91d-0de6-c91e-b5c5" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Pistola" hidden="false" id="5f0c-6f85-40b7-61d8" type="selectionEntry" targetId="7450-4bcf-e688-a638" sortIndex="1">
+        <entryLink name="Pistola" id="5f0c-6f85-40b7-61d8" hidden="false" import="true" sortIndex="1" targetId="7450-4bcf-e688-a638" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Pistola Pesada" hidden="false" id="3df0-4e7c-3693-c075" type="selectionEntry" targetId="87ce-65f3-e90a-c3dc" sortIndex="2">
+        <entryLink name="Pistola Pesada" id="3df0-4e7c-3693-c075" hidden="false" import="true" sortIndex="2" targetId="87ce-65f3-e90a-c3dc" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="8"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Pistola Ametralladora" hidden="false" id="ebc1-639c-909c-aa7c" type="selectionEntry" targetId="5004-b431-da18-f16e" sortIndex="3">
+        <entryLink name="Pistola Ametralladora" id="ebc1-639c-909c-aa7c" hidden="false" import="true" sortIndex="3" targetId="5004-b431-da18-f16e" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Armas Arrojadizas" id="f547-e9fb-3d63-d366" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Armas Arrojadizas" id="f547-e9fb-3d63-d366" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Granada de Fragmentación" hidden="false" id="22fe-db6f-f014-6d45" type="selectionEntry" targetId="bc28-1cf8-ff35-2950" sortIndex="1">
+        <entryLink name="Granada de Fragmentación" id="22fe-db6f-f014-6d45" hidden="false" import="true" sortIndex="1" targetId="bc28-1cf8-ff35-2950" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Cócktel Molotov" hidden="false" id="d4ae-d9c5-50b0-2483" type="selectionEntry" targetId="743a-a572-0346-7b3d" sortIndex="2">
+        <entryLink name="Cócktel Molotov" id="d4ae-d9c5-50b0-2483" hidden="false" import="true" sortIndex="2" targetId="743a-a572-0346-7b3d" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Granada Aturdidora" hidden="false" id="70da-aac8-295d-1013" type="selectionEntry" targetId="4d61-3776-e1a0-bae4" sortIndex="3">
+        <entryLink name="Granada Aturdidora" id="70da-aac8-295d-1013" hidden="false" import="true" sortIndex="3" targetId="4d61-3776-e1a0-bae4" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Granada de Humo" hidden="false" id="a472-2696-bcc5-1787" type="selectionEntry" targetId="6fa1-967a-f865-4661" sortIndex="4">
+        <entryLink name="Granada de Humo" id="a472-2696-bcc5-1787" hidden="false" import="true" sortIndex="4" targetId="6fa1-967a-f865-4661" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Armas de Combate Cercano" id="e0bb-9eeb-6ad5-2cae" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Armas de Combate Cercano" id="e0bb-9eeb-6ad5-2cae" collapsible="true" hidden="false">
+      <constraints>
+        <constraint id="8e78-7508-db05-7620" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
       <entryLinks>
-        <entryLink import="true" name="Desarmado" hidden="false" id="aede-1fb3-e920-b6d5" type="selectionEntry" targetId="f600-d53b-4e9a-ff4b" sortIndex="1">
+        <entryLink name="Desarmado" id="aede-1fb3-e920-b6d5" hidden="false" import="true" sortIndex="1" targetId="f600-d53b-4e9a-ff4b" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Puño Americano" hidden="false" id="0b3c-3e0e-dec6-25d3" type="selectionEntry" targetId="ff94-6612-c04e-d3bf" sortIndex="2">
+        <entryLink name="Puño Americano" id="0b3c-3e0e-dec6-25d3" hidden="false" import="true" sortIndex="2" targetId="ff94-6612-c04e-d3bf" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Arma Improvisada" hidden="false" id="fb7d-87a3-2380-a0e5" type="selectionEntry" targetId="6982-5ba6-100b-f413" sortIndex="3">
+        <entryLink name="Arma Improvisada" id="fb7d-87a3-2380-a0e5" hidden="false" import="true" sortIndex="3" targetId="6982-5ba6-100b-f413" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Bate de Beisbol" hidden="false" id="5743-97b0-474d-81e1" type="selectionEntry" targetId="1545-8316-be4e-e2b6" sortIndex="4">
+        <entryLink name="Bate de Beisbol" id="5743-97b0-474d-81e1" hidden="false" import="true" sortIndex="4" targetId="1545-8316-be4e-e2b6" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Hacha" hidden="false" id="2692-a195-961a-e5da" type="selectionEntry" targetId="c80f-112c-65f7-dd2e" sortIndex="7">
+        <entryLink name="Hacha" id="2692-a195-961a-e5da" hidden="false" import="true" sortIndex="7" targetId="c80f-112c-65f7-dd2e" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Cuchillo" hidden="false" id="8a6f-5286-bda4-5f7c" type="selectionEntry" targetId="2bd8-3024-019a-022b" sortIndex="5">
+        <entryLink name="Cuchillo" id="8a6f-5286-bda4-5f7c" hidden="false" import="true" sortIndex="5" targetId="2bd8-3024-019a-022b" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Espada" hidden="false" id="e05d-2b37-2096-532f" type="selectionEntry" targetId="4907-0ba9-90cf-fa23" sortIndex="6">
+        <entryLink name="Espada" id="e05d-2b37-2096-532f" hidden="false" import="true" sortIndex="6" targetId="4907-0ba9-90cf-fa23" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e78-7508-db05-7620" includeChildSelections="false"/>
-      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armas de Especialista" id="ce37-cb73-c814-2035" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Lanzallamas" hidden="false" id="e3a8-5587-ad96-d343" type="selectionEntry" targetId="b935-8989-2706-398f" sortIndex="1">
+        <entryLink name="Lanzallamas" id="e3a8-5587-ad96-d343" hidden="false" import="true" sortIndex="1" targetId="b935-8989-2706-398f" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="60"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Arma Antidrones" hidden="false" id="b8be-65a3-c0dc-f30a" type="selectionEntry" targetId="e24a-0e33-b59e-e77b" sortIndex="2">
+        <entryLink name="Arma Antidrones" id="b8be-65a3-c0dc-f30a" hidden="false" import="true" sortIndex="2" targetId="e24a-0e33-b59e-e77b" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Dron Antiblindaje" hidden="false" id="8fb0-c544-1f86-33ee" type="selectionEntry" targetId="9a2c-15b7-1ae5-b3b0" sortIndex="4">
+        <entryLink name="Dron Antiblindaje" id="8fb0-c544-1f86-33ee" hidden="false" import="true" sortIndex="4" targetId="9a2c-15b7-1ae5-b3b0" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Dron Antipersonas" hidden="false" id="9af9-85e3-0dad-a988" type="selectionEntry" targetId="e4b9-04d8-c70c-fc90" sortIndex="3">
+        <entryLink name="Dron Antipersonas" id="9af9-85e3-0dad-a988" hidden="false" import="true" sortIndex="3" targetId="e4b9-04d8-c70c-fc90" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lanzagranadas Multiple" hidden="false" id="c9d9-3b53-0531-a5ee" type="selectionEntry" targetId="2ad9-3704-47e5-f53d" sortIndex="5">
+        <entryLink name="Lanzagranadas Multiple" id="c9d9-3b53-0531-a5ee" hidden="false" import="true" sortIndex="5" targetId="2ad9-3704-47e5-f53d" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Cañón sin Retroceso" hidden="false" id="8971-22d1-5a30-6331" type="selectionEntry" targetId="65a4-8c6e-6604-b3e9" sortIndex="6">
+        <entryLink name="Cañón sin Retroceso" id="8971-22d1-5a30-6331" hidden="false" import="true" sortIndex="6" targetId="65a4-8c6e-6604-b3e9" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="40"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lanzador Antitanque sin Guiado" hidden="false" id="31df-7d96-1e71-6cbf" type="selectionEntry" targetId="ae7a-a9dc-750f-1e47" sortIndex="7">
+        <entryLink name="Lanzador Antitanque sin Guiado" id="31df-7d96-1e71-6cbf" hidden="false" import="true" sortIndex="7" targetId="ae7a-a9dc-750f-1e47" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="80"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora de Asalto" hidden="false" id="3252-ae1f-cb6c-0e6e" type="selectionEntry" targetId="4260-6e01-1676-3625" sortIndex="8">
+        <entryLink name="Ametralladora de Asalto" id="3252-ae1f-cb6c-0e6e" hidden="false" import="true" sortIndex="8" targetId="4260-6e01-1676-3625" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="45"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora Ligera Alimentada por Mochila" hidden="false" id="a30c-5c0c-53fb-0174" type="selectionEntry" targetId="0aa6-46d2-be1b-09f5" sortIndex="9">
+        <entryLink name="Ametralladora Ligera Alimentada por Mochila" id="a30c-5c0c-53fb-0174" hidden="false" import="true" sortIndex="9" targetId="0aa6-46d2-be1b-09f5" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="35"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Fusil Antimaterial" hidden="false" id="f3b2-2408-2633-12de" type="selectionEntry" targetId="0006-15fe-2246-b497" sortIndex="10">
+        <entryLink name="Fusil Antimaterial" id="f3b2-2408-2633-12de" hidden="false" import="true" sortIndex="10" targetId="0006-15fe-2246-b497" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="75"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Escopeta Automática" hidden="false" id="0f76-08d8-0a04-f67c" type="selectionEntry" targetId="063d-2533-e196-e923" sortIndex="11">
+        <entryLink name="Escopeta Automática" id="0f76-08d8-0a04-f67c" hidden="false" import="true" sortIndex="11" targetId="063d-2533-e196-e923" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="24"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Fusil de Combate Corto" hidden="false" id="fd71-e884-4b09-fc78" type="selectionEntry" targetId="f30f-7093-ddd7-d2e4" sortIndex="12">
+        <entryLink name="Fusil de Combate Corto" id="fd71-e884-4b09-fc78" hidden="false" import="true" sortIndex="12" targetId="f30f-7093-ddd7-d2e4" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
           </costs>
@@ -1180,140 +1201,140 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Emplazamientos de Armas" id="132e-efa5-3770-e0fe" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="SPG9 HEAT / SPG9 HE" hidden="false" id="990a-d675-5f37-8808" type="selectionEntry" targetId="bdf4-1d4c-5a7a-05d1" sortIndex="1">
+        <entryLink name="SPG9 HEAT / SPG9 HE" id="990a-d675-5f37-8808" hidden="false" import="true" sortIndex="1" targetId="bdf4-1d4c-5a7a-05d1" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="90"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lanzador Antitanque Ligero Guiado" hidden="false" id="5a19-03a1-b956-287c" type="selectionEntry" targetId="907a-e547-dac3-1794" sortIndex="3">
+        <entryLink name="Lanzador Antitanque Ligero Guiado" id="5a19-03a1-b956-287c" hidden="false" import="true" sortIndex="3" targetId="907a-e547-dac3-1794" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="120"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="M40 con Proyectil HEAT" hidden="false" id="2f5b-ef79-fbd7-d948" type="selectionEntry" targetId="5500-d9ea-dbd8-177b" sortIndex="2">
+        <entryLink name="M40 con Proyectil HEAT" id="2f5b-ef79-fbd7-d948" hidden="false" import="true" sortIndex="2" targetId="5500-d9ea-dbd8-177b" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="120"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Equipamiento Estándar" id="7019-0660-9d87-9794" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Equipamiento Estándar" id="7019-0660-9d87-9794" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Ganzúas" hidden="false" id="9109-eafc-f819-8bd1" type="selectionEntry" targetId="34d8-e5b2-6ca0-1469" sortIndex="3">
+        <entryLink name="Ganzúas" id="9109-eafc-f819-8bd1" hidden="false" import="true" sortIndex="3" targetId="34d8-e5b2-6ca0-1469" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="4"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Blindaje Corporal" hidden="false" id="4680-a715-d858-dba7" type="selectionEntry" targetId="3362-a69c-9050-dcd4" sortIndex="1">
+        <entryLink name="Blindaje Corporal" id="4680-a715-d858-dba7" hidden="false" import="true" sortIndex="1" targetId="3362-a69c-9050-dcd4" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Detonador de IED" hidden="false" id="e578-aa00-c1a9-d7ff" type="selectionEntry" targetId="cb03-cee4-ea46-cd03" sortIndex="2">
+        <entryLink name="Detonador de IED" id="e578-aa00-c1a9-d7ff" hidden="false" import="true" sortIndex="2" targetId="cb03-cee4-ea46-cd03" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="12"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Nárcoticos" hidden="false" id="e9f8-ca08-e9bf-9f4a" type="selectionEntryGroup" targetId="c60d-fefb-28f4-0122" sortIndex="4"/>
+        <entryLink name="Nárcoticos" id="e9f8-ca08-e9bf-9f4a" hidden="false" import="true" sortIndex="4" targetId="c60d-fefb-28f4-0122" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Equipamiento Especialista" id="c68e-9f56-f8ca-9b07" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Equipamiento Especialista" id="c68e-9f56-f8ca-9b07" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Comunicaciones de Observación Avanzada" hidden="false" id="e35e-e124-92a0-0362" type="selectionEntry" targetId="4183-ba1e-eb1c-09f9" sortIndex="7">
+        <entryLink name="Comunicaciones de Observación Avanzada" id="e35e-e124-92a0-0362" hidden="false" import="true" sortIndex="7" targetId="4183-ba1e-eb1c-09f9" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Designador Láser" hidden="false" id="0ad7-f30e-5c3e-1d93" type="selectionEntry" targetId="a5b6-b296-ca76-719f" sortIndex="8">
+        <entryLink name="Designador Láser" id="0ad7-f30e-5c3e-1d93" hidden="false" import="true" sortIndex="8" targetId="a5b6-b296-ca76-719f" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Visor de Observador" hidden="false" id="f7a2-11d8-c96f-5f9f" type="selectionEntry" targetId="5217-ec53-1996-5f8d" sortIndex="4">
+        <entryLink name="Visor de Observador" id="f7a2-11d8-c96f-5f9f" hidden="false" import="true" sortIndex="4" targetId="5217-ec53-1996-5f8d" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Perro Entrenado" hidden="false" id="9c04-f6f4-ab7f-1697" type="selectionEntry" targetId="7794-7527-c19d-448c" sortIndex="9">
+        <entryLink name="Perro Entrenado" id="9c04-f6f4-ab7f-1697" hidden="false" import="true" sortIndex="9" targetId="7794-7527-c19d-448c" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Escudo Completo" hidden="false" id="2f80-882d-eb4a-6c52" type="selectionEntry" targetId="d9fc-cc05-a596-028f" sortIndex="6">
+        <entryLink name="Escudo Completo" id="2f80-882d-eb4a-6c52" hidden="false" import="true" sortIndex="6" targetId="d9fc-cc05-a596-028f" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Medio Escudo" hidden="false" id="386d-2986-a893-6a79" type="selectionEntry" targetId="998f-bd89-7b7c-2070" sortIndex="5">
+        <entryLink name="Medio Escudo" id="386d-2986-a893-6a79" hidden="false" import="true" sortIndex="5" targetId="998f-bd89-7b7c-2070" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="12"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Blindaje Corporal Encubierto" hidden="false" id="61c1-bb35-6aaf-e77e" type="selectionEntry" targetId="4b8e-1de9-d9b8-80aa" sortIndex="1">
+        <entryLink name="Blindaje Corporal Encubierto" id="61c1-bb35-6aaf-e77e" hidden="false" import="true" sortIndex="1" targetId="4b8e-1de9-d9b8-80aa" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Silenciador" hidden="false" id="2dae-e0e4-2603-b5f7" type="selectionEntry" targetId="0286-c9db-88a9-0657" sortIndex="3">
+        <entryLink name="Silenciador" id="2dae-e0e4-2603-b5f7" hidden="false" import="true" sortIndex="3" targetId="0286-c9db-88a9-0657" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Chaleco Bomba" hidden="false" id="17c8-f0d9-4324-c577" type="selectionEntry" targetId="864d-9f08-ab70-dffc" sortIndex="2">
+        <entryLink name="Chaleco Bomba" id="17c8-f0d9-4324-c577" hidden="false" import="true" sortIndex="2" targetId="864d-9f08-ab70-dffc" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Explosivos de Brecha" hidden="false" id="2b3f-38dc-be58-7ee9" type="selectionEntry" targetId="103c-5948-71d2-6a2e" sortIndex="11">
+        <entryLink name="Explosivos de Brecha" id="2b3f-38dc-be58-7ee9" hidden="false" import="true" sortIndex="11" targetId="103c-5948-71d2-6a2e" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Herramientas de Brecha  Pesadas" hidden="false" id="e26e-af90-3a41-5d24" type="selectionEntry" targetId="55ad-80e2-999c-7df2" sortIndex="10">
+        <entryLink name="Herramientas de Brecha  Pesadas" id="e26e-af90-3a41-5d24" hidden="false" import="true" sortIndex="10" targetId="55ad-80e2-999c-7df2" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="8"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Herramientas de Brecha Electrónicas" hidden="false" id="3e13-06d8-de65-b98a" type="selectionEntry" targetId="b275-15bf-1a6a-5bb6" sortIndex="12">
+        <entryLink name="Herramientas de Brecha Electrónicas" id="3e13-06d8-de65-b98a" hidden="false" import="true" sortIndex="12" targetId="b275-15bf-1a6a-5bb6" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Respirador Uso Corto" hidden="false" id="0c69-fa48-534c-e1db" type="selectionEntry" targetId="bdad-1a83-592b-cadf" sortIndex="13">
+        <entryLink name="Respirador Uso Corto" id="0c69-fa48-534c-e1db" hidden="false" import="true" sortIndex="13" targetId="bdad-1a83-592b-cadf" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Respirador Uso Prolongado" hidden="false" id="90e6-c1b1-894f-42f1" type="selectionEntry" targetId="6b15-3fb8-5832-1b78" sortIndex="14">
+        <entryLink name="Respirador Uso Prolongado" id="90e6-c1b1-894f-42f1" hidden="false" import="true" sortIndex="14" targetId="6b15-3fb8-5832-1b78" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="18"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Traje Ghillie" hidden="false" id="a403-0493-59da-6f2b" type="selectionEntry" targetId="0032-9893-78ba-2be9" sortIndex="15">
+        <entryLink name="Traje Ghillie" id="a403-0493-59da-6f2b" hidden="false" import="true" sortIndex="15" targetId="0032-9893-78ba-2be9" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Traje NRBQ" hidden="false" id="6d59-4e60-36ce-3b40" type="selectionEntry" targetId="d39c-967c-7035-883e" sortIndex="16">
+        <entryLink name="Traje NRBQ" id="6d59-4e60-36ce-3b40" hidden="false" import="true" sortIndex="16" targetId="d39c-967c-7035-883e" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Equipamiento Mando" id="459b-bc80-d627-6dec" hidden="false" collapsible="true">
+    <selectionEntryGroup name="Equipamiento Mando" id="459b-bc80-d627-6dec" collapsible="true" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Comunicaciones de Larga Distancia" hidden="false" id="2f04-ea3b-d795-0588" type="selectionEntry" targetId="a1c3-df18-e636-830a" sortIndex="1">
+        <entryLink name="Comunicaciones de Larga Distancia" id="2f04-ea3b-d795-0588" hidden="false" import="true" sortIndex="1" targetId="a1c3-df18-e636-830a" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Comunicaciones de Fuerzas Combinadas" hidden="false" id="0120-4dfb-ed0f-03ae" type="selectionEntry" targetId="a722-b5a2-991d-3cb8" sortIndex="2">
+        <entryLink name="Comunicaciones de Fuerzas Combinadas" id="0120-4dfb-ed0f-03ae" hidden="false" import="true" sortIndex="2" targetId="a722-b5a2-991d-3cb8" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Comunicaciones de Observación Avanzada" hidden="false" id="f13f-caa8-20a8-a2a8" type="selectionEntry" targetId="4183-ba1e-eb1c-09f9" sortIndex="3">
+        <entryLink name="Comunicaciones de Observación Avanzada" id="f13f-caa8-20a8-a2a8" hidden="false" import="true" sortIndex="3" targetId="4183-ba1e-eb1c-09f9" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
           </costs>
@@ -1323,17 +1344,17 @@
     <selectionEntryGroup name="Armas Ligeras" id="b335-76c3-a7bb-eca0" hidden="false">
       <comment>Vehículos</comment>
       <entryLinks>
-        <entryLink import="true" name="Ametralladora Ligera " hidden="false" id="fb2e-b4e3-38b7-5b01" type="selectionEntry" targetId="b0d0-6eac-b352-8a55" sortIndex="1">
+        <entryLink name="Ametralladora Ligera " id="fb2e-b4e3-38b7-5b01" hidden="false" import="true" sortIndex="1" targetId="b0d0-6eac-b352-8a55" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora Media" hidden="false" id="7bb5-a020-403d-49a7" type="selectionEntry" targetId="698e-2892-f202-6122" sortIndex="2">
+        <entryLink name="Ametralladora Media" id="7bb5-a020-403d-49a7" hidden="false" import="true" sortIndex="2" targetId="698e-2892-f202-6122" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Ametralladora Pesada" hidden="false" id="b735-e9a5-b1a1-896f" type="selectionEntry" targetId="6913-fd31-fcca-c6c7" sortIndex="3">
+        <entryLink name="Ametralladora Pesada" id="b735-e9a5-b1a1-896f" hidden="false" import="true" sortIndex="3" targetId="6913-fd31-fcca-c6c7" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="20"/>
           </costs>
@@ -1343,32 +1364,32 @@
     <selectionEntryGroup name="Armas Medias" id="0eb2-c597-4dc7-6d32" hidden="false">
       <comment>Vehículos</comment>
       <entryLinks>
-        <entryLink import="true" name="ZPU 2" hidden="false" id="df66-9b91-5c35-cac1" type="selectionEntry" targetId="7f5c-9705-a839-e143" sortIndex="1">
+        <entryLink name="ZPU 2" id="df66-9b91-5c35-cac1" hidden="false" import="true" sortIndex="1" targetId="7f5c-9705-a839-e143" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="75"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="ZPU 4" hidden="false" id="0de9-3207-114b-ccde" type="selectionEntry" targetId="fe73-3e0b-b906-1208" sortIndex="2">
+        <entryLink name="ZPU 4" id="0de9-3207-114b-ccde" hidden="false" import="true" sortIndex="2" targetId="fe73-3e0b-b906-1208" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="90"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="ZSU 23" hidden="false" id="18db-519d-6425-df2f" type="selectionEntry" targetId="34fb-5c32-d85f-cfef" sortIndex="3">
+        <entryLink name="ZSU 23" id="18db-519d-6425-df2f" hidden="false" import="true" sortIndex="3" targetId="34fb-5c32-d85f-cfef" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="110"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Vaina de Cohetes" hidden="false" id="2a8c-f351-d2a7-56b5" type="selectionEntry" targetId="991e-20c7-1b74-f41b" sortIndex="5">
+        <entryLink name="Vaina de Cohetes" id="2a8c-f351-d2a7-56b5" hidden="false" import="true" sortIndex="5" targetId="991e-20c7-1b74-f41b" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="90"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Cañón Ligero" hidden="false" id="903c-a111-8c28-315f" type="selectionEntry" targetId="943c-9ca6-9d23-d306" sortIndex="4">
+        <entryLink name="Cañón Ligero" id="903c-a111-8c28-315f" hidden="false" import="true" sortIndex="4" targetId="943c-9ca6-9d23-d306" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="130"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Cañón Vulcan" hidden="false" id="aac3-2dea-ea92-6c49" type="selectionEntry" targetId="fc59-4f89-6dce-6e0f" sortIndex="6">
+        <entryLink name="Cañón Vulcan" id="aac3-2dea-ea92-6c49" hidden="false" import="true" sortIndex="6" targetId="fc59-4f89-6dce-6e0f" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="150"/>
           </costs>
@@ -1378,83 +1399,57 @@
     <selectionEntryGroup name="Armas Pesadas" id="1f8d-f131-6dc7-257a" hidden="false">
       <comment>Vehículos</comment>
       <entryLinks>
-        <entryLink import="true" name="SPG9 HEAT / SPG9 HE" hidden="false" id="fb40-519f-7ba7-f256" type="selectionEntry" targetId="bdf4-1d4c-5a7a-05d1" sortIndex="1">
+        <entryLink name="SPG9 HEAT / SPG9 HE" id="fb40-519f-7ba7-f256" hidden="false" import="true" sortIndex="1" targetId="bdf4-1d4c-5a7a-05d1" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="40"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="M40 con Proyectil HEAT" hidden="false" id="8b93-cff4-5f4a-611d" type="selectionEntry" targetId="5500-d9ea-dbd8-177b" sortIndex="2">
+        <entryLink name="M40 con Proyectil HEAT" id="8b93-cff4-5f4a-611d" hidden="false" import="true" sortIndex="2" targetId="5500-d9ea-dbd8-177b" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="75"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lanzador Antitanque Ligero Guiado" hidden="false" id="6ab9-e907-c0ce-00ca" type="selectionEntry" targetId="907a-e547-dac3-1794" sortIndex="3">
+        <entryLink name="Lanzador Antitanque Ligero Guiado" id="6ab9-e907-c0ce-00ca" hidden="false" import="true" sortIndex="3" targetId="907a-e547-dac3-1794" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="90"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="ZPU 1" hidden="false" id="ecf0-32cb-d4c0-be23" type="selectionEntry" targetId="6df7-abf1-c828-c77e" sortIndex="4">
+        <entryLink name="ZPU 1" id="ecf0-32cb-d4c0-be23" hidden="false" import="true" sortIndex="4" targetId="6df7-abf1-c828-c77e" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>
           </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Entrenamiento" id="f36a-4363-d8f0-2f52" hidden="false" defaultSelectionEntryId="1700-a0c7-239d-23a1">
+    <selectionEntryGroup name="Entrenamiento" id="f36a-4363-d8f0-2f52" defaultSelectionEntryId="1700-a0c7-239d-23a1" hidden="false">
+      <constraints>
+        <constraint id="8465-643c-62e9-00a4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="706d-7f99-7954-7473" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+      </constraints>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Civil" hidden="false" id="5798-6433-511b-6511" sortIndex="1">
+        <selectionEntry name="Civil" id="5798-6433-511b-6511" hidden="false" import="true" sortIndex="1" type="upgrade">
           <infoLinks>
-            <infoLink name="Civil" id="0772-eca1-c685-5382" hidden="false" type="profile" targetId="d2df-5d35-cf20-9324"/>
+            <infoLink name="Civil" id="0772-eca1-c685-5382" hidden="false" targetId="d2df-5d35-cf20-9324" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Criminal" hidden="false" id="e400-b23c-936b-c910" sortIndex="2">
+        <selectionEntry name="Criminal" id="e400-b23c-936b-c910" hidden="false" import="true" sortIndex="2" type="upgrade">
           <infoLinks>
-            <infoLink name="Criminal" id="9cfb-f46c-cd9c-033f" hidden="false" type="profile" targetId="3c83-9cde-8e46-659d"/>
+            <infoLink name="Criminal" id="9cfb-f46c-cd9c-033f" hidden="false" targetId="3c83-9cde-8e46-659d" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Recluta" hidden="false" id="ab1d-45ab-4209-d9e5" sortIndex="3">
+        <selectionEntry name="Recluta" id="ab1d-45ab-4209-d9e5" hidden="false" import="true" sortIndex="3" type="upgrade">
           <infoLinks>
-            <infoLink name="Recluta" id="5ae7-c58d-e1f3-6955" hidden="false" type="profile" targetId="aac1-39ef-dfed-abde"/>
+            <infoLink name="Recluta" id="5ae7-c58d-e1f3-6955" hidden="false" targetId="aac1-39ef-dfed-abde" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Milicia" hidden="false" id="1700-a0c7-239d-23a1" sortIndex="4">
+        <selectionEntry name="Milicia" id="1700-a0c7-239d-23a1" hidden="false" import="true" sortIndex="4" type="upgrade">
           <infoLinks>
-            <infoLink name="Milicia" id="0692-eb91-7c7d-bb16" hidden="false" type="profile" targetId="309c-9800-d8c1-1acd"/>
+            <infoLink name="Milicia" id="0692-eb91-7c7d-bb16" hidden="false" targetId="309c-9800-d8c1-1acd" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8465-643c-62e9-00a4" includeChildSelections="false"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="706d-7f99-7954-7473" includeChildSelections="false"/>
-      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Armamento" id="224b-7576-f907-42d9" hidden="false"/>
     <selectionEntryGroup name="Equipamiento" id="05f4-e791-1abb-ce09" hidden="false"/>
   </sharedSelectionEntryGroups>
-  <categoryEntries>
-    <categoryEntry name="Unidades de las Milicias" id="41dc-643d-2b8b-8d0d" hidden="false"/>
-    <categoryEntry name="Vehículos de las Milicias" id="4241-4665-124b-4cfa" hidden="false"/>
-    <categoryEntry name="Escaladas de las Milicias" id="b1f9-4ca1-8e10-ae0d" hidden="false"/>
-  </categoryEntries>
-  <forceEntries>
-    <forceEntry name="Force" id="9a7c-ca12-555d-ab08" hidden="false">
-      <categoryLinks>
-        <categoryLink name="Unidades de las Milicias" hidden="false" id="484b-b0ca-8f8f-764e" targetId="41dc-643d-2b8b-8d0d"/>
-        <categoryLink name="Vehículos de las Milicias" hidden="false" id="ab06-a360-db5f-79e4" targetId="4241-4665-124b-4cfa"/>
-        <categoryLink name="Escaladas de las Milicias" hidden="false" id="27d2-10e3-8fbb-51e3" targetId="b1f9-4ca1-8e10-ae0d"/>
-      </categoryLinks>
-    </forceEntry>
-  </forceEntries>
-  <catalogueLinks>
-    <catalogueLink type="catalogue" name="Armas" id="eb46-85bd-df4b-c54a" targetId="0daa-b4f2-7333-2915"/>
-    <catalogueLink type="catalogue" name="Vehiculos" id="ac15-ca3c-d2fc-d935" targetId="5c5c-7f1e-984f-2f90"/>
-  </catalogueLinks>
-  <sharedSelectionEntries>
-    <selectionEntry type="model" import="true" name="Combatiente" hidden="false" id="d3f0-0d7a-5c3f-4b2b"/>
-    <selectionEntry type="upgrade" import="true" name="Sargento" hidden="false" id="c327-cba4-d686-30b2">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="9329-7a48-6228-e458" includeChildSelections="true" message="Máximo 1 Sargento por Unidad"/>
-      </constraints>
-    </selectionEntry>
-  </sharedSelectionEntries>
 </catalogue>

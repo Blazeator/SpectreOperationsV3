@@ -4,14 +4,10 @@
     <catalogueLink name="Armas" id="16cf-1d9a-4ea5-5e13" targetId="0daa-b4f2-7333-2915" type="catalogue"/>
     <catalogueLink name="Vehiculos" id="6176-c856-eeab-7ee4" targetId="5c5c-7f1e-984f-2f90" type="catalogue"/>
   </catalogueLinks>
-  <categoryEntries>
-    <categoryEntry name="Unidades Orden Público" id="802d-0547-2e9f-83c3" hidden="false"/>
-    <categoryEntry name="Vehículos Orden Público" id="ec47-760f-7389-9261" hidden="false"/>
-  </categoryEntries>
   <entryLinks>
     <entryLink name="Lenco Bearcat" id="f831-da81-0187-1118" hidden="false" import="true" targetId="372d-a9f0-c5ed-497d" type="selectionEntry">
       <categoryLinks>
-        <categoryLink name="Vehículos Orden Público" id="34d5-3e1d-06ab-c548" primary="true" targetId="ec47-760f-7389-9261"/>
+        <categoryLink name="Vehículos" id="f531-aa3a-a446-d84c" hidden="false" primary="true" targetId="a5bc-a829-cccd-2f38"/>
       </categoryLinks>
       <costs>
         <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="150"/>
@@ -21,15 +17,15 @@
   <forceEntries>
     <forceEntry name="Force" id="50e0-8e4c-e7ed-13b3" hidden="false">
       <categoryLinks>
-        <categoryLink name="Unidades Orden Público" id="38da-74ff-125e-f447" hidden="false" targetId="802d-0547-2e9f-83c3"/>
-        <categoryLink name="Vehículos Orden Público" id="103a-9b46-5f46-fcdc" hidden="false" targetId="ec47-760f-7389-9261"/>
+        <categoryLink name="Unidades" id="38da-74ff-125e-f447" hidden="false" targetId="946c-0f3e-f2dc-ac84"/>
+        <categoryLink name="Vehículos" id="103a-9b46-5f46-fcdc" hidden="false" targetId="a5bc-a829-cccd-2f38"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry name="Equipo SWAT" id="3c18-5ecd-7886-5368" hidden="false" import="true" subType="unit-group" type="unit">
       <categoryLinks>
-        <categoryLink name="Unidades Orden Público" id="7c2f-a64d-08b0-b126" primary="true" targetId="802d-0547-2e9f-83c3"/>
+        <categoryLink name="Unidades" id="1b80-c857-c5e3-0f8c" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <entryLinks>
         <entryLink name="Entrenamiento" id="af08-2070-48e3-0f6a" hidden="false" import="true" sortIndex="1" targetId="89a7-ffcf-7b07-7d20" type="selectionEntryGroup"/>
@@ -145,7 +141,7 @@
     </selectionEntry>
     <selectionEntry name="Patrulla de Policía" id="d34f-e778-1ef5-9195" hidden="false" import="true" subType="unit-group" type="unit">
       <categoryLinks>
-        <categoryLink name="Unidades Orden Público" id="eed2-78e3-6145-ec27" primary="true" targetId="802d-0547-2e9f-83c3"/>
+        <categoryLink name="Unidades" id="c5f5-a975-b808-2bac" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <costs>
         <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="40"/>
@@ -210,7 +206,7 @@
     </selectionEntry>
     <selectionEntry name="Vehículo Patrulla" id="b760-1117-d20a-2c1b" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Vehículos Orden Público" id="8b46-fa3f-0c6d-7d3c" primary="true" targetId="ec47-760f-7389-9261"/>
+        <categoryLink name="Vehículos" id="a341-419f-f157-1238" hidden="false" primary="true" targetId="a5bc-a829-cccd-2f38"/>
       </categoryLinks>
       <costs>
         <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="50"/>

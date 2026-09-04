@@ -4,22 +4,18 @@
     <catalogueLink name="Armas" id="a8a4-8beb-23e3-e22b" targetId="0daa-b4f2-7333-2915" type="catalogue"/>
     <catalogueLink name="Vehiculos" id="c51d-247c-74b1-98d7" targetId="5c5c-7f1e-984f-2f90" type="catalogue"/>
   </catalogueLinks>
-  <categoryEntries>
-    <categoryEntry name="Unidades Criminales" id="1460-30a9-4632-9e12" hidden="false"/>
-    <categoryEntry name="Vehículos Criminales" id="4077-a6dd-eec7-66d5" hidden="false"/>
-  </categoryEntries>
   <forceEntries>
     <forceEntry name="Crimen Organizado" id="26f6-c556-04f3-af69" hidden="false">
       <categoryLinks>
-        <categoryLink name="Unidades Criminales" id="9475-4030-3846-0e5e" hidden="false" targetId="1460-30a9-4632-9e12"/>
-        <categoryLink name="Vehículos Criminales" id="09a9-a026-4efb-d701" hidden="false" targetId="4077-a6dd-eec7-66d5"/>
+        <categoryLink name="Unidades" id="9475-4030-3846-0e5e" hidden="false" targetId="946c-0f3e-f2dc-ac84"/>
+        <categoryLink name="Vehículos" id="09a9-a026-4efb-d701" hidden="false" targetId="a5bc-a829-cccd-2f38"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry name="Capo del Crimen" id="9cd5-8f43-72a2-5507" hidden="false" import="true" subType="unit-group" type="unit">
       <categoryLinks>
-        <categoryLink name="Unidades Criminales" id="3aa4-b967-eec3-cca4" hidden="false" primary="true" targetId="1460-30a9-4632-9e12"/>
+        <categoryLink name="Unidades" id="2cb5-af92-dc23-559d" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <entryLinks>
         <entryLink name="Jefazo" id="6b3c-50e8-abb0-d86c" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="b2cf-885b-c8bd-840b" type="selectionEntry">
@@ -237,7 +233,7 @@
     </selectionEntry>
     <selectionEntry name="Banda Criminal" id="c80a-a7ab-9e37-b704" hidden="false" import="true" subType="unit-group" type="unit">
       <categoryLinks>
-        <categoryLink name="Unidades Criminales" id="a84d-9719-c2c9-48d8" hidden="false" primary="true" targetId="1460-30a9-4632-9e12"/>
+        <categoryLink name="Unidades" id="620b-f015-9588-964f" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <entryLinks>
         <entryLink name="Combatiente" id="a500-f4cc-ba19-6475" defaultAmount="2" hidden="false" import="true" targetId="ad26-5cff-0927-a9fe" type="selectionEntry">
@@ -396,7 +392,7 @@
     </selectionEntry>
     <selectionEntry name="Unidad de Crimen Organizado" id="5cce-2b6b-d1ad-f986" hidden="false" import="true" subType="unit-group" type="unit">
       <categoryLinks>
-        <categoryLink name="Unidades Criminales" id="b8df-bbbc-4d63-3067" hidden="false" primary="true" targetId="1460-30a9-4632-9e12"/>
+        <categoryLink name="Unidades" id="4195-4c1b-074a-33ad" hidden="false" primary="true" targetId="946c-0f3e-f2dc-ac84"/>
       </categoryLinks>
       <entryLinks>
         <entryLink name="Combatiente" id="2fe8-7182-1cb6-2586" defaultAmount="2" hidden="false" import="true" targetId="ad26-5cff-0927-a9fe" type="selectionEntry">
@@ -628,7 +624,7 @@
     </selectionEntry>
     <selectionEntry name="Vehículo Civil" id="dd8f-7dc0-9649-c30d" hidden="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink name="Vehículos Criminales" id="2551-7308-99bc-362a" hidden="false" primary="true" targetId="4077-a6dd-eec7-66d5"/>
+        <categoryLink name="Vehículos" id="1aa5-5ac6-9796-bbbd" hidden="false" primary="true" targetId="a5bc-a829-cccd-2f38"/>
       </categoryLinks>
       <costs>
         <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="30"/>
