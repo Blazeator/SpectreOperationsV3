@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue name="New Catalogue" id="d700-0451-a992-2120" battleScribeVersion="2.03" gameSystemId="sys-c514-e280-17d7-17af" gameSystemRevision="1" library="false" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry name="New Force" id="6f15-78af-b6ea-e4b5" hidden="false"/>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry name="New Entry" id="5410-bede-aaa2-0a52" hidden="false" import="true" type="upgrade"/>
+    <selectionEntry name="New Entry" id="5686-281b-4a98-91e7" hidden="false" import="true" type="upgrade"/>
+  </selectionEntries>
+</catalogue>
