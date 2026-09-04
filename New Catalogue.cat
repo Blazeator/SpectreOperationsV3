@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue name="New Catalogue" id="d700-0451-a992-2120" battleScribeVersion="2.03" gameSystemId="sys-c514-e280-17d7-17af" gameSystemRevision="1" library="false" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink name="Armas" id="bb10-3700-10a1-df0c" targetId="0daa-b4f2-7333-2915" type="catalogue"/>
+    <catalogueLink name="Vehiculos" id="f18c-ac6c-778b-d0b3" targetId="5c5c-7f1e-984f-2f90" type="catalogue"/>
+  </catalogueLinks>
   <forceEntries>
     <forceEntry name="New Force" id="6f15-78af-b6ea-e4b5" hidden="false"/>
   </forceEntries>
