@@ -12,6 +12,7 @@
         <categoryLink name="Escaladas" id="9bef-9880-f197-3424" hidden="false" targetId="a941-773c-c46f-39b0"/>
       </categoryLinks>
     </forceEntry>
+    <forceEntry name="New Force" id="ff5f-6aa9-2abd-6bb8" hidden="false"/>
   </forceEntries>
   <selectionEntries>
     <selectionEntry name="Unidad de Mando" id="553e-4a91-83c2-78e8" hidden="false" import="true" subType="unit-group" type="unit">
@@ -1132,6 +1133,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry name="New Entry" id="9e0b-7383-5fd4-8a7a" hidden="false" import="true" type="upgrade"/>
   </selectionEntries>
   <sharedRules>
     <rule name="Transporte 0" id="2fad-2aff-1c03-8f1d" hidden="false">
