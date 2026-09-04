@@ -11,6 +11,9 @@
         <categoryLink name="Vehículos" id="0868-5d41-a52e-7f29" hidden="false" targetId="a5bc-a829-cccd-2f38"/>
         <categoryLink name="Escaladas" id="9bef-9880-f197-3424" hidden="false" targetId="a941-773c-c46f-39b0"/>
       </categoryLinks>
+      <costs>
+        <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="0"/>
+      </costs>
     </forceEntry>
   </forceEntries>
   <selectionEntries>

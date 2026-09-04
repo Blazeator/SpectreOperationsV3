@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Spectre Operations V3" id="sys-c514-e280-17d7-17af" battleScribeVersion="2.03" revision="1" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Spectre Operations V3" id="sys-c514-e280-17d7-17af" battleScribeVersion="2.03" revision="2" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Unidades" id="946c-0f3e-f2dc-ac84" hidden="false"/>
     <categoryEntry name="Escaladas" id="a941-773c-c46f-39b0" hidden="false"/>
