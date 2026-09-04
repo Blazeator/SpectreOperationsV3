@@ -297,7 +297,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </entryLink>
-            <entryLink name="Equipamiento" id="6039-e4c3-0eca-de87" hidden="false" import="true" targetId="43fb-a3f9-7235-e1de" type="selectionEntryGroup">
+            <entryLink name="Equipamiento" id="6039-e4c3-0eca-de87" hidden="false" import="true" sortIndex="3" targetId="43fb-a3f9-7235-e1de" type="selectionEntryGroup">
               <entryLinks>
                 <entryLink name="Equipamiento Estándar" id="0a61-bb9a-33b9-c057" hidden="false" import="true" sortIndex="1" targetId="7f6f-a561-40a4-0155" type="selectionEntryGroup"/>
                 <entryLink name="Equipamiento Tier 1 y 2" id="844d-75fe-3c72-e4b0" hidden="false" import="true" sortIndex="3" targetId="46f0-a008-d871-ecae" type="selectionEntryGroup">
@@ -1204,7 +1204,7 @@
   <sharedSelectionEntries>
     <selectionEntry name="Combatiente" id="c66b-3fe8-4e62-2100" hidden="false" import="true" type="model"/>
     <selectionEntry name="Comandante" id="a95f-af20-00ff-de36" hidden="false" import="true" type="model"/>
-    <selectionEntry name="Sargento" id="9a33-8f03-c017-cfd1" hidden="false" import="true" type="model">
+    <selectionEntry name="Sargento" id="9a33-8f03-c017-cfd1" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="5ae9-f2db-405f-50a7" field="selections" includeChildSelections="true" scope="root-entry" shared="true" type="max" value="1"/>
       </constraints>
