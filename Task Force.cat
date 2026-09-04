@@ -842,13 +842,13 @@
             <constraint id="1f6d-98de-87ba-2d8f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bombardeo de Mortero Ligero" id="d256-a134-b324-e336" hidden="false" import="true" targetId="9989-65b7-4f40-5bbc" type="selectionEntry">
+            <entryLink name="Bombardeo de Mortero Ligero" id="d256-a134-b324-e336" hidden="false" import="true" sortIndex="1" targetId="9989-65b7-4f40-5bbc" type="selectionEntry">
               <constraints>
                 <constraint id="b2ea-da19-813b-9983" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="1ad9-75aa-b16d-0f36" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Bombardeo de Mortero Pesado" id="8d04-efbc-a011-8554" hidden="false" import="true" targetId="a34b-2c4b-8fa0-b6b0" type="selectionEntry">
+            <entryLink name="Bombardeo de Mortero Pesado" id="8d04-efbc-a011-8554" hidden="false" import="true" sortIndex="2" targetId="a34b-2c4b-8fa0-b6b0" type="selectionEntry">
               <constraints>
                 <constraint id="aa1e-b1de-b439-54c9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="cb35-82c4-1388-f5e4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -903,232 +903,292 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name="Nivel 2 - Amenazas Cinéticas Ligeras" id="7d94-3460-bd3d-764e" hidden="false" import="true" sortIndex="2" type="upgrade">
+        <selectionEntry name="Nivel 2 - Apoyo de Fuego Directo" id="7d94-3460-bd3d-764e" hidden="false" import="true" sortIndex="2" type="upgrade">
           <constraints>
             <constraint id="6204-0b17-26e1-1dd7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="2d23-9944-4d65-cbc1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Francotirador Medio" id="f1cf-e523-c0d1-b1b4" hidden="false" import="true" targetId="ee1a-7ee0-7020-169b" type="selectionEntry">
+            <entryLink name="Cañón de Cadena Medio" id="f1cf-e523-c0d1-b1b4" hidden="false" import="true" sortIndex="2" targetId="a9fa-2060-8146-ffcc" type="selectionEntry">
               <constraints>
                 <constraint id="1c1e-0e77-d7c0-96db" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="7b50-e52b-d743-8bd3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cócktel Molotov" id="d7bc-e780-3714-22ce" hidden="false" import="true" targetId="743a-a572-0346-7b3d" type="selectionEntry">
+            <entryLink name="Ataque de Artillería de Cohetes" id="d7bc-e780-3714-22ce" hidden="false" import="true" sortIndex="5" targetId="948d-82a7-064e-199c" type="selectionEntry">
               <constraints>
                 <constraint id="f673-eebc-f311-8863" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="644f-49aa-ec2d-14b3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
+            <entryLink name="Ametralladora Rotativa Pesada" id="0bbb-baf9-3059-eded" hidden="false" import="true" sortIndex="3" targetId="5f24-e2f3-f6ab-1eec" type="selectionEntry">
+              <constraints>
+                <constraint id="0c94-e958-bf6e-bd76" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="b219-c872-4ba2-8bc3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Ametralladora Rotativa" id="7166-e0a8-c14e-fe83" hidden="false" import="true" sortIndex="1" targetId="ef99-a832-5135-e797" type="selectionEntry">
+              <constraints>
+                <constraint id="4178-1911-a74e-3bea" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="1fa8-dec1-54b3-8913" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Misil Aire-Tierra Antiblindaje" id="ff03-7bdd-f103-3987" hidden="false" import="true" sortIndex="6" targetId="ae69-658c-0628-9402" type="selectionEntry">
+              <constraints>
+                <constraint id="b855-124e-d8d9-a986" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="ee5f-ded6-37a8-6388" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Misil Aire-Tierra Antipersona" id="3e89-100b-d4ab-8a45" hidden="false" import="true" sortIndex="7" targetId="15db-abae-fa8c-96ca" type="selectionEntry">
+              <constraints>
+                <constraint id="dafb-633a-ba64-30de" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="5192-b975-817f-397f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Ataque de Artillería" id="d67a-679a-627a-391d" hidden="false" import="true" sortIndex="4" targetId="a530-ee93-7e18-93b6" type="selectionEntry">
+              <constraints>
+                <constraint id="d63e-cc7b-0185-9165" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="54d5-03d0-306c-5c30" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Ataque de Artillería Guiada" id="df18-dcdd-5163-6f4c" hidden="false" import="true" sortIndex="5" targetId="f9ae-8599-6c93-e2bb" type="selectionEntry">
+              <constraints>
+                <constraint id="2a3b-d5c0-2060-ace6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="c5b1-9841-7c31-3a80" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <profiles>
-            <profile name="Nivel 2 - Fuego de apoyo de Vehículo Técnico" id="0750-96d2-29ed-c96f" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 2 - Fuerza de Reacción Rápida (QRF)" id="0750-96d2-29ed-c96f" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Se incorpora al combate un Vahículo Técnico con HMG o SPG-9</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Debe aparecer en una carretera, un callejón o un garaje. Aplica Reglas de Refuerzos.</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Llegan rápidamente refuerzos (&lt;800r). Deben desplegarse en una carretera o en la LZ</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Aplica Reglas de Refuerzos p27</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 2 - Salva de Molotóvs" id="cc99-08e0-02c8-7e49" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 2 - Aeronave Contrainsurgencia (Misiles)" id="cc99-08e0-02c8-7e49" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Varios combatientes lanzan una andanada de Cockteles Molotóvs</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Arma Cocktel Molotov</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Equipado con misiles Anti-blindaje o Anti-persona</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Misil Aire-Tierra</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 2 - Trampa de Francotirador" id="b972-fbf4-179c-cce2" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 2 - Ataque de Artillería (Cohetes Guiados)" id="b972-fbf4-179c-cce2" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Un Tirador escondido ataca.</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Usa el perfil de Francotirador Medio en Alcance Extremo.</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Requiere Designador Laser</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Artillería de Cohetes Guiada</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 2 - Aeronave Contrainsurgencia (Cañón de Cadena)" id="dcf9-1529-1ea3-b649" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Cañón de Cadena Medio (Letalidad 7, Penetración 2) o Ametralladora Rotativa Pesada (Letalidad 6, Penetración 1)</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Arma de Cadena o Rotativa Pesada</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 2 - Aeronave Contrainsurgencia (Minigun)" id="72a1-7014-74db-b88b" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Aeronave de ala fija despliega una salga de ametralladora</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Arma Ametralladora Rotativa</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 2 - Ataque de Artillería" id="0aaf-6065-f5ab-c557" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Obuses de 105 mm</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Artillería</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 2 - Ataque de Artillería (Obuses Guiados)" id="0f7d-285b-ea69-6d7f" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Requiere Designador Laser</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Artillería Guiada</characteristic>
               </characteristics>
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name="Nivel 3 - Daños en Área" id="8769-74a2-288e-9658" hidden="false" import="true" sortIndex="3" type="upgrade">
+        <selectionEntry name="Nivel 3 - Combates Estratégicos" id="8769-74a2-288e-9658" hidden="false" import="true" sortIndex="3" type="upgrade">
           <constraints>
             <constraint id="25fb-dc3c-4b31-2ee6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="1bac-02a1-bb5c-02da" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Coche Bomba" id="0a30-e19e-2a45-e7c7" hidden="false" import="true" targetId="bd05-32bf-34f7-5e2d" type="selectionEntry">
+            <entryLink name="Bomba Guiada" id="0a30-e19e-2a45-e7c7" hidden="false" import="true" sortIndex="2" targetId="8358-2676-368a-4448" type="selectionEntry">
               <constraints>
                 <constraint id="6ad9-88eb-7397-9c7d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="1dac-553e-1b10-e33f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
+            <entryLink name="GAU-8" id="44d3-87ae-5cfc-7e4e" hidden="false" import="true" sortIndex="7" targetId="3144-1712-5799-345d" type="selectionEntry">
+              <constraints>
+                <constraint id="23a6-f24c-0d6a-4aff" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="4f1c-93b0-19f9-505c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bomba sin Guía" id="c029-0d43-09c8-48f1" hidden="false" import="true" sortIndex="1" targetId="b11d-653a-80af-8355" type="selectionEntry">
+              <constraints>
+                <constraint id="380d-dfde-a647-c12f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="93cf-6835-9cd8-8a3a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Municiones de Racimo" id="04a3-829f-e243-e710" hidden="false" import="true" sortIndex="3" targetId="9c78-b11b-e7ce-b942" type="selectionEntry">
+              <constraints>
+                <constraint id="be29-fe27-b95a-1091" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="c2fe-b854-6a2f-1fc1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Vaina de Cohetes" id="22f0-6273-15d9-8b87" hidden="false" import="true" sortIndex="5" targetId="991e-20c7-1b74-f41b" type="selectionEntry">
+              <constraints>
+                <constraint id="3a20-0340-1ae6-aa16" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="6f51-44dc-369a-12f8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Cañón de Cadena Medio" id="d754-d0d6-3bf3-79de" hidden="false" import="true" sortIndex="6" targetId="a9fa-2060-8146-ffcc" type="selectionEntry">
+              <constraints>
+                <constraint id="efcc-4266-591f-34ee" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="cb51-e0d8-f73b-9f8e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Municiones Incendiarias" id="1c80-5d33-0c43-4b34" hidden="false" import="true" sortIndex="4" targetId="0b0e-38a2-180b-7692" type="selectionEntry">
+              <constraints>
+                <constraint id="f260-37d6-a6bc-6c19" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="60d1-3d30-5dcc-8c3b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Misil Aire-Tierra Antiblindaje" id="617a-6e85-83df-efb6" hidden="false" import="true" sortIndex="8" targetId="ae69-658c-0628-9402" type="selectionEntry">
+              <constraints>
+                <constraint id="e1b6-1534-6388-08f0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8b36-e821-4b0b-06c1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Misil Aire-Tierra Antipersona" id="499b-bd2f-3a60-affa" hidden="false" import="true" sortIndex="9" targetId="15db-abae-fa8c-96ca" type="selectionEntry">
+              <constraints>
+                <constraint id="55d5-0b0b-6a8b-79be" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="2a69-2418-a913-94c6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Persistente" id="3078-261f-0397-31c1" hidden="false" targetId="1e55-e06a-2e8f-34f6" type="rule"/>
+          </infoLinks>
           <profiles>
-            <profile name="Nivel 3 - Ataque de Mortero" id="1340-95b1-78f2-12e1" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 3 - Helicóptero Cañonera (Misiles)" id="1340-95b1-78f2-12e1" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Fuego desde posiciones alejadas</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Mortero Ligero</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Reemplaza Vaina de Cohetes por Misiles Anti-Persona/Blindaje</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Misil Aire-Tierra</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 3 - Coche Bomba" id="86c7-fe20-44d8-b3c3" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 3 - Ataque Aéreo (Municiones Incendiarias)" id="b83c-170c-18a4-c275" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Un suicida detona un Coche Bomba</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Coche Bomba</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">
+</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Municiones Incendiarias</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 3 - Ataque Aéreo (Guiado)" id="3423-9201-f12c-51d4" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Requiere Designador Laser</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Bomba Guiada</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 3 - Ataque Aéreo (Municiones de Racimo)" id="98ef-ca81-80ae-e560" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">
+</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Municiones de Racimo</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 3 - Ataque Aéreo (No guiado)" id="b859-16df-a0bd-5d33" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Aeronave convencional con municiones no guiadas</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Bomba sin guía</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 3 - Dron ISTAR Avanzado" id="c557-c86d-65d2-9088" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Todos los aliados ganan +2 a Percepción y +4 a Detección Este Turno</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Persistente</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 3 - Helicóptero Cañonera" id="b048-ad3d-e4ba-6d3a" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Aeronave de ala rotativa con Cañón de Cadena y Cohetes</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Cañón de Cadena y Vaina de Cohetes</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Nivel 3 - Pasada de A-10 (GAU-8)" id="bb8a-950f-8f8b-2d35" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+              <characteristics>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">BRRRRRRRT</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de GAU-8</characteristic>
               </characteristics>
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name="Nivel 4 - Caos en Masa" id="f22f-6511-ef3f-4902" hidden="false" import="true" sortIndex="4" type="upgrade">
+        <selectionEntry name="Nivel 4 - Apoyo Sostenido" id="f22f-6511-ef3f-4902" hidden="false" import="true" sortIndex="4" type="upgrade">
           <constraints>
             <constraint id="a919-2933-1ed9-e5a2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="ee5a-55c5-72c7-6236" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Vaina de Cohetes" id="21c6-2c95-4f84-af7d" hidden="false" import="true" targetId="991e-20c7-1b74-f41b" type="selectionEntry">
+            <entryLink name="Misil Aire-Tierra Antipersona" id="21c6-2c95-4f84-af7d" hidden="false" import="true" sortIndex="4" targetId="15db-abae-fa8c-96ca" type="selectionEntry">
               <constraints>
                 <constraint id="3c72-c584-b2b1-86b6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="5e0a-8ff9-7a73-da52" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Bombardeo de Mortero Pesado" id="f4fd-81b2-5d18-caf7" hidden="false" import="true" targetId="a34b-2c4b-8fa0-b6b0" type="selectionEntry">
+            <entryLink name="Ataque de Artillería Guiada" id="f4fd-81b2-5d18-caf7" hidden="false" import="true" sortIndex="1" targetId="f9ae-8599-6c93-e2bb" type="selectionEntry">
               <constraints>
                 <constraint id="296a-48a6-afe9-9bcc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="b0bb-8f43-e0c3-8787" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-          </entryLinks>
-          <profiles>
-            <profile name="Nivel 4 - Andanada de Cohetes" id="75e4-7090-395d-9f87" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Una lluvia de Cohetes Caseros</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Vaina de Cohetes</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Nivel 4 - Ataque de Mortero Pesado" id="2213-ffd8-2fd4-cd48" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Fuego de gran calibre desde posiciones alejadas</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Mortero Pesado</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Nivel 4 - Refuerzos: Muchedumbre" id="5c90-05d9-296a-526f" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Despliega 2-3 Unidades de Milicianos desde la reserva</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Deben aparecer en una carretera, un callejón o un garaje. Aplica Reglas de Refuerzos.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Nivel 5 - Escalada del Conflicto" id="7e90-f68d-7e99-3ecc" hidden="false" import="true" sortIndex="5" type="upgrade">
-          <constraints>
-            <constraint id="cda7-fc5a-c88b-7adc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="d861-09cc-5762-fe0e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Ataque de Artillería" id="d4eb-830d-54e1-a9f8" hidden="false" import="true" targetId="a530-ee93-7e18-93b6" type="selectionEntry">
+            <entryLink name="Misil Aire-Tierra Antiblindaje" id="23ed-eecc-3ca9-db61" hidden="false" import="true" sortIndex="3" targetId="ae69-658c-0628-9402" type="selectionEntry">
               <constraints>
-                <constraint id="dafb-8a38-e64c-bb1c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="a185-e3fe-b200-a04f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="b62d-4145-e5a8-c3e3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="9693-0bfe-89d2-8525" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Bomba sin Guía" id="e796-b9ed-4814-aee1" hidden="false" import="true" targetId="b11d-653a-80af-8355" type="selectionEntry">
+            <entryLink name="Cañón de Cadena Pesado" id="d6d0-a96d-2213-4926" hidden="false" import="true" sortIndex="2" targetId="a3b7-124e-e90b-f8fb" type="selectionEntry">
               <constraints>
-                <constraint id="8212-b55e-2dcf-382f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="8ea7-1acd-e825-2a30" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="476d-4e3c-9ae1-7a45" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="1553-221e-b562-89fa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Ataque de Artillería de Cohetes" id="6c16-108a-1f3e-31a1" hidden="false" import="true" targetId="948d-82a7-064e-199c" type="selectionEntry">
+            <entryLink name="Munición Merodeadora Antiblindaje" id="854d-ff36-83ac-7fa4" hidden="false" import="true" sortIndex="5" targetId="9dd4-48df-6eb3-e9a6" type="selectionEntry">
               <constraints>
-                <constraint id="7cc6-c048-9d3e-ea94" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="ca83-b47f-07a2-48a4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="af52-b732-1451-92dc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="0087-284e-9e93-6227" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Municiones Incendiarias" id="d08a-2067-3e22-ff95" hidden="false" import="true" targetId="0b0e-38a2-180b-7692" type="selectionEntry">
+            <entryLink name="Munición Merodeadora Antipersona" id="166c-5f25-9e61-8ca9" hidden="false" import="true" sortIndex="6" targetId="a5e0-914b-bb22-31e0" type="selectionEntry">
               <constraints>
-                <constraint id="cce0-6696-791f-96ec" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="3204-a73f-e52b-e962" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Cañón de Cadena Pesado" id="a2cf-1c0d-2a42-af85" hidden="false" import="true" targetId="a3b7-124e-e90b-f8fb" type="selectionEntry">
-              <constraints>
-                <constraint id="28e7-c0c0-ef2c-8f4d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="c44c-69c3-3e79-e05f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Cañón de Cadena Medio" id="4802-4f30-87ac-2313" hidden="false" import="true" targetId="a9fa-2060-8146-ffcc" type="selectionEntry">
-              <constraints>
-                <constraint id="68e9-c849-771e-cdbc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="5621-f589-ab94-8857" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="40ba-51a5-9fb7-7761" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8bae-e3b8-2da9-5da5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
+          <infoLinks>
+            <infoLink name="Persistente" id="41a8-107d-fc28-921e" hidden="false" targetId="1e55-e06a-2e8f-34f6" type="rule"/>
+          </infoLinks>
           <profiles>
-            <profile name="Nivel 5 - Intento de Asesinato" id="43c9-1ad2-5aed-bf65" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 4 - Cañonera Spooky" id="75e4-7090-395d-9f87" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Un Tirador de la Milicia intenta asesinar al Comandante enemigo.</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Francotirador Medio a Alcance Extremo</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">AC-130 sobre el terreno</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Artilleria Guiada, Cañon de Cadena Pesado, y Misil Aire-Tierra. Persistente</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Helicóptero Cañonera" id="744f-8c6a-6ac5-ee5a" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 4 - Conexión en Línea de Objetivos" id="2213-ffd8-2fd4-cd48" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Apoyo de ala rotatoria, provisto de cohetes y cañones</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Vaina de Cohetes y Cañón de Cadena</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Comandantes y Especialistas ganan +2 a Percepción y pueden compartir resultados de Detección este turno.</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Coordinación Táctica. Persistente</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Bomba no guiada" id="7f83-4094-3dcf-ab24" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 4 - Despliegue de Superioridad Aérea Total" id="5c90-05d9-296a-526f" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Lanzamiento de municiones desde medios improvisados</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Bomba sin Guía</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Todas las Unidades enemigas deben superar un Chequeo de Estrés, tirando un dado por cada punto de Estrés actual.</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Supresión No Letal pero devastadora.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Nivel 5 - Ataque de Artillería" id="7e4d-e97b-7a2b-39d4" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
+            <profile name="Nivel 4 - Red de Neutralización de Precisión" id="67c7-62d8-a84f-b5e6" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Ataque de Artillería con precisión limitada</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Artillería</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Nivel 5 - Municiones Incendiarias" id="7343-5139-fc85-1fde" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Bomba Termobárica casera</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Municiones Incendiarias</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Nivel 5 - Ataque de Cohetes en masa" id="aa9b-a195-b51f-c034" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Ataque con cohetes caseros de gran calibre</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Artillería de Cohetes</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry name="Nivel 6 - Caos Total" id="31fd-d716-85be-0842" hidden="false" import="true" sortIndex="6" type="upgrade">
-          <constraints>
-            <constraint id="1c6f-1d7b-2d43-eed7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="5468-5d45-84f8-b476" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Ataque con Arma Química" id="c4d0-501f-4495-cc80" hidden="false" import="true" targetId="e308-f7d5-d8cf-90c8" type="selectionEntry">
-              <constraints>
-                <constraint id="651d-dd79-75aa-e209" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="ca93-107d-36f4-a9d6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <profiles>
-            <profile name="Nivel 6 - Movilización en Masa" id="dbb5-e2b5-8487-0581" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Hasta 3 Unidades llegan desde fuera de los limites del tablero. Generalmente, inexpertos pero numerosos.</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Aparecen desde cualquier zona accesible por civiles. Aplican reglas de Refuerzos.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Nivel 6 - Ataque de Armas Químicas" id="1be7-0e7d-1838-a1d0" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Dispersión de agentes químicos caseros.</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Ataque de Armas Químicas.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Nivel 6 - Levantamiento Coordinado" id="875d-9054-f6df-d982" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Todas las Unidades de la Milicia gana +2 de Momentum en este turno</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Mayor caos, mayor peligro.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Nivel 6 - Pánico Generalizado" id="02a8-c5dd-ab10-76c1" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
-              <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Los civiles empiezan a huir. Las fuerzas del orden u otras facciones pueden intervenir.</characteristic>
-                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Todas las unidades Civiles realizan una tirada de Comportamiento Hostil. Todas las Unidades enemigas realizan un Test de Estrés.</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">Dispara municiones merodeadoras a 2 objetivos</characteristic>
+                <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Municiones Merodeadoras (elegir)</characteristic>
               </characteristics>
             </profile>
           </profiles>
