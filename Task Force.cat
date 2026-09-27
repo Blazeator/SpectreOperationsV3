@@ -726,7 +726,7 @@
                     </selectionEntry>
                     <selectionEntry name="0-1 Afuste de Armas" id="fddc-c115-0784-8b61" hidden="false" import="true" type="upgrade">
                       <entryLinks>
-                        <entryLink name="Afuste de Armas" id="440f-0a0f-83fe-ba11" collapsible="true" hidden="false" import="true" targetId="a719-d840-305d-ec23" type="selectionEntryGroup">
+                        <entryLink name="Afuste de Armas" id="440f-0a0f-83fe-ba11" hidden="false" import="true" targetId="a719-d840-305d-ec23" type="selectionEntryGroup">
                           <constraints>
                             <constraint id="39df-4f09-7ed5-c453" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
@@ -1076,8 +1076,7 @@
             </profile>
             <profile name="Nivel 3 - Ataque Aéreo (Municiones Incendiarias)" id="b83c-170c-18a4-c275" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">
-</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2"/>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Municiones Incendiarias</characteristic>
               </characteristics>
             </profile>
@@ -1089,8 +1088,7 @@
             </profile>
             <profile name="Nivel 3 - Ataque Aéreo (Municiones de Racimo)" id="98ef-ca81-80ae-e560" hidden="false" typeId="9bc6-e12d-f350-b01a" typeName="Escaladas">
               <characteristics>
-                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2">
-</characteristic>
+                <characteristic name="Descripción" typeId="2b3c-4ce9-3d0b-24d2"/>
                 <characteristic name="Efecto" typeId="77dd-688d-97d4-78a1">Perfil de Municiones de Racimo</characteristic>
               </characteristics>
             </profile>
@@ -1229,12 +1227,12 @@
         </selectionEntry>
         <selectionEntry name="Tier 1" id="9a19-e37a-e348-ca13" hidden="false" import="true" sortIndex="1" type="upgrade">
           <infoLinks>
-            <infoLink name="Tier I" id="f81b-2743-afba-436c" hidden="false" targetId="6ac0-ffa2-523a-241a" type="profile"/>
+            <infoLink name="Tier 1" id="f81b-2743-afba-436c" hidden="false" targetId="6ac0-ffa2-523a-241a" type="profile"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry name="Tier 2" id="8d48-05e8-6a57-aff7" hidden="false" import="true" sortIndex="2" type="upgrade">
           <infoLinks>
-            <infoLink name="Tier II" id="68b3-e3cb-f5b4-24f8" hidden="false" targetId="047f-0019-f900-ce9d" type="profile"/>
+            <infoLink name="Tier 2" id="68b3-e3cb-f5b4-24f8" hidden="false" targetId="047f-0019-f900-ce9d" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1811,12 +1809,12 @@
             <entryLink name="Ordenes avanzadas de K9" id="c29b-0026-5b51-7742" hidden="false" import="true" targetId="c63e-6354-45f9-49ef" type="selectionEntry"/>
           </entryLinks>
         </entryLink>
-        <entryLink name="Escudo Completo" id="1d42-d0aa-46fe-8467" hidden="false" import="true" sortIndex="8" targetId="d9fc-cc05-a596-028f" type="selectionEntry">
+        <entryLink name="Escudo Balístico (Completo)" id="1d42-d0aa-46fe-8467" hidden="false" import="true" sortIndex="8" targetId="d9fc-cc05-a596-028f" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="25"/>
           </costs>
         </entryLink>
-        <entryLink name="Medio Escudo" id="f64a-e0e2-c8d9-1fdb" hidden="false" import="true" sortIndex="7" targetId="998f-bd89-7b7c-2070" type="selectionEntry">
+        <entryLink name="Escudo Balístico (Pequeño)" id="f64a-e0e2-c8d9-1fdb" hidden="false" import="true" sortIndex="7" targetId="998f-bd89-7b7c-2070" type="selectionEntry">
           <costs>
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="12"/>
           </costs>
@@ -1973,8 +1971,8 @@
                 <constraint id="d3dc-3ed2-be77-a6e2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Armas Medias" id="6ed5-1b9a-a871-75bc" hidden="false" import="true" targetId="0f86-4504-6c0c-78cc" type="selectionEntryGroup"/>
-                <entryLink name="Armas Pesadas" id="dd79-0dc9-6b26-d000" hidden="false" import="true" targetId="2f25-2471-aa04-94ff" type="selectionEntryGroup"/>
+                <entryLink name="Armas Medias" id="6ed5-1b9a-a871-75bc" hidden="false" import="true" sortIndex="1" targetId="0f86-4504-6c0c-78cc" type="selectionEntryGroup"/>
+                <entryLink name="Armas Pesadas" id="dd79-0dc9-6b26-d000" hidden="false" import="true" sortIndex="2" targetId="2f25-2471-aa04-94ff" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1984,25 +1982,25 @@
             <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="15"/>
           </costs>
           <entryLinks>
-            <entryLink name="Armas Pesadas" id="7a84-9dfd-a380-b0d3" hidden="false" import="true" targetId="2f25-2471-aa04-94ff" type="selectionEntryGroup">
+            <entryLink name="Armas Pesadas" id="7a84-9dfd-a380-b0d3" hidden="false" import="true" sortIndex="1" targetId="2f25-2471-aa04-94ff" type="selectionEntryGroup">
               <constraints>
                 <constraint id="dc8a-92ee-3986-1840" field="selections" includeChildSelections="false" scope="parent" shared="false" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Armas Pesadas/Especiales" id="8851-1a74-e1bd-f422" hidden="false" import="true" targetId="cab6-ecce-e65b-3946" type="selectionEntryGroup">
+            <entryLink name="Armas Pesadas/Especiales" id="8851-1a74-e1bd-f422" hidden="false" import="true" sortIndex="3" targetId="cab6-ecce-e65b-3946" type="selectionEntryGroup">
               <constraints>
                 <constraint id="14e2-4cde-d15e-5329" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Arma Media / Pesada Opcional" id="99a8-60ba-170f-f588" hidden="false">
+            <selectionEntryGroup name="Arma Media / Pesada Opcional" id="99a8-60ba-170f-f588" hidden="false" sortIndex="2">
               <constraints>
                 <constraint id="78ce-fc36-68d0-a1ae" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Armas Pesadas" id="0f51-9447-f89d-60a4" hidden="false" import="true" targetId="2f25-2471-aa04-94ff" type="selectionEntryGroup"/>
-                <entryLink name="Armas Medias" id="4d29-61be-f65c-126e" hidden="false" import="true" targetId="0f86-4504-6c0c-78cc" type="selectionEntryGroup"/>
+                <entryLink name="Armas Pesadas" id="0f51-9447-f89d-60a4" hidden="false" import="true" sortIndex="2" targetId="2f25-2471-aa04-94ff" type="selectionEntryGroup"/>
+                <entryLink name="Armas Medias" id="4d29-61be-f65c-126e" hidden="false" import="true" sortIndex="1" targetId="0f86-4504-6c0c-78cc" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>

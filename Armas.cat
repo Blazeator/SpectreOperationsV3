@@ -2536,6 +2536,9 @@
       </profiles>
     </selectionEntry>
     <selectionEntry name="Granada de Gas" id="8dfb-ff9e-e5cc-7681" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Armas Arrojadizas" id="4eca-aa15-fdf1-0f90" hidden="false" primary="true" targetId="0f35-d25d-c28b-8a0a"/>
+      </categoryLinks>
       <infoLinks>
         <infoLink name="Armas con Área de Efecto (AoE)" id="7c24-a879-4404-491c" hidden="false" targetId="b372-02b2-42cd-07db" type="rule"/>
         <infoLink name="Aturdir" id="9769-2422-c614-97f4" hidden="false" targetId="ad8c-eca2-6734-5595" type="rule"/>
@@ -2565,6 +2568,109 @@
             <characteristic name="Combate R/M/L/AP" typeId="646a-c48f-d06b-7249">20&quot;/-1/-/1</characteristic>
             <characteristic name="Extremo R/M/L/AP" typeId="e478-29d2-0e1d-f1c5">40&quot;/-2/-/1</characteristic>
             <characteristic name="Especial" typeId="3ac9-347e-9443-e1c6">AoE 5, Aturdir 2, Gas Lacrimógeno</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="RPG-30" id="0a7d-9736-622b-34e0" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Sistema de Armas Operadas Desde el Hombro" id="cffd-1a6d-e8c7-a090" hidden="false" primary="true" targetId="995b-9608-37fa-68e5"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Armas con Área de Efecto (AoE)" id="426b-c039-5f73-6e75" hidden="false" targetId="b372-02b2-42cd-07db" type="rule"/>
+        <infoLink name="Un Uso" id="46a1-fa6c-ee61-9ed8" hidden="false" targetId="93ee-a371-5cb8-7d8f" type="rule"/>
+        <infoLink name="Pesada" id="84bb-57fe-2992-c608" hidden="false" targetId="4665-552e-cbbc-c02f" type="rule"/>
+        <infoLink name="Proyectil en Tandem" id="58da-7248-706b-ccbb" hidden="false" targetId="6c75-4e09-025a-fb1e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="RPG-30" id="45fe-417a-ef7c-f7b6" hidden="false" typeId="e585-baa0-23fd-d836" typeName="Arma">
+          <characteristics>
+            <characteristic name="CQB R/M/L/AP" typeId="7aab-c3cd-87ac-eae2">-/-/-/-</characteristic>
+            <characteristic name="Combate R/M/L/AP" typeId="646a-c48f-d06b-7249">35&quot;/-1/6+/6</characteristic>
+            <characteristic name="Extremo R/M/L/AP" typeId="e478-29d2-0e1d-f1c5">50&quot;/-2/6+/6</characteristic>
+            <characteristic name="Especial" typeId="3ac9-347e-9443-e1c6">AoE 2, Antitanque, Un uso, Pesada, Proyectil en Tandem, ERA Defeat, Rango Mínimo 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="RPG-22/26" id="dfa5-5e45-5e0a-3a23" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Sistema de Armas Operadas Desde el Hombro" id="c884-b74f-2feb-96fb" hidden="false" primary="true" targetId="995b-9608-37fa-68e5"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Armas con Área de Efecto (AoE)" id="3b90-231b-151f-fd6f" hidden="false" targetId="b372-02b2-42cd-07db" type="rule"/>
+        <infoLink name="Tiro a Tiro" id="a96c-8300-a07f-2ea5" hidden="false" targetId="5c67-15a4-91ef-1f3d" type="rule"/>
+        <infoLink name="Antiblindaje" id="8b61-816e-87f6-e93c" hidden="false" targetId="2dd4-353e-1bae-ab50" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="RPG-22/26" id="5325-ebf7-8a6c-e0b2" hidden="false" typeId="e585-baa0-23fd-d836" typeName="Arma">
+          <characteristics>
+            <characteristic name="CQB R/M/L/AP" typeId="7aab-c3cd-87ac-eae2">-/-/-/-</characteristic>
+            <characteristic name="Combate R/M/L/AP" typeId="646a-c48f-d06b-7249">35&quot;/0/8+/4</characteristic>
+            <characteristic name="Extremo R/M/L/AP" typeId="e478-29d2-0e1d-f1c5">50&quot;/-1/8+/4</characteristic>
+            <characteristic name="Especial" typeId="3ac9-347e-9443-e1c6">AoE 2, Antiblindaje, Tiro a Tiro, Rango Mínimo 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="BUR" id="dd4b-035f-c46b-f7e7" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Sistema de Armas Operadas Desde el Hombro" id="6f7b-b9f1-8264-5f01" hidden="false" primary="true" targetId="995b-9608-37fa-68e5"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Armas con Área de Efecto (AoE)" id="caa3-31dd-aed5-dbbc" hidden="false" targetId="b372-02b2-42cd-07db" type="rule"/>
+        <infoLink name="Termobárica" id="7650-bf42-babe-fad7" hidden="false" targetId="6e6f-6c8a-4825-1132" type="rule"/>
+        <infoLink name="Compacta" id="80d2-3989-7b39-3214" hidden="false" targetId="97a7-86a6-9988-f4a7" type="rule"/>
+        <infoLink name="Penetración de Blindaje" id="ecc1-9836-55d3-2d12" hidden="false" targetId="d4ed-a106-4ec9-1c42" type="rule"/>
+        <infoLink name="Tiro a Tiro" id="bd53-4dd1-053d-27db" hidden="false" targetId="5c67-15a4-91ef-1f3d" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="BUR" id="53f2-1250-a950-46d5" hidden="false" typeId="e585-baa0-23fd-d836" typeName="Arma">
+          <characteristics>
+            <characteristic name="CQB R/M/L/AP" typeId="7aab-c3cd-87ac-eae2">-/-/-/-</characteristic>
+            <characteristic name="Combate R/M/L/AP" typeId="646a-c48f-d06b-7249">24&quot;/-1/4+/2</characteristic>
+            <characteristic name="Extremo R/M/L/AP" typeId="e478-29d2-0e1d-f1c5">36&quot;/-2/4+/2</characteristic>
+            <characteristic name="Especial" typeId="3ac9-347e-9443-e1c6">AoE 4, Termobárico, Tiro a Tiro, Penetración de Blindaje, Compacta, Rango Mínimo 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="RPO Shimel" id="122c-c9cd-b0a5-1921" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Sistema de Armas Operadas Desde el Hombro" id="5074-6a04-adc6-980d" hidden="false" primary="true" targetId="995b-9608-37fa-68e5"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Armas con Área de Efecto (AoE)" id="7eb6-4bcd-b2eb-1dbd" hidden="false" targetId="b372-02b2-42cd-07db" type="rule"/>
+        <infoLink name="Termobárica" id="b770-7d4c-16a9-4bf1" hidden="false" targetId="6e6f-6c8a-4825-1132" type="rule"/>
+        <infoLink name="Tiro a Tiro" id="70f1-34c4-5f01-4d5b" hidden="false" targetId="5c67-15a4-91ef-1f3d" type="rule"/>
+        <infoLink name="Penetración de Blindaje" id="9311-8756-793f-e0d3" hidden="false" targetId="d4ed-a106-4ec9-1c42" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="RPO Shimel" id="83ec-2e18-3990-5ee5" hidden="false" typeId="e585-baa0-23fd-d836" typeName="Arma">
+          <characteristics>
+            <characteristic name="CQB R/M/L/AP" typeId="7aab-c3cd-87ac-eae2">-/-/-/-</characteristic>
+            <characteristic name="Combate R/M/L/AP" typeId="646a-c48f-d06b-7249">30&quot;/-1/4+/2</characteristic>
+            <characteristic name="Extremo R/M/L/AP" typeId="e478-29d2-0e1d-f1c5">50&quot;/-2/4+/2</characteristic>
+            <characteristic name="Especial" typeId="3ac9-347e-9443-e1c6">AoE 5, Termobárico, Tiro a Tiro, Penetración de Blindaje, Rango Mínimo 8&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Granada Incendiaria" id="dabb-80c8-3b76-d53d" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Armas Arrojadizas" id="5f18-92ad-06f5-9356" primary="true" targetId="0f35-d25d-c28b-8a0a"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Armas con Área de Efecto (AoE)" id="76a7-7ac6-54cd-e455" hidden="false" targetId="b372-02b2-42cd-07db" type="rule"/>
+        <infoLink name="Incendiarias" id="838b-ba30-9782-5821" hidden="false" targetId="46c4-57c7-81c0-cf5a" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Granada Incendiaria" id="5626-f186-c46c-3e31" hidden="false" typeId="e585-baa0-23fd-d836" typeName="Arma">
+          <characteristics>
+            <characteristic name="CQB R/M/L/AP" typeId="7aab-c3cd-87ac-eae2">6&quot;/0/6+/1</characteristic>
+            <characteristic name="Combate R/M/L/AP" typeId="646a-c48f-d06b-7249">8&quot;/-1/6+/1</characteristic>
+            <characteristic name="Extremo R/M/L/AP" typeId="e478-29d2-0e1d-f1c5">12&quot;/-2/6+/1</characteristic>
+            <characteristic name="Especial" typeId="3ac9-347e-9443-e1c6">Aoe 3, Incendiaria</characteristic>
           </characteristics>
         </profile>
       </profiles>

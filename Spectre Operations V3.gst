@@ -9,7 +9,7 @@
     <costType name="Recursos" id="e097-af1e-bf07-f031" defaultCostLimit="-1"/>
   </costTypes>
   <profileTypes>
-    <profileType name="Combatiente" id="9e34-ec9a-2063-cc02" hidden="false" kind="model" sortIndex="1">
+    <profileType name="Combatiente" id="9e34-ec9a-2063-cc02" hidden="false" kind="model" sortIndex="2">
       <characteristicTypes>
         <characteristicType name="Movimiento" id="62b0-2d44-1adc-2daf"/>
         <characteristicType name="Balística" id="e9bf-d1ec-4f7e-b6fb"/>
@@ -17,7 +17,7 @@
         <characteristicType name="Estrés" id="7bd1-d92a-d8df-8b7f"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Arma" id="e585-baa0-23fd-d836" hidden="false" kind="weapon" sortIndex="2">
+    <profileType name="Arma" id="e585-baa0-23fd-d836" hidden="false" kind="weapon" sortIndex="4">
       <characteristicTypes>
         <characteristicType name="CQB R/M/L/AP" id="7aab-c3cd-87ac-eae2"/>
         <characteristicType name="Combate R/M/L/AP" id="646a-c48f-d06b-7249"/>
@@ -25,12 +25,12 @@
         <characteristicType name="Especial" id="3ac9-347e-9443-e1c6"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Equipamiento" id="6838-76bd-df50-3dbe" hidden="false" kind="weapon" sortIndex="3">
+    <profileType name="Equipamiento" id="6838-76bd-df50-3dbe" hidden="false" kind="weapon" sortIndex="5">
       <characteristicTypes>
         <characteristicType name="Descripción" id="8943-2b21-512c-8bb6" kind="longText"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Vehiculo" id="0c55-6dc2-27bd-bebc" hidden="false" kind="model" sortIndex="4">
+    <profileType name="Vehiculo" id="0c55-6dc2-27bd-bebc" hidden="false" kind="model" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Movimiento" id="0715-e1a1-c3e9-7473"/>
         <characteristicType name="Clase" id="25b6-b6ad-f17c-9762"/>
@@ -40,7 +40,7 @@
         <characteristicType name="Reglas Especiales" id="6a4c-cfa9-876e-25ac"/>
       </characteristicTypes>
     </profileType>
-    <profileType name="Escaladas" id="9bc6-e12d-f350-b01a" hidden="false">
+    <profileType name="Escaladas" id="9bc6-e12d-f350-b01a" hidden="false" sortIndex="1">
       <characteristicTypes>
         <characteristicType name="Descripción" id="2b3c-4ce9-3d0b-24d2"/>
         <characteristicType name="Efecto" id="77dd-688d-97d4-78a1"/>
@@ -96,7 +96,7 @@
         <characteristic name="Estrés" typeId="7bd1-d92a-d8df-8b7f">4</characteristic>
       </characteristics>
     </profile>
-    <profile name="Tier II" id="047f-0019-f900-ce9d" hidden="false" selectable="true" selectionGroup="Entrenado" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente">
+    <profile name="Tier 2" id="047f-0019-f900-ce9d" hidden="false" selectable="true" selectionGroup="Entrenado" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente">
       <characteristics>
         <characteristic name="Movimiento" typeId="62b0-2d44-1adc-2daf">5</characteristic>
         <characteristic name="Balística" typeId="e9bf-d1ec-4f7e-b6fb">4</characteristic>
@@ -104,7 +104,7 @@
         <characteristic name="Estrés" typeId="7bd1-d92a-d8df-8b7f">3</characteristic>
       </characteristics>
     </profile>
-    <profile name="Tier I" id="6ac0-ffa2-523a-241a" hidden="false" selectable="true" selectionGroup="Entrenado" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente">
+    <profile name="Tier 1" id="6ac0-ffa2-523a-241a" hidden="false" selectable="true" selectionGroup="Entrenado" typeId="9e34-ec9a-2063-cc02" typeName="Combatiente">
       <characteristics>
         <characteristic name="Movimiento" typeId="62b0-2d44-1adc-2daf">6</characteristic>
         <characteristic name="Balística" typeId="e9bf-d1ec-4f7e-b6fb">3</characteristic>
@@ -354,6 +354,7 @@ El Valor de Percepción del Vehículo al realizar pruebas de Percepción se incr
       <description>Cualquier Vehículo con esta regla aumentará su (B) contra Minas y IEDs en +1.</description>
     </rule>
     <rule name="Protección Reforzada para la Tripulación" id="f552-09de-bdbf-7432" hidden="false">
+      <comment>Vehiculos</comment>
       <description>Cualquier vehículo con esta regla reducirá las tiradas de Letalidad contra la tripulación o cualquier Unidad Embarcada en ellos en -2.</description>
     </rule>
     <rule name="Inhibidor de Explosivos" id="55ae-7af3-87ce-7161" hidden="false">
@@ -388,6 +389,29 @@ Una Unidad amiga puede ser objetivo de armas con la regla de humo.</description>
     </rule>
     <rule name="Persistente" id="1e55-e06a-2e8f-34f6" hidden="false">
       <description>Sus efectos duran toda la partida</description>
+    </rule>
+    <rule name="Traje Anti-Fragmentación" id="a5dc-8fd4-fcab-5da1" hidden="false">
+      <description>El portador de un Traje Anti-Fragmentación (Frag Suit) reducirá la Letalidad de un arma en 1, hasta un mínimo de 10+, y reducirá aún más la Letalidad de un Arma de Fragmentación en -2 adicional, además de cualquier otro modificador, como las Pruebas de Percepción contra Armas de Fragmentación. El portador también verá reducido su Movimiento en -1.</description>
+    </rule>
+    <rule name="Sistema de Combate Nocturno Mk1" id="b4af-73da-81c2-2bb7" hidden="false">
+      <comment>Vehiculos</comment>
+      <description>Al efectuar Combates utilizando las reglas de Oscuridad y Oscuridad Absoluta, todos los Combates se realizan con una penalización de -3.</description>
+    </rule>
+    <rule name="Sistema de Combate Nocturno Mk2" id="e43b-5cd9-5016-cc93" hidden="false">
+      <comment>Vehiculos</comment>
+      <description>Al efectuar Combates utilizando las reglas de Oscuridad y Oscuridad Absoluta, todos los Combates se realizan con una penalización de -2.</description>
+    </rule>
+    <rule name="Sistema de Adquisición de Objetivos" id="83a9-b6cb-0c1f-e105" hidden="false">
+      <comment>Vehiculos</comment>
+      <description>Cualquier vehículo equipado con un Sistema de Adquisición de Objetivos podrá repetir cualquier tirada fallida de Fuego Preciso que se realice a Distancia de Combate.</description>
+    </rule>
+    <rule name="Filtros NRBQ" id="55e9-e9d4-ea0e-1e4a" hidden="false">
+      <comment>Vehiculos</comment>
+      <description>Los vehículos con Filtración NRBQ protegerán a la tripulación y a cualquier Unidad Embarcada en su interior contra todas las armas Químicas y Biológicas.</description>
+    </rule>
+    <rule name="Comunicaciones Mejoradas" id="d216-c810-ac78-9aff" hidden="false">
+      <comment>Vehiculos</comment>
+      <description>Un vehículo con Comunicaciones Mejoradas siempre eliminará 1 punto de estrés por turno, hasta un mínimo del Valor de Estrés inicial de la Unidad.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -428,12 +452,12 @@ Fragmentación en -3. El Usuario también tendrá su Valor de Movimiento reduci
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Escudo Completo" id="d9fc-cc05-a596-028f" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Escudo Balístico (Completo)" id="d9fc-cc05-a596-028f" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="a9cb-7420-c168-d692" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <profiles>
-        <profile name="Escudo Completo" id="8df5-9e35-8b8d-1a46" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+        <profile name="Escudo Balístico (Completo)" id="8df5-9e35-8b8d-1a46" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
           <characteristics>
             <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Una miniatura con un Escudo Completo reducirá la letalidad de cualquier impacto en -1, si el ataque se origina desde el Frontal de la unidad Objetivo.
 Esto es acumulativo con otros elementos como el blindaje corporal. Si una unidad tiene al menos 1 miniatura por cada 3 con un Escudo Completo, esa unidad se beneficiará de un adicional de +2 en sus Pruebas de Percepción.</characteristic>
@@ -441,12 +465,12 @@ Esto es acumulativo con otros elementos como el blindaje corporal. Si una unida
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Medio Escudo" id="998f-bd89-7b7c-2070" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Escudo Balístico (Pequeño)" id="998f-bd89-7b7c-2070" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="5edc-509f-991c-fd62" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <profiles>
-        <profile name="Medio Escudo" id="ab73-b9ee-1c51-3380" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+        <profile name="Escudo Balístico (Pequeño)" id="ab73-b9ee-1c51-3380" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
           <characteristics>
             <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Una miniatura con un Escudo Medio reducirá la letalidad de la primera vez que la unidad sea alcanzada en -1 en la que puede ser el objetivo de cualquier acción de Combate en la que esta miniatura sea un objetivo y se origine desde el Frente de Fuego de la miniatura con el escudo.</characteristic>
           </characteristics>
@@ -1228,18 +1252,75 @@ Además, la percepción de todas las unidades dentro de la fuerza que contenga 
     </selectionEntry>
     <selectionEntry name="Tier 1" id="fe42-e0ee-6fc9-e655" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Tier I" id="6f08-cb3b-10dd-d215" hidden="false" targetId="6ac0-ffa2-523a-241a" type="profile"/>
+        <infoLink name="Tier 1" id="6f08-cb3b-10dd-d215" hidden="false" targetId="6ac0-ffa2-523a-241a" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Tier 2" id="3d37-2927-bbd0-cd22" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Tier II" id="d59c-ee55-8065-8c46" hidden="false" targetId="047f-0019-f900-ce9d" type="profile"/>
+        <infoLink name="Tier 2" id="d59c-ee55-8065-8c46" hidden="false" targetId="047f-0019-f900-ce9d" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Veterano" id="8d78-9db1-12e8-1e9f" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Veterano" id="8f1d-9101-d052-b9aa" hidden="false" targetId="c8a0-8900-9535-b743" type="profile"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Traje Anti-Fragmentación" id="8f72-840d-fa81-a212" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="6f6d-9ae1-5dfe-f75e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Traje Anti-Fragmentación" id="0334-4ee8-ac8f-5a8c" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+          <characteristics>
+            <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">El portador de un Traje Anti-Fragmentación (Frag Suit) reducirá la Letalidad de un arma en 1, hasta un mínimo de 10+, y reducirá aún más la Letalidad de un Arma de Fragmentación en -2 adicional, además de cualquier otro modificador, como las Pruebas de Percepción contra Armas de Fragmentación. El portador también verá reducido su Movimiento en -1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Comunicaciones Mejoradas" id="8eb6-b18a-15aa-01a9" hidden="false" import="true" type="upgrade">
+      <comment>Vehiculos</comment>
+      <constraints>
+        <constraint id="9342-9f6e-695a-03cf" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Comunicaciones Mejoradas" id="ca05-1aaf-cf27-9dfa" hidden="false" targetId="d216-c810-ac78-9aff" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Sistema de Combate Nocturno Mk1" id="4a83-7ba6-c531-d7b3" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="353b-9a63-4a78-bef2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Sistema de Combate Nocturno Mk1" id="fc1a-a84b-b64b-d006" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+          <characteristics>
+            <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Al efectuar Combates utilizando las reglas de Oscuridad y Oscuridad Absoluta, todos los Combates se realizan con una penalización de -3.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Sistema de Combate Nocturno Mk2" id="25cb-f5c8-3cfd-1fbe" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="6b5d-8950-35a1-2a0d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Sistema de Combate Nocturno Mk2" id="ef59-7823-5907-2007" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+          <characteristics>
+            <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Al efectuar Combates utilizando las reglas de Oscuridad y Oscuridad Absoluta, todos los Combates se realizan con una penalización de -2.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Sistema de Adquisición de Objetivos" id="f2fc-7928-912b-85d0" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="667e-6c7a-027c-8b70" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Sistema de Adquisición de Objetivos" id="85ad-1a5a-2fd8-dcde" hidden="false" typeId="6838-76bd-df50-3dbe" typeName="Equipamiento">
+          <characteristics>
+            <characteristic name="Descripción" typeId="8943-2b21-512c-8bb6">Cualquier vehículo equipado con un Sistema de Adquisición de Objetivos podrá repetir cualquier tirada fallida de Fuego Preciso que se realice a Distancia de Combate.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

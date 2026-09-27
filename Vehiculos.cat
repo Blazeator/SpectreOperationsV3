@@ -721,5 +721,145 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry name="BTR 82" id="aa1c-7cca-6eb6-ddd8" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Medianos" id="49c3-9786-4cfb-c5f6" hidden="false" primary="true" targetId="3e99-c63f-b607-4222"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink name="Comunicaciones Mejoradas" id="9ee9-971c-01c2-4121" hidden="false" import="true" sortIndex="2" targetId="8eb6-b18a-15aa-01a9" type="selectionEntry">
+          <costs>
+            <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Filtros NRBQ" id="20f2-467a-30ce-12ca" hidden="false" targetId="55e9-e9d4-ea0e-1e4a" type="rule"/>
+        <infoLink name="Protección Reforzada para la Tripulación" id="35fd-d8b2-bad4-83b8" hidden="false" targetId="f552-09de-bdbf-7432" type="rule"/>
+        <infoLink name="Transporte Improvisado" id="783a-1c4f-f223-14b9" hidden="false" targetId="daa0-73d6-065d-65c4" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="BTR 82" id="764d-bd04-908e-75c3" hidden="false" typeId="0c55-6dc2-27bd-bebc" typeName="Vehiculo">
+          <characteristics>
+            <characteristic name="Movimiento" typeId="0715-e1a1-c3e9-7473">6</characteristic>
+            <characteristic name="Clase" typeId="25b6-b6ad-f17c-9762">Mediano 1</characteristic>
+            <characteristic name="Blindaje" typeId="d7a6-2884-3fe0-c590">6</characteristic>
+            <characteristic name="Capacidad de Transporte" typeId="436e-80b8-83dc-16ed">7</characteristic>
+            <characteristic name="Armamento" typeId="a93e-ae5e-7d18-0bc0">ZPU 1, Ametralladora Mediana</characteristic>
+            <characteristic name="Reglas Especiales" typeId="6a4c-cfa9-876e-25ac">Transporte Improvisado 8, Filtros NRBQ, Protección Reforzada para la Tripulación</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Opciones de Armamento" id="d9d8-12da-121a-4ae0" defaultSelectionEntryId="822a-dfdf-ebf5-64d1" hidden="false" sortIndex="1">
+          <constraints>
+            <constraint id="4baa-f878-8e24-2a5b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="8e76-5f3c-e782-9c52" field="selections" includeChildSelections="false" message="(BTR 82) Selecciona una opción de Armamento" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Torreta Remota Estándar" id="822a-dfdf-ebf5-64d1" defaultAmount="1" hidden="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink name="Ametralladora Media" id="84df-794d-51b4-f5c2" defaultAmount="1" hidden="false" import="true" sortIndex="2" targetId="698e-2892-f202-6122" type="selectionEntry">
+                  <constraints>
+                    <constraint id="5cde-24a7-eb75-ba63" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="3465-8d3e-26b5-b91b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Cañón Medio" id="1dbd-c85a-e20e-66f2" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="4d26-83d7-0852-0fe2" type="selectionEntry">
+                  <constraints>
+                    <constraint id="8616-d93d-203e-1526" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="411e-794a-e63f-6d69" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Sistema de Combate Nocturno Mk1" id="e563-f528-7a13-ea27" defaultAmount="1" hidden="false" import="true" sortIndex="3" targetId="4a83-7ba6-c531-d7b3" type="selectionEntry">
+                  <constraints>
+                    <constraint id="7dec-9e4b-ac0b-297b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry name="Torreta Remota con Misiles AT" id="7d21-bde1-e609-09bf" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="120"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Cañón Medio" id="78d2-a8de-1818-0fec" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="4d26-83d7-0852-0fe2" type="selectionEntry">
+                  <constraints>
+                    <constraint id="18b7-1aff-bf88-876a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="18b7-1aff-bf88-876a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Lanzador Antitanque Ligero Guiado" id="596b-b65a-e3e4-1e9c" defaultAmount="2" hidden="false" import="true" sortIndex="3" targetId="907a-e547-dac3-1794" type="selectionEntry">
+                  <constraints>
+                    <constraint id="5ba1-451a-c400-db02-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+                    <constraint id="5ba1-451a-c400-db02-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Descargadores de Humo" id="5339-b356-3b37-8e28" defaultAmount="1" hidden="false" import="true" sortIndex="4" targetId="630b-6e65-f43c-b66e" type="selectionEntry">
+                  <constraints>
+                    <constraint id="3867-cb3b-6079-b562-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="3867-cb3b-6079-b562-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Ametralladora Media" id="b01f-2857-6fd8-c62c" defaultAmount="1" hidden="false" import="true" sortIndex="2" targetId="698e-2892-f202-6122" type="selectionEntry">
+                  <constraints>
+                    <constraint id="3c2f-5266-65ce-33ab-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="3c2f-5266-65ce-33ab-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Sistema de Adquisición de Objetivos" id="e8ca-f269-cb02-995b" defaultAmount="1" hidden="false" import="true" sortIndex="5" targetId="f2fc-7928-912b-85d0" type="selectionEntry">
+                  <constraints>
+                    <constraint id="771d-8167-78fb-4e7e-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="771d-8167-78fb-4e7e-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Sistema de Combate Nocturno Mk2" id="0bc8-3939-e086-5623" defaultAmount="1" hidden="false" import="true" sortIndex="6" targetId="25cb-f5c8-3cfd-1fbe" type="selectionEntry">
+                  <constraints>
+                    <constraint id="a293-6f27-9943-5573-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="a293-6f27-9943-5573-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry name="Torreta Remota con Cañón Pesado" id="8f03-b0f4-a4f9-72f0" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Recursos" typeId="e097-af1e-bf07-f031" value="100"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Cañón Pesado" id="7983-ac48-99d9-b182" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="81a7-1baa-e238-a876" type="selectionEntry">
+                  <constraints>
+                    <constraint id="05c3-94c3-561d-7ab0-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="05c3-94c3-561d-7ab0-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Ametralladora Media" id="ddce-b61e-2827-8d6b" defaultAmount="1" hidden="false" import="true" sortIndex="2" targetId="698e-2892-f202-6122" type="selectionEntry">
+                  <constraints>
+                    <constraint id="3c67-fd6a-6177-0dd2-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="3c67-fd6a-6177-0dd2-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Descargadores de Humo" id="9769-76b8-472d-b3ca" defaultAmount="1" hidden="false" import="true" sortIndex="3" targetId="630b-6e65-f43c-b66e" type="selectionEntry">
+                  <constraints>
+                    <constraint id="8810-8a47-258a-2781-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="8810-8a47-258a-2781-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Sistema de Adquisición de Objetivos" id="dd56-04cf-a2ce-e024" defaultAmount="1" hidden="false" import="true" sortIndex="4" targetId="f2fc-7928-912b-85d0" type="selectionEntry">
+                  <constraints>
+                    <constraint id="6103-7ff3-389a-a46a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="6103-7ff3-389a-a46a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Sistema de Combate Nocturno Mk2" id="cf0e-a7e1-42b5-d07a" defaultAmount="1" hidden="false" import="true" sortIndex="5" targetId="25cb-f5c8-3cfd-1fbe" type="selectionEntry">
+                  <constraints>
+                    <constraint id="3944-633d-70d7-aed9-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="3944-633d-70d7-aed9-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
